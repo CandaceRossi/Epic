@@ -2,24 +2,32 @@ import React from 'react';
 import './App.css';
 import CarouselComp from "./components/CarouselComp";
 import NavbarComp from "./components/NavbarComp";
-// import painter from './images/painter.jpg';
+import TopNavComp from "./components/TopNavComp";
+import MissionComp from "./components/MissionComp";
+import palm from './images/palm.jpg';
 
 function App() {
   return (
     <div className="App">
       <div className="component-list">
+        <TopNavComp />
         <NavbarComp />
         <div className="comp-list-carousel">
           <CarouselComp />
         </div>
-        <div className="mission">
-          <div className="missions-style">
-            <h2>Our Mission</h2>
-            <p> We make exceptional paint for Southern climates, proudly delivered by knowledgable people with a mission to brighten the lives of everyone we serve. </p>
-            <p>Florida Paints was founded with the goal of providing a broad assortment of quality,
-            Florida-focused paint products and paint supplies, ample inventory and the best customer service experience in the paint industry.
-            While our name may be relatively new to you, our roots run deep in the professional painting industry here in the Sunshine State.
-        Learn about our history.</p>
+        <div className="revbody">
+          <div className="reveal">
+            <div className="reveal-container">
+              <div className="reveal_title">
+                Epic Paint & Construction
+          </div>
+              <div className="reveal_title-overlay">
+                <div className="reveal_title-overlay-value">
+                  Subscribe!
+            </div>
+              </div>
+            </div>
+            {/* <img src={palm} alt="palms" /> */}
           </div>
         </div>
         <div className="parallax">
