@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const MissionComp = () => {
+const Mission = () => {
    
     return (
 
@@ -18,4 +18,4 @@ const MissionComp = () => {
 
     )
     }
-    export default MissionComp;
+    export default Mission;

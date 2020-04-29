@@ -38,6 +38,10 @@
             align-items: center;
         }
         
+        .nav {
+            box-sizing: border-box;
+        }
+        
         .nav a {
             width: auto;
             box-sizing: border-box;
@@ -47,22 +51,40 @@
             box-sizing: border-box;
             padding: 15px;
             align-items: center;
+            border: 3px solid #719192;
         }
         
         .nav a:hover {
             box-sizing: border-box;
             height: 65px;
             width: auto;
-            /* border-radius: 5%; */
             display: flex;
-            /* background-image: url("../src/images/palmtrees.jpg"); */
-            background: whitesmoke;
-            border: 2px solid #dfcdc3;
+            background: #719192;
+            border-bottom: 3px solid #dfcdc3;
             color: #3c4245;
-            text-decoration: lavender underline overline;
+        }
+        /* .nav div {
+            border: none;
+        } */
+        
+        .nav div a:second-of-type {
+            border: none;
+        }
+        
+        .nav div a:nth-child(2) {
+            border: none;
+        }
+        
+        .nav div a:nth-child(3) {
+            border: none;
+        }
+        
+        .nav div a:nth-child(4) {
+            border: none;
         }
         
         .component-list {
+            width: 100%;
             margin: 0 auto;
             padding: none;
             box-sizing: border-box;
@@ -75,7 +97,7 @@
         .comp-list-carousel {
             width: 100%;
             margin: 0 auto;
-            padding: none;
+            padding-bottom: 70px;
         }
         
         .container {
@@ -102,6 +124,48 @@
         
         .carousel-control-prev-icon {
             visibility: hidden;
+        }
+        
+        .cards-style {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card {
+            box-sizing: border-box;
+            margin: 15px 5%;
+            /* width: 26% !important; */
+            max-width: 20%;
+            min-width: 240px !important;
+            /* min-width: 240px; */
+            height: auto;
+            /* min-width: 20%; */
+            /* padding: 15px; */
+            background: #dfcdc3 !important;
+            border: 2px solid #51b7bb !important;
+        }
+        
+        .card:hover {
+            border: 4px solid #51b7bb !important;
+        }
+        
+        .card div {
+            background: #dfcdc3 !important;
+        }
+        
+        .elipses {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #51b7bb !important;
+            border-radius: 50%;
+        }
+        
+        .card div .elipses:first-of-type {
+            border: 4px solid #51b7bb !important;
         }
         
         .mission {
