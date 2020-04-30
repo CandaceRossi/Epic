@@ -8,16 +8,15 @@ const Cards = () => {
 
         <div className="component-list">
             <div className="cards-style">
-                {/* style={{ width: '18rem', background: "#dfcdc3" }} */}
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
                     <Card.Body>
                         <div className="elipses">
                         </div>
+                        <br />
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Some quick example text to build on the card title
     </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
@@ -33,11 +32,13 @@ const Cards = () => {
                 <Card >
                     <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
                     <Card.Body>
+                        <div className="elipses">
+                        </div>
+                        <br />
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-    </Card.Text>
+                            Some quick example text to build on
+                            </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         <ListGroupItem>Cras justo odio</ListGroupItem>
@@ -52,10 +53,12 @@ const Cards = () => {
                 <Card >
                     <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
                     <Card.Body>
+                        <div className="elipses">
+                        </div>
+                        <br />
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Some quick example text to build on the card title and make up
     </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
