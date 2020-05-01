@@ -1,6 +1,6 @@
                 .App {
                     text-align: center;
-                    background: #5F6769;
+                    background: whitesmoke;
                     box-sizing: border-box;
                 }
                 
@@ -12,7 +12,7 @@
                     p {
                         margin: 5px;
                         padding: 10px;
-                        color: #dfcdc3;
+                        color: #f76cdf;
                     }
                     a {
                         margin: 5px;
@@ -29,22 +29,23 @@
                     a {
                         width: auto;
                         box-sizing: border-box;
-                        color: #3c4245;
+                        color: whitesmoke;
+                        // text-shadow: 1px 1px black;
                         text-decoration: none;
                         font-weight: bold;
                         box-sizing: border-box;
                         padding: 15px;
                         align-items: center;
-                        border: 3px solid #719192;
+                        border: 4px solid #0da8ad;
                     }
                     a:hover {
                         box-sizing: border-box;
                         height: 65px;
                         width: auto;
                         display: flex;
-                        background: #719192;
-                        border-bottom: 3px solid #dfcdc3;
-                        color: #3c4245;
+                        background: #0da8ad;
+                        border-bottom: 4px solid #f76cdf;
+                        color: #f76cdf;
                     }
                     div a:second-of-type {
                         border: none;
@@ -61,7 +62,7 @@
                     .navbar {
                         width: 100%;
                         height: 65px;
-                        background: #719192;
+                        background: #0da8ad;
                         box-sizing: border-box;
                         display: flex;
                         justify-content: space-evenly;
@@ -87,7 +88,7 @@
                 
                 .component-list {
                     width: 100%;
-                    margin: 0 auto;
+                    margin: 15px auto;
                     padding: none;
                     box-sizing: border-box;
                 }
@@ -99,7 +100,7 @@
                 .comp-list-carousel {
                     width: 100%;
                     margin: 0 auto;
-                    padding-bottom: 70px;
+                    padding-bottom: 10px;
                 }
                 
                 .container {
@@ -128,10 +129,14 @@
                     visibility: hidden;
                 }
                 
+                .cards-container {
+                    margin: 40px auto;
+                    padding-bottom: 20px;
+                }
+                
                 .cards-style {
                     margin: 0 auto;
                     max-width: 100%;
-                    // height: auto;
                     display: flex;
                     justify-content: center;
                 }
@@ -142,17 +147,19 @@
                     max-width: 20%;
                     min-width: 240px !important;
                     height: auto;
-                    background: #51b7bb!important;
+                    background: hsl(219, 95%, 76%) !important;
                     color: whitesmoke;
-                    border: 2px solid #dfcdc3 !important;
+                    // border: 2px solid #f76cdf !important;
                 }
                 
                 .card:hover {
-                    border: 4px solid #dfcdc3 !important;
+                    box-shadow: 0 0 5px 5px rgb(212, 212, 212);
+                    // border: 4px solid #f76cdf !important;
                     box-sizing: border-box;
                     .elipses {
-                        border: 4px solid #dfcdc3 !important;
+                        border: 4px solid whitesmoke !important;
                         box-sizing: border-box;
+                        box-shadow: 0 0 5px 5px whitesmoke;
                     }
                 }
                 
@@ -160,10 +167,24 @@
                     margin: 0 auto;
                     padding-top: 5px;
                     padding-bottom: 5px;
-                    background: #51b7bb !important;
+                    background: hsl(219, 95%, 76%) !important;
                 }
                 
                 .elipses {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 100px;
+                    border: 2px solid whitesmoke !important;
+                    border-radius: 50%;
+                }
+                
+                .testimon-card-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                
+                .elipse-testimonial {
                     margin: 0 auto;
                     width: 100px;
                     height: 100px;
@@ -171,12 +192,9 @@
                     border-radius: 50%;
                 }
                 
-                // .card div .elipses:first-of-type {
-                //     border: 4px solid #51b7bb !important;
-                // }
                 .mission {
                     width: 100%;
-                    border-bottom: solid 2px slategrey;
+                    border-bottom: solid 2px whitesmoke;
                     display: flex;
                     justify-content: center;
                     align-content: center;

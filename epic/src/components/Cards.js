@@ -6,7 +6,7 @@ const Cards = () => {
 
     return (
 
-        <div className="component-list">
+        <div className="cards-container">
             <div className="cards-style">
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
@@ -58,7 +58,7 @@ const Cards = () => {
                         <br />
                         <Card.Title>Card Title</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up
+                            Some quick example text to build on the card title
     </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
