@@ -11,6 +11,9 @@ import Mission from "./components/Mission";
 import palm from './images/palm.jpg';
 
 function App() {
+  window.addEventListener("load", () => {
+    document.querySelector("body").classList.add("loaded");
+  })
   return (
     <div className="App">
       <div className="component-list">

@@ -16,22 +16,34 @@ const CarouselComp = () => {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src={painting} alt="first slide" />
+                    <div>
+                        <p>Commercial Siding and Painting</p>
+                        <p>We've Got the Team!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={paintingpainters} alt="second slide" />
+                    <div>
+                        <p>Residential Siding and Painting</p>
+                        <p>We've Get the Job Done Right!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={painter} alt="third slide" />
+                    <div>
+                        <p>Skill and Detail</p>
+                        <p>We Make It Happen!</p>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            {/* <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
+            </a> */}
         </div>
 
     );
