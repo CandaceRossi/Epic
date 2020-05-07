@@ -8,19 +8,17 @@ import Parralax from "./Parralax";
 
 
 const Home = () => {
-   
+
     return (
 
         <div className="component-list">
-            <div className="comp-list-carousel">
-                <CarouselComp />
-            </div>
+            <CarouselComp />
             <Rev />
             <TestimonialCards />
             <Cards />
             <Parralax />
-    </div>
+        </div>
 
     )
-    }
-    export default Home;
+}
+export default Home;

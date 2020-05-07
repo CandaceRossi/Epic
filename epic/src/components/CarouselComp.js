@@ -16,22 +16,29 @@ const CarouselComp = () => {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src={painting} alt="first slide" />
-                    <div>
+
+                    <div className="animation-one">
                         <p>Commercial Siding and Painting</p>
+                    </div>
+                    <div className="animation-two">
                         <p>We've Got the Team!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={paintingpainters} alt="second slide" />
-                    <div>
+                    <div className="animation-one">
                         <p>Residential Siding and Painting</p>
+                    </div>
+                    <div className="animation-two">
                         <p>We've Get the Job Done Right!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src={painter} alt="third slide" />
-                    <div>
+                    <div className="animation-one">
                         <p>Skill and Detail</p>
+                    </div>
+                    <div className="animation-two">
                         <p>We Make It Happen!</p>
                     </div>
                 </div>
