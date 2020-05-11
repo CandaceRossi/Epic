@@ -20,7 +20,7 @@ const CarouselComp = () => {
                     <div className="animation-one">
                         <p>Commercial Siding and Painting</p>
                     </div>
-                    <div className="animation-two">
+                    <div className="two-animation">
                         <p>We've Got the Team!</p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const CarouselComp = () => {
                     <div className="animation-one">
                         <p>Residential Siding and Painting</p>
                     </div>
-                    <div className="animation-two">
+                    <div className="two-animation">
                         <p>We've Get the Job Done Right!</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const CarouselComp = () => {
                     <div className="animation-one">
                         <p>Skill and Detail</p>
                     </div>
-                    <div className="animation-two">
+                    <div className="two-animation">
                         <p>We Make It Happen!</p>
                     </div>
                 </div>
