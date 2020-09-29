@@ -1,519 +1,612 @@
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
-            
-            .App {
-                text-align: center;
-                background: whitesmoke;
-                box-sizing: border-box;
-            }
-            
-            .topNav {
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-end;
-                width: 100%;
-                height: 85px;
-                p {
-                    margin: 5px;
-                    padding: 8px;
-                    color: #f76cdf;
-                }
-                a {
-                    margin: 5px;
-                    padding: 8px;
-                }
-                input {
-                    margin: 5px;
-                    padding: 5px;
-                    width: 200px;
-                }
-            }
-            
-            .nav {
-                a {
-                    width: auto;
-                    box-sizing: border-box;
-                    color: whitesmoke;
-                    // text-shadow: 1px 1px black;
-                    text-decoration: none;
-                    font-weight: bold;
-                    box-sizing: border-box;
-                    padding: 15px;
-                    align-items: center;
-                    border: 4px solid #0da8ad;
-                }
-                a:hover {
-                    box-sizing: border-box;
-                    height: 65px;
-                    width: auto;
-                    display: flex;
-                    background: #0da8ad;
-                    border-bottom: 4px solid #f76cdf;
-                    color: #f76cdf;
-                }
-                div a:second-of-type {
-                    border: none;
-                }
-                div a:nth-child(2) {
-                    border: none;
-                }
-                div a:nth-child(3) {
-                    border: none;
-                }
-                div a:nth-child(4) {
-                    border: none;
-                }
-                .navbar {
-                    width: 100%;
-                    height: 65px;
-                    background: #0da8ad;
-                    box-sizing: border-box;
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
-            }
-            
-            .nav div a:second-of-type {
-                border: none;
-            }
-            
-            .nav div a:nth-child(2) {
-                border: none;
-            }
-            
-            .nav div a:nth-child(3) {
-                border: none;
-            }
-            
-            .nav div a:nth-child(4) {
-                border: none;
-            }
-            
-            .component-list {
-                width: 100%;
-                margin: 15px auto;
-                padding: none;
-                box-sizing: border-box;
-            }
-            
-            .carousel {
-                max-width: 100vw;
-                height: 70vh;
-                overflow: hidden;
-                margin: 0 auto;
-                padding: 5px;
-            }
-            
-            .carousel-item img {
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-                margin: 0 auto;
-                animation: kenburns 9s infinite;
-                @keyframes kenburns {
-                    0% {
-                        opacity: 0;
-                    }
-                    5% {
-                        opacity: 1;
-                    }
-                    // 95% {
-                    //     transform: scale3d(1.1, 1.1, 1.1);
-                    //     animation-timing-function: ease-in;
-                    //     opacity: 1;
-                    // }
-                    100% {
-                        transform: scale3d(1.2, 1.2, 1.2);
-                        animation-timing-function: ease-in;
-                        opacity: 1;
-                    }
-                }
-            }
-            
-            //optional but maybe makes carousel transition smoother?
-            .carousel-fade {
-                transition-duration: .9s;
-                // animation-timing-function: ease-in;
-            }
-            
-            .animation-one {
-                margin: auto;
-                padding-left: 20px;
-                width: 100%;
-                height: 200px !important;
-                overflow: hidden !important;
-                position: absolute;
-                z-index: 100;
-                left: 0;
-                top: 120px;
-                display: flex;
-                align-content: center;
-                box-sizing: border-box;
-            }
-            
-            .two-animation {
-                margin: auto;
-                padding-left: 20px;
-                width: 100%;
-                height: 100px;
-                overflow: hidden;
-                position: absolute;
-                z-index: 100;
-                left: 0;
-                top: 300px;
-                display: flex;
-                align-content: center;
-                box-sizing: border-box;
-                // border: 3px solid yellow;
-            }
-            
-            .loaded .carousel-inner div p:nth-child(1) {
-                box-sizing: border-box;
-                height: 100px;
-                width: auto;
-                animation-fill-mode: forwards;
-                animation: slide 9s;
-                color: rgb(238, 71, 216);
-                text-shadow: 1px 2px slategray;
-                font-size: 4rem;
-                // position: absolute;
-                // margin-top: 20px;
-                z-index: 7;
-                // left: 0;
-                // top: 20px;
-                // opacity: 0;
-                // overflow: hidden;
-                transform: translateY(-95px);
-                // animation: fadeIn 1s ease-in 0.7s forwards;
-                // animation: fadeIn 1s ease-in 0.7s forwards, slideIn 0.8s ease-in 0.9s forwards;
-            }
-            
-            .loaded .carousel-inner div p:nth-child(2) {
-                height: 100px;
-                width: auto;
-                border: 3px solid yellow;
-                animation-direction: reverse;
-                animation-fill-mode: forwards;
-                animation: slide 9s;
-                color: rgb(255, 5, 151);
-                text-shadow: 1px 2px slategray;
-                font-size: 4rem;
-                // position: absolute;
-                // margin-top: 20px;
-                z-index: 7;
-                // left: 0;
-                // top: 450px;
-                // opacity: 0;
-                // overflow: hidden;
-                // transform: translateY(95px);
-                // animation: fadeIn 1s ease-in 0.7s forwards;
-                // animation: fadeIn 1s ease-in 0.7s forwards, slideIn 0.8s ease-in 0.9s forwards;
-            }
-            
-            // @keyframes grow {
-            //     0% {
-            //         margin-bottom: -200px;
-            //     }
-            //     from {
-            //         left: 0px;
-            //         top: 500px;
-            //     }
-            //     to {
-            //         left: 0px;
-            //         top: 0px;
-            //     }
-            // }
-            @keyframes slide {
-                0% {
-                    margin-top: -200px;
-                }
-                33% {
-                    margin-top: 100px;
-                }
-                65% {
-                    margin-top: 100px;
-                }
-                75% {
-                    margin-top: 100px;
-                }
-                100% {
-                    margin-top: 100px;
-                }
-            }
-            
-            .testimon-card-container {
-                box-sizing: border-box;
-                margin: 0 auto;
-                width: 100%;
-                height: auto;
-                display: flex;
-            }
-            
-            .testimonial-cards {
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                .card {
-                    margin: 25px 60px;
-                    padding: 5px;
-                    display: flex;
-                    width: 25%;
-                    min-width: 375px !important;
-                    height: 135px;
-                    .card-body {
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        div {
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-around;
-                            align-items: center;
-                        }
-                        .card-text {
-                            width: 50%;
-                        }
-                        .elipse-testimonial {
-                            margin: 0px;
-                            width: 110px;
-                            height: 110px;
-                            border: 2px solid hsl(219, 95%, 76%) !important;
-                            border-radius: 50%;
-                            overflow: hidden;
-                        }
-                    }
-                }
-            }
-            
-            .cards-container {
-                margin: 40px auto;
-                padding-bottom: 20px;
-            }
-            
-            .cards-style {
-                margin: 0 auto;
-                max-width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .card {
-                box-sizing: border-box;
-                margin: 15px 5%;
-                width: 20%;
-                min-width: 240px !important;
-                height: auto;
-                background: white;
-                color: hsl(219, 95%, 76%);
-                border: 2px solid hsl(219, 95%, 76%) !important;
-                // background: hsl(219, 95%, 76%) !important;
-                // color: whitesmoke;
-                // border: 2px solid #f76cdf !important;
-                div {
-                    margin: 0 auto;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    // background: hsl(219, 95%, 76%) !important;
-                    background: white;
-                    color: hsl(219, 95%, 76%);
-                }
-                .elipses {
-                    margin-top: 15px;
-                    margin: 15px auto;
-                    width: 100px;
-                    height: 100px;
-                    border: 2px solid hsl(219, 95%, 76%) !important;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            
-            .card:hover {
-                box-shadow: 0 0 2px 2px hsl(219, 95%, 76%);
-                // border: 4px solid #f76cdf !important;
-                box-sizing: border-box;
-                .elipses {
-                    // border: 4px solid whitesmoke !important;
-                    box-sizing: border-box;
-                    box-shadow: 0 0 2px 2px hsl(219, 95%, 76%);
-                    // border: 3px solid hsl(219, 95%, 76%) !important;
-                }
-                .elipse-testimonial {
-                    box-shadow: 0 0 2px 2px hsl(219, 95%, 76%);
-                }
-            }
-            
-            .mission {
-                width: 100%;
-                border-bottom: solid 2px whitesmoke;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-            }
-            
-            .missions-style {
-                width: 70%;
-                /* border-bottom: solid 2px slategrey; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-            }
-            
-            .missions-style h2 {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-weight: lighter;
-                color: #c9b0a2;
-            }
-            
-            .missions-style p:first-of-type {
-                font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #7fc0c4;
-                font-size: 1.2rem;
-            }
-            
-            .missions-style p {
-                color: whitesmoke;
-            }
-            
-            .revbody {
-                width: 100vw;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                position: absolute;
-                z-index: 1;
-                left: 90px;
-                top: 2.3%;
-            }
-            
-            .reveal {
-                width: 220px;
-                height: 85px;
-                border-radius: 3px;
-                // border: 2px solid #fff;
-                transform: scale(0.9);
-                transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1);
-                position: relative;
-                cursor: pointer;
-            }
-            
-            .reveal::before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: 10px;
-                top: 12px;
-                width: calc(100% - 20px);
-                height: calc(100% - 20px);
-                background: #dfcdc3;
-                box-shadow: 0 0 12px 6px #000;
-                border-radius: 50%;
-                transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1), opacity 0.4s cubic-bezier(0, 0, 0.3, 1);
-                opacity: 0.4;
-            }
-            /* .reveal img {
-            width: 300px;
-            height: 375px;
-            position: relative;
-        } */
-            
-            .reveal:hover {
-                transform: scale(1);
-            }
-            /* .reveal:hover::before {
-            transform: translateY(12px);
-            opacity: 0.2;
-        }
-         */
-            
-            .reveal_title,
-            .reveal_title-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                font-size: 18px;
-                color: #000;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-style: italic;
-                font-weight: bold;
-                z-index: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .reveal_title-overlay {
-                overflow: hidden;
-                top: calc(50% - 50px);
-                background-image: url("../src/images/palmtrees.jpg");
-                height: 105px;
-                width: 305px;
-                left: 50%;
-                z-index: 2;
-                color: #fff;
-                font-size: 16px;
-                transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1);
-                transform: translate(-150%) skew(-30deg);
-            }
-            
-            .reveal_title-overlay-value {
-                width: 100%;
-                text-align: center;
-                transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1);
-                transform: translateX(-110%) skew(30deg);
-            }
-            
-            .reveal:hover .reveal_title-overlay {
-                transform: translateX(-50%) skew(-30deg);
-            }
-            
-            .reveal:hover .reveal_title-overlay-value {
-                transform: skew(30deg);
-            }
-            
-            .reveal-container {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            
-            .parallax {
-                background-image: url("../src/images/palmtrees.jpg");
-                min-height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .parallaxes {
-                background-image: url("../src/images/palms.jpg");
-                min-height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .parallaxing {
-                background-image: url("../src/images/palm.jpg");
-                min-height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+                            * {
+                                padding: 0;
+                                margin: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                padding-top: 150px;
+                                height: 100vh;
+                            }
+                            
+                            .App {
+                                text-align: center;
+                                background: whitesmoke;
+                                box-sizing: border-box;
+                            }
+                            
+                            .component-list {
+                                display: block;
+                                width: 100%;
+                                margin: 0 auto;
+                                box-sizing: border-box;
+                            }
+                            
+                            .fixed-top {
+                                box-sizing: border-box;
+                                display: block;
+                                width: 100%;
+                                position: fixed;
+                                z-index: 100;
+                            }
+                            
+                            .topNav {
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: flex-end;
+                                width: 100%;
+                                box-sizing: border-box;
+                                height: 85px;
+                                background: whitesmoke;
+                                position: fixed;
+                                z-index: 100px;
+                                top: 0;
+                                p {
+                                    margin: 5px;
+                                    padding: 8px;
+                                    color: #d6cec3;
+                                }
+                                a {
+                                    margin: 5px;
+                                    padding: 8px;
+                                }
+                                input {
+                                    margin: 5px;
+                                    padding: 5px;
+                                    width: 200px;
+                                }
+                            }
+                            
+                            .nav {
+                                .navbar {
+                                    position: fixed;
+                                    top: 85px;
+                                    z-index: 100;
+                                    width: 100%;
+                                    height: 65px;
+                                    background: #54504a;
+                                    box-sizing: border-box;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-items: center;
+                                }
+                                a {
+                                    width: auto;
+                                    box-sizing: border-box;
+                                    color: whitesmoke;
+                                    // text-shadow: 1px 1px black;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    box-sizing: border-box;
+                                    padding: 15px;
+                                    align-items: center;
+                                    // border: 4px solid #0da8ad;
+                                    border: 4px solid #54504a;
+                                }
+                                a:hover {
+                                    box-sizing: border-box;
+                                    height: 65px;
+                                    width: auto;
+                                    display: flex;
+                                    background: #54504a;
+                                    border-bottom: 4px solid #d6cec3;
+                                    color: #d6cec3;
+                                    box-sizing: border-box;
+                                }
+                                .droptop {
+                                    color: #54504a;
+                                    border: none;
+                                }
+                                .droptop:hover {
+                                    border: none;
+                                    padding: none;
+                                    height: auto;
+                                }
+                                .nav-item:hover .droptop {
+                                    display: block!important
+                                }
+                            }
+                            
+                            .carousel {
+                                z-index: 95;
+                                max-width: 100vw;
+                                height: 70vh;
+                                overflow: hidden;
+                                margin: 0 auto;
+                            }
+                            
+                            .carousel-item img {
+                                object-fit: cover;
+                                height: 100%;
+                                width: 100%;
+                                margin: 0 auto;
+                                animation: kenburns 9s infinite;
+                                @keyframes kenburns {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    5% {
+                                        opacity: 1;
+                                    }
+                                    75% {
+                                        transform: scale3d(1.1, 1.1, 1.1);
+                                        animation-timing-function: ease-in;
+                                        opacity: 1;
+                                    }
+                                    100% {
+                                        transform: scale3d(1.2, 1.2, 1.2);
+                                        animation-timing-function: ease-in;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            
+                            //optional but maybe makes carousel transition smoother?
+                            // .carousel-fade {
+                            //     transition-duration: .9s;
+                            //     animation-timing-function: ease-in;
+                            // }
+                            .animation-one {
+                                margin: 0px 25px;
+                                padding-left: 20px;
+                                width: 100%;
+                                height: 200px !important;
+                                overflow: hidden !important;
+                                position: absolute;
+                                z-index: 100;
+                                left: 0;
+                                top: 120px;
+                                display: flex;
+                                align-content: center;
+                                box-sizing: border-box;
+                            }
+                            
+                            .two-animation {
+                                margin: 0px 25px;
+                                padding-left: 20px;
+                                width: 100%;
+                                height: 100px !important;
+                                overflow: hidden !important;
+                                position: absolute;
+                                z-index: 100;
+                                left: 0;
+                                top: 300px;
+                                display: flex;
+                                align-content: center;
+                                box-sizing: border-box;
+                            }
+                            
+                            .loaded .carousel-inner .animation-one {
+                                box-sizing: border-box;
+                                height: 100px;
+                                width: auto;
+                                animation-fill-mode: forwards;
+                                animation: slide 9s;
+                                color: #f8d50e;
+                                text-shadow: 1px 2px slategray;
+                                font-size: 4rem;
+                                z-index: 7;
+                                transform: translateY(-95px);
+                            }
+                            
+                            .loaded .carousel-inner .two-animation {
+                                height: 100px;
+                                width: auto;
+                                animation-fill-mode: forwards;
+                                animation: revs 9s;
+                                color: #f8d50e;
+                                text-shadow: 1px 2px slategray;
+                                font-size: 4rem;
+                                z-index: 7;
+                                overflow: hidden;
+                                transform: translateY(-175px);
+                            }
+                            
+                            @keyframes slide {
+                                0% {
+                                    margin-top: -200px;
+                                }
+                                33% {
+                                    margin-top: 100px;
+                                }
+                                65% {
+                                    margin-top: 100px;
+                                }
+                                75% {
+                                    margin-top: 100px;
+                                }
+                                100% {
+                                    margin-top: 100px;
+                                }
+                            }
+                            
+                            @keyframes revs {
+                                0% {
+                                    margin-top: 500px;
+                                }
+                                33% {
+                                    margin-top: 100px;
+                                }
+                                65% {
+                                    margin-top: 100px;
+                                }
+                                75% {
+                                    margin-top: 100px;
+                                }
+                                100% {
+                                    margin-top: 100px;
+                                }
+                            }
+                            
+                            .divondiv {
+                                width: 100%;
+                                height: 290px;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                margin: 15px;
+                                padding-right: 35px;
+                            }
+                            
+                            .overall {
+                                width: 44%;
+                                height: 95%;
+                                position: relative;
+                                border: 2px solid #d6cec3;
+                                border-radius: 7px;
+                                overflow: hidden !important;
+                                bottom: 0;
+                                right: 0;
+                                border: 0;
+                                margin: 0px 25px;
+                                padding: 0;
+                                top: 0;
+                                left: 0;
+                                background-size: cover;
+                                background-attachment: fixed;
+                                background-repeat: none;
+                                .block {
+                                    position: absolute;
+                                    z-index: 100;
+                                }
+                                .n1 {
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    background: rgba(140, 35, 24, .5);
+                                    animation: horizantal 7.5s linear infinite;
+                                }
+                                .n2 {
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background: rgba(94, 140, 106, .5);
+                                    animation: vertical 7.5s linear infinite;
+                                    animation-delay: 1.5s;
+                                }
+                                .n3 {
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    background: rgba(136, 166, 94, .5);
+                                    animation: horizantal 7.5s linear infinite;
+                                    animation-delay: 3s;
+                                }
+                                .n4 {
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    background: rgba(242, 196, 90, .5);
+                                    animation: vertical 7.5s linear infinite;
+                                    animation-delay: 4.5s;
+                                }
+                                .bg {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background: #fff;
+                                    opacity: 0;
+                                    animation: appear 8s linear infinite;
+                                    @keyframes appear {
+                                        10% {
+                                            opacity: 1
+                                        }
+                                        30% {
+                                            opacity: 0;
+                                            background-position: right;
+                                            zoom: 105%;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .servserv {
+                                margin: 0 auto;
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-content: center;
+                                overflow: hidden !important;
+                                .servs {
+                                    margin: 15px;
+                                    width: 100%;
+                                    z-index: 200;
+                                    overflow: hidden !important;
+                                    .service-headers {
+                                        h2,
+                                        h3 {
+                                            width: 100%;
+                                            padding: 5px;
+                                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                            font-weight: bold;
+                                            color: #f5ecdf;
+                                            text-shadow: 2px 1px #6e6a62;
+                                        }
+                                    }
+                                    .services {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;
+                                        overflow: hidden !important;
+                                        z-index: 200;
+                                        ul {
+                                            padding: 7px;
+                                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                            font-weight: bolder;
+                                            color: #c9b0a2;
+                                            display: flex;
+                                            justify-content: start;
+                                            align-items: baseline;
+                                            flex-direction: column;
+                                        }
+                                        span {
+                                            z-index: 200;
+                                            margin: 0 auto;
+                                            padding: 3px;
+                                            width: 100%;
+                                            font-family: Verdana, Geneva, Tahoma, serif;
+                                            // font-weight: lighter;
+                                            font-size: 1.1rem;
+                                            // color: #54504a;
+                                            color: black;
+                                            text-shadow: 1px 1px rgb(223, 221, 221);
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            @keyframes horizantal {
+                                0% {
+                                    width: 0
+                                }
+                                50% {
+                                    width: 100%
+                                }
+                                100% {
+                                    width: 0
+                                }
+                            }
+                            
+                            @keyframes vertical {
+                                0% {
+                                    height: 0
+                                }
+                                50% {
+                                    height: 100%
+                                }
+                                100% {
+                                    height: 0
+                                }
+                            }
+                            
+                            .testimon-card-container {
+                                box-sizing: border-box;
+                                margin: 0 auto;
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                            }
+                            
+                            .testimonial-cards {
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                                .card {
+                                    margin: 25px 60px;
+                                    padding: 5px;
+                                    display: flex;
+                                    width: 25%;
+                                    min-width: 375px !important;
+                                    height: 135px;
+                                    .card-body {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: space-evenly;
+                                        div {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-around;
+                                            align-items: center;
+                                        }
+                                        .card-text {
+                                            width: 50%;
+                                        }
+                                        .elipse-testimonial {
+                                            margin: 0px;
+                                            width: 110px;
+                                            height: 110px;
+                                            border: 2px solid #d6cec3 !important;
+                                            border-radius: 50%;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .cards-container {
+                                margin: 10px auto;
+                                // padding-bottom: 20px;
+                            }
+                            
+                            .cards-style {
+                                margin: 0 auto;
+                                max-width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                .card-title {
+                                    font-size: 2rem !important;
+                                }
+                            }
+                            
+                            .card {
+                                box-sizing: border-box;
+                                margin: 55px 5%;
+                                width: 20%;
+                                min-width: 340px !important;
+                                height: auto;
+                                background: white;
+                                color: #d6cec3;
+                                border: 2px solid #d6cec3 !important;
+                                // background: hsl(219, 95%, 76%) !important;
+                                // color: whitesmoke;
+                                // border: 2px solid #f76cdf !important;
+                                div {
+                                    margin: 0 auto;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    // background: hsl(219, 95%, 76%) !important;
+                                    background: white;
+                                    color: #d6cec3;
+                                    .card-title {
+                                        margin-top: 10px !important;
+                                    }
+                                }
+                                .elipses {
+                                    margin-top: 15px;
+                                    // margin: 15px auto;
+                                    width: 100px;
+                                    position: absolute;
+                                    top: -70px;
+                                    left: 34%;
+                                    z-index: 10px;
+                                    height: 100px;
+                                    border: 2px solid #d6cec3 !important;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                a {
+                                    font-size: .9rem !important;
+                                    color: #54504a;
+                                }
+                            }
+                            
+                            .card:hover {
+                                box-shadow: 0 0 2px 2px #d6cec3;
+                                // border: 4px solid #f76cdf !important;
+                                box-sizing: border-box;
+                                .elipses {
+                                    // border: 4px solid whitesmoke !important;
+                                    box-sizing: border-box;
+                                    box-shadow: 0 0 2px 2px #d6cec3;
+                                    // border: 3px solid hsl(219, 95%, 76%) !important;
+                                }
+                                .elipse-testimonial {
+                                    box-shadow: 0 0 2px 2px #d6cec3;
+                                }
+                                .card-title {
+                                    // font-weight: bold;
+                                }
+                            }
+                            
+                            .mission {
+                                width: 100%;
+                                border-bottom: solid 2px whitesmoke;
+                                display: flex;
+                                justify-content: center;
+                                align-content: center;
+                            }
+                            
+                            .missions-style {
+                                width: 70%;
+                                /* border-bottom: solid 2px slategrey; */
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-content: center;
+                                h2 {
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                    font-weight: lighter;
+                                    color: #c9b0a2;
+                                }
+                                p {
+                                    color: #c9b0a2;
+                                }
+                            }
+                            
+                            // .missions-style h2 {
+                            //     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            //     font-weight: lighter;
+                            //     color: #c9b0a2;
+                            // }
+                            // .missions-style p:first-of-type {
+                            //     font-weight: bold;
+                            //     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            //     color: #7fc0c4;
+                            //     font-size: 1.2rem;
+                            // }
+                            .missions-style p {
+                                color: #c9b0a2;
+                            }
+                            
+                            .parallax {
+                                background-image: url("../src/images/palmtrees.jpg");
+                                min-height: 500px;
+                                background-attachment: fixed;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                            
+                            .parallaxes {
+                                background-image: url("../src/images/palms.jpg");
+                                min-height: 500px;
+                                background-attachment: fixed;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                            
+                            .parallaxing {
+                                background-image: url("../src/images/palm.jpg");
+                                min-height: 500px;
+                                background-attachment: fixed;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                            
+                            .parapara1 {
+                                font-family: comic;
+                            }
+                            
+                            .footer {
+                                width: 100%;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: space-around;
+                                align-content: flex-end;
+                                background: #d6cec3;
+                                border-top: 2px solid #54504a;
+                                border-bottom: 2px solid #54504a;
+                                a {
+                                    color: #54504a;
+                                }
+                                a:hover {
+                                    font-weight: bold;
+                                    color: #54504a;
+                                }
+                            }

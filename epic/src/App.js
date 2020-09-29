@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import CarouselComp from "./components/CarouselComp";
 import Parralax from "./components/Parralax";
 import Mission from "./components/Mission";
+import Footer from "./components/Footer";
 import palm from './images/palm.jpg';
 
 function App() {
@@ -16,14 +17,17 @@ function App() {
   })
   return (
     <div className="App">
-      <div className="component-list">
+      <div className="fixed-top">
+        {/* <div classname="fixed-nav"> */}
         <TopNavComp />
         <NavbarComp />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Mission" component={Mission} />
-        </Switch>
+
       </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Mission" component={Mission} />
+      </Switch>
+      <Footer />
     </div>
   );
 }

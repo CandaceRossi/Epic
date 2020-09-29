@@ -4,6 +4,12 @@ import { ListGroup, ListGroupItem } from "react-bootstrap";
 import paintroller from "../images/paintroller.png";
 import brushhouse from "../images/brushhouse.png";
 import paintguy from "../images/paintguy.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
+
+
+
+
 
 const Cards = () => {
 
@@ -29,8 +35,8 @@ const Cards = () => {
                         <ListGroupItem>Graffiti</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                        <Card.Link href="#">epicpaintandwash.com</Card.Link>
-                        <Card.Link href="#">PH: 239-555-5555</Card.Link>
+                        <Card.Link href="#"><span><FontAwesomeIcon icon={faGlobe} /></span> epicpaintandwash.com/contact</Card.Link><br />
+                        <Card.Link href="#"><span><FontAwesomeIcon icon={faMobile} /></span> 239-555-5555</Card.Link>
                     </Card.Body>
                 </Card>
                 <Card >
@@ -40,9 +46,9 @@ const Cards = () => {
                             <img src={brushhouse} style={{ width: "55%", height: "85%" }} alt="paint brush" />
                         </div>
                         <br />
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Need help with Design?</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on
+                            Our team is qualified to help! Contact our office today for a design consultation.
                             </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
