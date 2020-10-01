@@ -13,7 +13,7 @@ const Parralax = () => {
             </div>
             <div className="parallaxes">
             </div> <div style={{ "height": "300px", "backgroundColor": "whitesmoke" }}>
-                <h2 className="parapara1">Don't take our word for it!</h2><h3 className="parapara2">Read testimonials from our customers</h3><a>here</a>
+                <h2 className="parapara1">Don't take our word for it!</h2><h3 className="parapara2">Read testimonials from our customers</h3><a className="parapara3">Here</a>
                 <TestimonialCards />
             </div>
             <div className="parallaxing">

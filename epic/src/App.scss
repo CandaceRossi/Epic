@@ -589,8 +589,36 @@
                                 background-size: cover;
                             }
                             
-                            .parapara1 {
-                                font-family: comic;
+                            .parapara1,
+                            .parapara2,
+                            .parapara3 {
+                                margin: 15px;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: #6e6a62;
+                            }
+                            
+                            .contact {
+                                background-image: url("./images/brick.jpg");
+                                opacity: 0.5;
+                                background-repeat: repeat;
+                                height: 100vh;
+                                background-position: center;
+                                background-size: cover;
+                                .contact-style {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: space-between;
+                                    .consty {
+                                        margin: 165px auto;
+                                    }
+                                }
+                                h2,
+                                h3 {
+                                    padding: 12px;
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                    color: black;
+                                    text-shadow: 1px 1px black;
+                                }
                             }
                             
                             .footer {

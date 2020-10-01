@@ -11,6 +11,7 @@ const Footer = () => {
                 <Nav.Link href="/Projects">PROJECTS</Nav.Link>
                 <Nav.Link href="/Contact">CONTACT</Nav.Link>
             </Navbar>
+
         </div>
     );
 };
