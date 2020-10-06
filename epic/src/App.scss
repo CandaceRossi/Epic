@@ -601,27 +601,115 @@
                                 background-image: url("./images/brick.jpg");
                                 opacity: 0.5;
                                 background-repeat: repeat;
-                                height: 100vh;
+                                // height: 100%;
                                 background-position: center;
                                 background-size: cover;
                                 .contact-style {
+                                    // height: 100vh;
                                     display: flex;
                                     flex-direction: column;
                                     align-items: space-between;
                                     .consty {
-                                        margin: 165px auto;
+                                        margin: 109px auto;
+                                        width: 100%;
+                                        h1,
+                                        h2 {
+                                            font-size: auto;
+                                            margin: auto;
+                                            padding: 12px;
+                                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                            color: black;
+                                            text-shadow: 1px 1px black;
+                                        }
+                                        h1 {
+                                            font-size: 50px;
+                                        }
+                                    }
+                                    .brickup {
+                                        margin: 60px auto;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: linear-gradient(rgb(15, 9, 9), slategray);
+                                        .brickup1 {
+                                            margin: 0px auto;
+                                            padding-top: 120px;
+                                            padding-bottom: 40px;
+                                            h1 {
+                                                font-size: 50px;
+                                                color: rgb(255, 255, 255);
+                                                z-index: 500px;
+                                                // top: 0;
+                                                // left: 0;
+                                                padding: 15px;
+                                                // position: absolute;
+                                            }
+                                            .line {
+                                                margin: 0 auto;
+                                                width: 100px;
+                                                height: 3px;
+                                                border-top: 3px solid black;
+                                            }
+                                        }
+                                    }
+                                    .bruckup {
+                                        color: white;
+                                        width: 100%;
+                                        padding-bottom: 40px;
+                                        .contaflex {
+                                            height: 135px;
+                                            display: flex;
+                                            width: 955px;
+                                            margin: 0 auto;
+                                            justify-content: center;
+                                            align-items: center;
+                                            p {
+                                                font-size: 1.35rem;
+                                                width: 300px;
+                                                margin: 0 auto;
+                                            }
+                                            a {
+                                                font-size: 1.55rem;
+                                                width: 300px;
+                                                margin: 0 auto;
+                                            }
+                                        }
                                     }
                                 }
-                                h2,
-                                h3 {
-                                    padding: 12px;
-                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                    color: black;
-                                    text-shadow: 1px 1px black;
+                            }
+                            
+                            .footing {
+                                width: 100%;
+                                display: block;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            
+                            .prefooter {
+                                width: 100%;
+                                height: 200px;
+                                display: flex;
+                                justify-content: center;
+                                P {
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 200px;
+                                    font-size: 1.5rem;
+                                }
+                                .prefoo {
+                                    width: 200px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    a {
+                                        width: 300px;
+                                        font-size: 1rem;
+                                    }
                                 }
                             }
                             
                             .footer {
+                                position: absolute;
+                                bottom: 0;
                                 width: 100%;
                                 margin: 0 auto;
                                 display: flex;

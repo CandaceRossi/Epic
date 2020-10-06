@@ -1,18 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import brick from "../images/brick.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 const Contact = () => {
 
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
     return (
 
         <div className="contact">
             <div className="contact-style">
-                <div className="consty">
-                    <h2>SCHEDULE A FREE ESTIMATE TODAY!</h2>
-                    <h3>We appreciate our customer's business.</h3>
-                    <h3>We guarantee great service from professionals you can count on.</h3>
-                    <h3>Contact us today to get set up with a specialist who can help.</h3>
+                <div className="consty" data-aos="zoom-in">
+                    <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
+                    <h2>We appreciate our customer's business.</h2>
+                    <h2>We guarantee great service from professionals you can count on.</h2>
+                    <h2>Contact us today to get set up with a specialist who can help.</h2>
+                </div>
+                <div className="brickup" data-aos="fade-up">
+                    <div className="brickup1">
+                        <h1>Get In Touch Using Our Contact Info Below!</h1>
+                        <div className="line"></div>
+                    </div>
+                    <div className="bruckup" data-aos="fade-up">
+                        <h3>Our team has been servicing the South West Florida area for nearly 10 years!</h3>
+                        <h3>We look forward to providing you with excellent service.</h3>
+                        <div className="contaflex">
+                            <div data-aos="fade-right">
+                                <p>EMAIL:</p>
+                                <a>ANDREWCHARLES@EPIC.COM</a>
+                            </div>
+                            <div data-aos="zoom-in">
+                                <p>PHONE:</p>
+                                <a>(239)826-4326</a>
+                            </div>
+                            <div data-aos="fade-left">
+                                <p>HOURS OF OPERATION:</p>
+                                <a>8AM - 6PM</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
