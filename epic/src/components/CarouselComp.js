@@ -1,7 +1,7 @@
 import React from "react";
 import painting from "../images/painting.jpg";
 import paintingpainters from "../images/paintingpainters.jpg";
-import painter from "../images/painter.jpg";
+import greenexterior from "../images/greenexterior.jpg";
 import 'bootstrap/dist/css/bootstrap.css';
 
 const CarouselComp = () => {
@@ -34,7 +34,7 @@ const CarouselComp = () => {
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src={painter} alt="third slide" />
+                    <img class="d-block w-100" src={greenexterior} alt="third slide" />
                     <div className="animation-one">
                         <p>Skill and Detail</p>
                     </div>

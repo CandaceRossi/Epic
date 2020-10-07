@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 
-const Contact = () => {
+const PressureWashing = () => {
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -49,4 +49,4 @@ const Contact = () => {
 
     )
 }
-export default Contact;
+export default PressureWashing;

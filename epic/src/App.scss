@@ -107,19 +107,33 @@
                                 }
                             }
                             
-                            .carousel {
-                                z-index: 95;
-                                max-width: 100vw;
-                                height: 70vh;
+                            .carousel-inner {
+                                display: flex;
+                                align-items: center;
+                                // box-sizing: border-box;
+                                // z-index: 95;
+                                width: 100%;
+                                height: 650px;
                                 overflow: hidden;
-                                margin: 0 auto;
+                                margin: auto;
+                            }
+                            
+                            .carousel {
+                                // display: flex;
+                                // align-items: center;
+                                // box-sizing: border-box;
+                                z-index: 95;
+                                // width: 100%;
+                                // height: 650px;
+                                // overflow: hidden;
+                                // margin: auto;
                             }
                             
                             .carousel-item img {
                                 object-fit: cover;
                                 height: 100%;
                                 width: 100%;
-                                margin: 0 auto;
+                                margin: auto;
                                 animation: kenburns 9s infinite;
                                 @keyframes kenburns {
                                     0% {
@@ -129,13 +143,13 @@
                                         opacity: 1;
                                     }
                                     75% {
-                                        transform: scale3d(1.1, 1.1, 1.1);
                                         animation-timing-function: ease-in;
+                                        transform: scale3d(1.1, 1.1, 1.1);
                                         opacity: 1;
                                     }
                                     100% {
-                                        transform: scale3d(1.2, 1.2, 1.2);
                                         animation-timing-function: ease-in;
+                                        transform: scale3d(1.2, 1.2, 1.2);
                                         opacity: 1;
                                     }
                                 }
@@ -155,7 +169,7 @@
                                 position: absolute;
                                 z-index: 100;
                                 left: 0;
-                                top: 120px;
+                                top: 520px;
                                 display: flex;
                                 align-content: center;
                                 box-sizing: border-box;
@@ -170,13 +184,14 @@
                                 position: absolute;
                                 z-index: 100;
                                 left: 0;
-                                top: 300px;
+                                top: 700px;
                                 display: flex;
                                 align-content: center;
                                 box-sizing: border-box;
                             }
                             
-                            .loaded .carousel-inner .animation-one {
+                            //.loaded .carousel-inner .animation-one
+                            .loaded .carousel .animation-one {
                                 box-sizing: border-box;
                                 height: 100px;
                                 width: auto;
@@ -189,7 +204,7 @@
                                 transform: translateY(-95px);
                             }
                             
-                            .loaded .carousel-inner .two-animation {
+                            .loaded .carousel .two-animation {
                                 height: 100px;
                                 width: auto;
                                 animation-fill-mode: forwards;

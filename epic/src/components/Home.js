@@ -13,7 +13,7 @@ const Home = () => {
 
         <div className="component-list">
             <CarouselComp />
-            <Services />
+            {/* <Services /> */}
             <Parralax />
         </div>
 
