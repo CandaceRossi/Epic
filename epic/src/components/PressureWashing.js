@@ -11,9 +11,9 @@ const PressureWashing = () => {
     }, []);
     return (
 
-        <div className="contact">
-            <div className="contact-style">
-                <div className="consty" data-aos="zoom-in">
+        <div className="pressurewash">
+            <div className="pressurewash-style">
+                <div className="pressy" data-aos="zoom-in">
                     <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
                     <h2>We appreciate our customer's business.</h2>
                     <h2>We guarantee great service from professionals you can count on.</h2>

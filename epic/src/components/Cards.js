@@ -52,13 +52,13 @@ const Cards = () => {
                             </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem>Cras justo odio</ListGroupItem>
-                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                        <ListGroupItem>Exterior Design</ListGroupItem>
+                        <ListGroupItem>Interior Design</ListGroupItem>
+                        <ListGroupItem>Talk With An Interior Designer</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
+                        <Card.Link href="#">Interior Design Consultant</Card.Link>
+                        {/* <Card.Link href="#">Another Link</Card.Link> */}
                     </Card.Body>
                 </Card>
                 <Card >
@@ -68,19 +68,20 @@ const Cards = () => {
                             <img src={paintguy} style={{ width: "95%", height: "95%", paddingRight: "5px" }} alt="painter guy" />
                         </div>
                         <br />
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>The Team You Can Count On!</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title
+                            Learn about our team's values, read customer reviews,
+                            and check out our latest projects!
     </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem>Cras justo odio</ListGroupItem>
-                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                        <ListGroupItem>Our Mission</ListGroupItem>
+                        <ListGroupItem>Customer Testimonies</ListGroupItem>
+                        <ListGroupItem>Our Latest Projects</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
+                        <Card.Link href="#"><span><FontAwesomeIcon icon={faGlobe} /></span> epicpaintandwash.com/contact</Card.Link><br />
+                        <Card.Link href="#"><span><FontAwesomeIcon icon={faMobile} /></span> 239-555-5555</Card.Link>
                     </Card.Body>
                 </Card>
             </div>

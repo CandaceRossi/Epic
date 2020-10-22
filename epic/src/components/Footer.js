@@ -5,7 +5,7 @@ import { Nav, Navbar } from "react-bootstrap";
 const Footer = () => {
     return (
         <div className="footing">
-            <div className="prefooter">
+            {/* <div className="prefooter">
                 <div><p>ACEDITATIONS</p></div> <div><p>SERVICES</p><div className="prefoo"><a>RESIDENTIAL PAINTING</a><a>COMMERCIAL PAINTING</a><a>POWERWASHING SERVICES</a></div></div>
             </div>
             <div className="footer">
@@ -16,7 +16,7 @@ const Footer = () => {
                     <Nav.Link href="/Contact">CONTACT</Nav.Link>
                 </Navbar>
 
-            </div>
+            </div> */}
         </div>
     );
 };

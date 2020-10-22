@@ -11,13 +11,15 @@ const Residential = () => {
     }, []);
     return (
 
-        <div className="contact">
-            <div className="contact-style">
-                <div className="consty" data-aos="zoom-in">
-                    <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
-                    <h2>We appreciate our customer's business.</h2>
-                    <h2>We guarantee great service from professionals you can count on.</h2>
-                    <h2>Contact us today to get set up with a specialist who can help.</h2>
+        <div className="residential">
+            <div className="residential-style">
+                <div className="residy" data-aos="zoom-in">
+                    <h1>RESIDENTIAL PROJECTS</h1>
+                    <h2>Your Home Is Important To Us Too!</h2>
+                    <h3>Our Reputation Was Built On Care and Quality!</h3>
+                    <h3>Adding A New Coat Of Paint On the Interior or Exterior </h3>
+                    <h3>Of Your Home Can Do Wonders For Your Home Value </h3>
+                    <h3>And Add New Character, Mood Setting, or Brightness.</h3>
                 </div>
                 <div className="brickup" data-aos="fade-up">
                     <div className="brickup1">
