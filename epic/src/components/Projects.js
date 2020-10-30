@@ -3,7 +3,10 @@ import rental from "../images/rental.jpg";
 import rental1 from "../images/rental1.jpg";
 import officeclean from "../images/officeclean.jpg";
 import greenexterior from "../images/greenexterior.jpg";
-// import rental from "../images/rental.jpg";
+import commercialclean2 from "../images/commercialclean2.jpg";
+import twodoor from "../images/twodoor.jpg";
+
+// import bluemanroom from "../images/bluemanroom.jpg";
 // import rental from "../images/rental.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,8 +19,8 @@ const Projects = () => {
         Aos.init({ duration: 2000 });
     }, []);
     return (
-
         <div className="project">
+
             <div id="m1" className="modal fade" data-backdrop="false">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
@@ -144,57 +147,69 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+
+            <div class="overlay"> </div>
             <div className="project-style">
                 <div className="projy" data-aos="zoom-in">
                     <h1>Epic's Project Photo Gallery!</h1>
-                    <h2>Check Out Images Of Our Detailed Work</h2>
+                    <h3>Check Out Images Of Our Detailed Work</h3>
                     {/* <h2>Schedule An Appointment, Today!</h2> */}
                     {/* <a>(239)826-4326</a> */}
                 </div>
-                <div className="brickup" data-aos="fade-up">
-                    <div className="brickup1">
-                        <h1>Project Gallery</h1>
-                        <div className="line"></div>
+                <div className="brickdownchitown">
+                    <div className="imgcontainer">
+                        <img src={twodoor} alt="" />
+                        <img src={commercialclean2} alt="" />
                     </div>
-                    <div className="bruckup" data-aos="fade-up">
-                        <h3>Our team has been servicing the South West Florida area for nearly 10 years!</h3>
-                        <h3>We look forward to providing you with excellent service.</h3>
-                        <div className="contaflex">
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m1">
-                                <div className="one" ></div>
-                                <p>WINNIE'S HOME</p>
-                            </div>
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m2">
-                                <div className="two"></div>
-                                <p>SARA & TIM</p>
-                            </div>
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m3">
-                                <div className="three"></div>
-                                <p>GRACE LEGAL OFFICE</p>
-                            </div>
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m4">
-                                <div className="four"></div>
-                                <p>CABRERA'S RESTAURANT</p>
-                            </div>
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m5">
-                                <div className="five"></div>
-                                <p>FRANK'S PLACE</p>
-                            </div>
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m6">
-                                <div className="six"></div>
-                                <p>SUZAN & KIP</p>
-                            </div>
-                            <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m7">
-                                <div className="seven"></div>
-                                <p>DENNIS MORRIS' HOME</p>
+                    <div className="brickup" data-aos="fade-up">
+                        <div className="brickup1">
+                            <h1>Project Gallery</h1>
+                            <div className="line"></div>
+                        </div>
+                        <div className="bruckup" data-aos="fade-up">
+                            <h3>Our team are fully licensed Painters located in the  South West Florida area</h3>
+                            <h3>Preparation is 90% of the job. We start each project by protecting surrounding areas, removing handles and electric plates –
+                            surfaces are patched and filled while the trim is de-glossed so that the finish coats will be beautiful as well as durable..</h3>
+                        </div>
+                    </div>
+                    <div className="contaflex">
+                        <div className="flexin">
+                            <div className="flexflexin">
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m1">
+                                    <div className="one" ></div>
+                                    <p>WINNIE'S HOME</p>
+                                </div>
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m2">
+                                    <div className="two"></div>
+                                    <p>SARA & TIM</p>
+                                </div>
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m3">
+                                    <div className="three"></div>
+                                    <p>GRACE LEGAL OFFICE</p>
+                                </div>
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m4">
+                                    <div className="four"></div>
+                                    <p>CABRERA'S RESTAURANT</p>
+                                </div>
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m5">
+                                    <div className="five"></div>
+                                    <p>FRANK'S PLACE</p>
+                                </div>
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m6">
+                                    <div className="six"></div>
+                                    <p>SUZAN & KIP</p>
+                                </div>
+                                <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m7">
+                                    <div className="seven"></div>
+                                    <p>DENNIS MORRIS' HOME</p>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+
+
                 </div>
-
             </div>
-
         </div>
 
     )

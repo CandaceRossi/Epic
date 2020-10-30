@@ -46,7 +46,7 @@ const Cards = () => {
                             <img src={brushhouse} style={{ width: "55%", height: "85%" }} alt="paint brush" />
                         </div>
                         <br />
-                        <Card.Title>Need help with Design?</Card.Title>
+                        <Card.Title>Get Design Help</Card.Title>
                         <Card.Text>
                             Our team is qualified to help! Contact our office today for a design consultation.
                             </Card.Text>
@@ -57,8 +57,8 @@ const Cards = () => {
                         <ListGroupItem>Talk With An Interior Designer</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                        <Card.Link href="#">Interior Design Consultant</Card.Link>
-                        {/* <Card.Link href="#">Another Link</Card.Link> */}
+                        <Card.Link href="#"><span><FontAwesomeIcon icon={faGlobe} /></span> Interior Design Consultant</Card.Link><br />
+                        <Card.Link href="#"><span><FontAwesomeIcon icon={faMobile} /></span> 239-555-5555</Card.Link>
                     </Card.Body>
                 </Card>
                 <Card >
@@ -68,7 +68,7 @@ const Cards = () => {
                             <img src={paintguy} style={{ width: "95%", height: "95%", paddingRight: "5px" }} alt="painter guy" />
                         </div>
                         <br />
-                        <Card.Title>The Team You Can Count On!</Card.Title>
+                        <Card.Title>Count On Us!</Card.Title>
                         <Card.Text>
                             Learn about our team's values, read customer reviews,
                             and check out our latest projects!

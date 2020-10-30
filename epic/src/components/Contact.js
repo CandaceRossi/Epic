@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import brick from "../images/brick.jpg";
 import contactimg from "../images/contactimg.jpg";
 import googlemap from "../images/googlemap.PNG";
@@ -11,9 +11,18 @@ const Contact = () => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
-    return (
 
+    const handleScroll = e => {
+        e.target = null
+    }
+
+    const foo = false;
+
+    if (foo)
+        return (<div> <h4>Loading...</h4></div>)
+    return (
         <div className="contact">
+
             <div class="overlay"> </div>
             <div className="contact-style">
                 <div className="consty" data-aos="zoom-in">
@@ -22,6 +31,7 @@ const Contact = () => {
                     <h2>We guarantee great service from professionals you can count on.</h2>
                     <h2>Contact us today to get set up with a specialist who can help.</h2>
                 </div>
+
                 <div className="brickdownchitown">
                     <img src={contactimg} alt="" />
                     <div className="brickup" data-aos="fade-up">
@@ -50,6 +60,9 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div className="location" >
                     <img src={googlemap} alt="map" />
                     <div className="rightflex" >

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 import { Route, Switch } from "react-router-dom";
 import './App.scss';
 
@@ -19,13 +20,43 @@ function App() {
   window.addEventListener("load", () => {
     document.querySelector("body").classList.add("loaded");
   })
+
+  const [mapData, setMapData] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await axios.get("https://api.tomtom.com/search/2/poiSearch")
+      console.log("sumnabitch", response)
+      const tt = window.tt
+
+      const map = tt.response({
+        key: process.env.REACT_APP_TOM_TOM_API_KEY,
+        container: 'map',
+        center: [26.640629, -81.872307],
+        zoom: 16,
+        style: 'tomtom://vector/1/basic-main',
+        theme: {
+          style: 'main',
+          layer: 'basic',
+          source: 'vector'
+        }
+      })
+      map.addControl(new tt.FullscreenControl())
+      map.addControl(new tt.NavigationControl())
+
+      setMapData(fetchData)
+    }
+  })
+
+
+
   return (
     <div className="App">
       <div className="fixed-top">
         {/* <div classname="fixed-nav"> */}
         <TopNavComp />
         <NavbarComp />
-
+        <div id="map"></div>
       </div>
       <Switch>
         <Route exact path="/" component={Home} />
