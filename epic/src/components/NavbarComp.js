@@ -20,9 +20,9 @@ const NavbarComp = () => {
                     show={show}
                     onMouseEnter={showDropdown}
                     onMouseLeave={hideDropdown}>
-                    <NavDropdown.Item className="droptop" href="#action/3.1">Residential Painting</NavDropdown.Item>
-                    <NavDropdown.Item className="droptop" href="#action/3.2">Commercial Painting</NavDropdown.Item>
-                    <NavDropdown.Item className="droptop" href="#action/3.4">Pressure Washing</NavDropdown.Item>
+                    <NavDropdown.Item className="droptop" href="/Residential">Residential Painting</NavDropdown.Item>
+                    <NavDropdown.Item className="droptop" href="/Commercial">Commercial Painting</NavDropdown.Item>
+                    <NavDropdown.Item className="droptop" href="/PressureWashing">Pressure Washing</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/Contact">CONTACT</Nav.Link>
             </Navbar>
