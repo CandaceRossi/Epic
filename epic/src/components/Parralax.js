@@ -14,6 +14,7 @@ const Parralax = () => {
                     <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
                     <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
                 </div>
+                <div className="cleanbreak"></div>
             </div>
             <div className="parallaxes">
             </div> <div style={{ "height": "300px", "backgroundColor": "whitesmoke" }}>
