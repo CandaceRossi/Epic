@@ -2,11 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Route, Switch } from "react-router-dom";
 import './App.scss';
-
-import NavbarComp from "./components/NavbarComp";
-import TopNavComp from "./components/TopNavComp";
+import NavContainer from "./components/NavContainer";
 import Home from "./components/Home";
-
 import Mission from "./components/Mission";
 import Contact from "./components/Contact";
 import Residential from "./components/Residential";
@@ -120,9 +117,7 @@ function App() {
   return (
     <div className="App">
       <div className="fixed-top">
-        {/* <div classname="fixed-nav"> */}
-        <TopNavComp />
-        <NavbarComp />
+        <NavContainer />
         <div id="map"></div>
       </div>
       <Switch>

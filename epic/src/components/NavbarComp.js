@@ -10,6 +10,7 @@ const NavbarComp = () => {
     const hideDropdown = e => {
         setShow(false);
     }
+
     return (
         <div className="nav">
             <Navbar>
@@ -28,6 +29,7 @@ const NavbarComp = () => {
             </Navbar>
         </div>
     );
-};
+}
+// }
 
 export default NavbarComp;

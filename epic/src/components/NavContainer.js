@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import TopNavComp from "./TopNavComp";
+import NavbarComp from "./NavbarComp";
 
-export default class TopNavComp extends Component {
+export default class NavContainer extends Component {
     constructor(props) {
         super(props);
 
@@ -36,13 +38,11 @@ export default class TopNavComp extends Component {
 
     render() {
         return (
-            <div>
-                <nav className={classnames("topNav", {
-                    "topNav--hidden": !this.state.visible
-                })}>
-                    <p>Servicing South West Florida Area</p>
-                    <p>Phone: (239)-826-4326 </p>
-                </nav>
+            <div className={classnames("navCont", {
+                "navCont--hidden": !this.state.visible
+            })}>
+                <TopNavComp />
+                <NavbarComp />
             </div>
         );
     }
