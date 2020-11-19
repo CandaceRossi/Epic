@@ -37,11 +37,21 @@ export default class TopNavComp extends Component {
     render() {
         return (
             <div>
-                <nav className={classnames("topNav", {
+                <nav className={classnames({
                     "topNav--hidden": !this.state.visible
-                })}>
-                    <p>Servicing South West Florida Area</p>
-                    <p>Phone: (239)-826-4326 </p>
+                }, "topNav")}>
+                    <div className="navsort">
+                        <div className="sortnav">
+                            <div><h1>EPIC</h1></div>
+
+                            <div className="sorting">
+                                <h3>PAINTING &</h3>
+                                <h3>POWERWASHING</h3>
+                            </div>
+                        </div>
+                        <p>Servicing South West Florida Area</p>
+                        <p>Phone: (239)-826-4326 </p>
+                    </div>
                 </nav>
             </div>
         );

@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import commercialslick from "../images/commercialslick.jpg";
-import powerwashtool from "../images/powerwashtool.jpg";
 import powerwash12 from "../images/powerwash12.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";

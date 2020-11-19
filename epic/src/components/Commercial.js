@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import brick from "../images/brick.jpg";
 import commercialslick from "../images/commercialslick.jpg";
+//eslint-disable-next-line 
 // import residentailclean2 from "../images/residentailclean2.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
