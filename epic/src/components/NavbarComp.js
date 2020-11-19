@@ -10,6 +10,7 @@ const NavbarComp = () => {
     const hideDropdown = e => {
         setShow(false);
     }
+
     return (
         <div className="nav">
             <Navbar>
@@ -22,12 +23,13 @@ const NavbarComp = () => {
                     onMouseLeave={hideDropdown}>
                     <NavDropdown.Item className="droptop" href="/Residential">Residential Painting</NavDropdown.Item>
                     <NavDropdown.Item className="droptop" href="/Commercial">Commercial Painting</NavDropdown.Item>
-                    <NavDropdown.Item className="droptop" href="/PressureWashing">Pressure Washing</NavDropdown.Item>
+                    <NavDropdown.Item className="droptop" href="/Powerwashing">Powerwashing</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/Contact">CONTACT</Nav.Link>
             </Navbar>
         </div>
     );
-};
+}
+// }
 
 export default NavbarComp;

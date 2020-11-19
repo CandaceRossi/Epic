@@ -1,5 +1,5 @@
 import React from 'react';
-import clock from "../images/clock.png";
+
 
 const Services = () => {
 
@@ -55,11 +55,3 @@ const Services = () => {
     )
 }
 export default Services;
-
-{/* <img src={clock} alt="clock"
-    style={{
-        height: "250px", width: "250px",
-        position: "absolute",
-        zIndex: "200",
-        top: "870px", left: "347px"
-    }} /> */}

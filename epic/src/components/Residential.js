@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import brick from "../images/brick.jpg";
 import residentailclean from "../images/residentailclean.jpg";
 import residentailclean2 from "../images/residentailclean2.jpg";
 
@@ -55,6 +54,15 @@ const Residential = () => {
                     </div>
                 </div>
             </div>
+            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
+                <div className="clean">
+                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
+                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
+                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
+                </div>
+                <div className="cleanbreak"></div>
+            </div>
+            <div className="parallax"></div>
         </div>
 
     )

@@ -153,8 +153,6 @@ const Projects = () => {
                 <div className="projy" data-aos="zoom-in">
                     <h1>Epic's Project Photo Gallery!</h1>
                     <h3>Check Out Images Of Our Detailed Work</h3>
-                    {/* <h2>Schedule An Appointment, Today!</h2> */}
-                    {/* <a>(239)826-4326</a> */}
                 </div>
                 <div className="brickdownchitown">
                     <div className="imgcontainer">
@@ -209,6 +207,14 @@ const Projects = () => {
 
 
                 </div>
+            </div>
+            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
+                <div className="clean">
+                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
+                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
+                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
+                </div>
+                <div className="cleanbreak"></div>
             </div>
         </div>
 

@@ -1,5 +1,8 @@
 import React from 'react';
-import Cards from "./Cards";
+//eslint-disable-next-line 
+// import Cards from "./Cards";
+import bluemanroom from "../images/bluemanroom.jpg";
+import paintcarousel2 from "../images/paintcarousel2.jpg"
 import TestimonialCards from "./TestimonialCards";
 
 
@@ -7,17 +10,27 @@ const Parralax = () => {
 
     return (
         <>
-            <div className="parallax">
-            </div> <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
+            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
+                <div className="cleanbreak">
+                    <div>
+                        <h1>Have Confidence In Who You Hire...</h1>
+                        <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
+                    </div>
+                    <img src={bluemanroom} alt="" />
                 </div>
+                <div className="clean">
+                    <img src={paintcarousel2} alt="" />
+                    <div>
+                        <h1>Have Confidence In Who You Hire...</h1>
+                        <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="parallax">
             </div>
             <div className="parallaxes">
             </div> <div style={{ "height": "300px", "backgroundColor": "whitesmoke" }}>
-                <h3 className="parapara2">Read Testimonials From Our Customers <span><a className="parapara3">Here</a></span></h3>
+                <h3 className="parapara2">Read Testimonials From Our Customers <span>Here</span></h3>
                 <TestimonialCards />
             </div>
             {/* <div className="parallaxing">

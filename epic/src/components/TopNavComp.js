@@ -1,38 +1,59 @@
-import React from "react";
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import React, { Component } from "react";
+import classnames from "classnames";
 
+export default class TopNavComp extends Component {
+    constructor(props) {
+        super(props);
 
-const TopNavComp = () => {
-    return (
-        <div className="topNav">
-            <p>Servicing South West Florida Area</p>
-            <a>Phone: (239)-826-4326 </a>
-            <input placeholder="Search..."></input>
-            {/* <Navbar>
+        this.state = {
+            prevScrollpos: window.pageYOffset,
+            visible: true
+        };
+    }
 
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
+    // Adds an event listener when the component is mount.
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+    }
 
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
+    // Remove the event listener when the component is unmount.
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+    }
 
-                <Nav.Link href="/">HOME</Nav.Link>
-                <Nav.Link href="/Contact">CONTACT</Nav.Link>
-                <Nav.Link href="/About">ABOUT</Nav.Link>
-                <Nav.Link href="/ShoppingCart"> SHOPPING CART </Nav.Link>
-            </Navbar> */}
-        </div>
-    );
-};
+    // Hide or show the menu.
+    handleScroll = () => {
+        const { prevScrollpos } = this.state;
 
-export default TopNavComp;
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollpos > currentScrollPos;
+
+        this.setState({
+            prevScrollpos: currentScrollPos,
+            visible
+        });
+    };
+
+    render() {
+        return (
+            <div>
+                <nav className={classnames({
+                    "topNav--hidden": !this.state.visible
+                }, "topNav")}>
+                    <div className="navsort">
+                        <div className="sortnav">
+                            <div><h1>EPIC</h1></div>
+
+                            <div className="sorting">
+                                <h3>PAINTING &</h3>
+                                <h3>POWERWASHING</h3>
+                            </div>
+                        </div>
+                        <p>Servicing South West Florida Area</p>
+                        <p>Phone: (239)-826-4326 </p>
+                    </div>
+                </nav>
+            </div>
+        );
+    }
+}
