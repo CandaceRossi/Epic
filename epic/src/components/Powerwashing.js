@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import powerwash12 from "../images/powerwash12.jpg";
+import Parallax from "./Parralax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 
-const Powerwashing = () => {
+const Powerwashing = ({isNeeded}) => {
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -22,7 +23,6 @@ const Powerwashing = () => {
                     <h3>Dirt? Oil? Grime? Mildew?</h3>
                     <h3>One Call Solves It All!</h3>
                 </div>
-
                 <div className="brickdownchitown">
                     <div className="imgcontainer">
                         <img src={powerwash12} alt="" />
@@ -31,14 +31,13 @@ const Powerwashing = () => {
                         <div className="brickup1">
                             <h1>Call Us Today For A Free Quote!</h1>
                             <div className="line"></div>
-
+                            </div>
                             <div className="bruckup" data-aos="fade-up">
                                 <h3>We Pride Ourselves In Customer Satisfaction.</h3>
-                                <h3>Call Today!</h3>
-                            </div>
-                        </div>
+                                <h3>Call Our Office Today!</h3>
+                            {/* </div>
+                        </div> */}
                         <div className="contaflex">
-
                             <div className="flexin" data-aos="fade-right">
                                 <p>Whole Houses, Awnings, Roofs, Patio Cages</p>
                             </div>
@@ -49,15 +48,8 @@ const Powerwashing = () => {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
-                </div>
-                <div className="cleanbreak"></div>
-            </div>
+        </div>
+             <Parallax isNeeded = {false} />
         </div>
     )
 }

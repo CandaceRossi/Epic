@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 //eslint-disable-next-line 
 // import axios from "axios";
 import { Route, Switch } from "react-router-dom";
@@ -20,6 +20,7 @@ function App() {
     document.querySelector("body").classList.add("loaded");
   })
 
+  const [isNeeded] = useState(false)
   // const [mapData, setMapData] = useState({});
 
   // useEffect(() => {
@@ -123,7 +124,7 @@ function App() {
         <div id="map"></div>
       </div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home} isNeeded={isNeeded} />
         <Route path="/Mission" component={Mission} />
         <Route path="/Contact" component={Contact} />
         <Route path="/Residential" component={Residential} />
@@ -131,7 +132,10 @@ function App() {
         <Route path="/Powerwashing" component={Powerwashing} />
         <Route path="/Projects" component={Projects} />
       </Switch>
-      <Footer />
+      <div className="lastbottom">
+         <Footer />
+      </div>
+    
     </div>
   );
 }

@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
 import residentailclean from "../images/residentailclean.jpg";
 import residentailclean2 from "../images/residentailclean2.jpg";
-
+import Parallax from "./Parralax";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import classNames from "classnames";
+import TestimonialCards from "./TestimonialCards";
 
 
-const Residential = () => {
-
+const Residential = ({isNeeded}) => {
+    
+const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -54,15 +57,7 @@ const Residential = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
-                </div>
-                <div className="cleanbreak"></div>
-            </div>
-            <div className="parallax"></div>
+            <Parallax isNeeded = {false} />
         </div>
 
     )

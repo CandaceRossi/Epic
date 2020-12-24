@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import commercialslick from "../images/commercialslick.jpg";
-//eslint-disable-next-line 
-// import residentailclean2 from "../images/residentailclean2.jpg";
+import Parallax from "./Parralax";
+import classNames from "classnames";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 
-const Commercial = () => {
-
+const Commercial = ({isNeeded}) => {
+const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -24,7 +24,6 @@ const Commercial = () => {
                 <div className="brickdownchitown">
                     <div className="imgcontainer">
                         <img src={commercialslick} alt="" />
-                        {/* <img src={residentailclean} alt="" /> */}
                     </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
@@ -47,15 +46,7 @@ const Commercial = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
-                </div>
-                <div className="cleanbreak"></div>
-            </div>
-            <div className="parallax"></div>
+            <Parallax isNeeded = {false} />
         </div>
 
     )

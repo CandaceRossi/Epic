@@ -5,16 +5,15 @@ import officeclean from "../images/officeclean.jpg";
 import greenexterior from "../images/greenexterior.jpg";
 import commercialclean2 from "../images/commercialclean2.jpg";
 import twodoor from "../images/twodoor.jpg";
-
-// import bluemanroom from "../images/bluemanroom.jpg";
-// import rental from "../images/rental.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import classNames from "classnames";
+import Parallax from "./Parralax";
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-const Projects = () => {
-
+const Projects = ({isNeeded}) => {
+const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -208,14 +207,7 @@ const Projects = () => {
 
                 </div>
             </div>
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
-                </div>
-                <div className="cleanbreak"></div>
-            </div>
+          <Parallax isNeeded = {false} />
         </div>
 
     )

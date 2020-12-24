@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
+import Parallax from "./Parralax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Mission = () => {
+const Mission = ({isNeeded}) => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
     return (
+        <>
 
         <div className="mission">
             <div className="mission-style">
@@ -48,8 +50,10 @@ const Mission = () => {
 
                 </div>
             </div>
+          
         </div>
-
+          <Parallax isNeeded = {false} />
+          </>
     )
 }
 
