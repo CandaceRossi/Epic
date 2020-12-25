@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import commercialslick from "../images/commercialslick.jpg";
-import Parallax from "./Parralax";
-import classNames from "classnames";
+import Parralax from "./Parralax";
+// import classNames from "classnames";
+import commercialclean from "../images/commercialclean.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 
 const Commercial = ({isNeeded}) => {
-const altimageclasses = classNames("img1", "img2")
+// const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -46,7 +48,7 @@ const altimageclasses = classNames("img1", "img2")
                     </div>
                 </div>
             </div>
-            <Parallax isNeeded = {false} />
+            <Parralax featuredImage1={commercialclean} featuredImage2={commercialclean} isNeeded = {false} />
         </div>
 
     )

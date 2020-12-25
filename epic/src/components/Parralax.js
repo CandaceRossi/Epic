@@ -1,13 +1,15 @@
 import React from 'react';
-import bluemanroom from "../images/bluemanroom.jpg";
-// import paintcarousel2 from "../images/paintcarousel2.jpg";
-import classNames from "classnames";
+// import classNames from "classnames";
 import TestimonialCards from "./TestimonialCards";
 
 
+
 const Parralax = props => {
-    const altimageclasses = classNames("img1", "img2")
- const {isNeeded} = props;
+    console.log(props, "this is that shyt")
+    // const altimageclasses = classNames("img1", "img2")
+ const isNeeded = props.isNeeded;
+const featuredImage1 = props.featuredImage1;
+const featuredImage2 = props.featuredImage2;
     return (
         <>
             <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
@@ -16,10 +18,11 @@ const Parralax = props => {
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
                     </div>
-                    <div className={altimageclasses}></div>
+                     <img src={featuredImage1} alt="" />
                 </div>
                 <div className="clean">
-                    <div className={altimageclasses}></div>
+                
+                    <img src={featuredImage2} alt="" />
                     <div>
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
@@ -45,3 +48,5 @@ const Parralax = props => {
     )
 }
 export default Parralax;
+
+// className={altimageclasses}

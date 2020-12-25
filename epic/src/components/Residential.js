@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import residentailclean from "../images/residentailclean.jpg";
 import residentailclean2 from "../images/residentailclean2.jpg";
-import Parallax from "./Parralax";
+import exteriorres2 from "../images/exteriorres2.jpg";
+import exteriorres from "../images/exteriorres.jpg";
+import Parralax from "./Parralax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import classNames from "classnames";
@@ -10,6 +12,7 @@ import TestimonialCards from "./TestimonialCards";
 
 const Residential = ({isNeeded}) => {
     
+   
 const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -57,7 +60,7 @@ const altimageclasses = classNames("img1", "img2")
                     </div>
                 </div>
             </div>
-            <Parallax isNeeded = {false} />
+            <Parralax featuredImage1={exteriorres} featuredImage2={exteriorres2} isNeeded = {false} />
         </div>
 
     )
