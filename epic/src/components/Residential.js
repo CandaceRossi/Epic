@@ -1,17 +1,23 @@
 import React, { useEffect } from 'react';
 import residentailclean from "../images/residentailclean.jpg";
 import residentailclean2 from "../images/residentailclean2.jpg";
-
+import exteriorres2 from "../images/exteriorres2.jpg";
+import exteriorres from "../images/exteriorres.jpg";
+// import creamceiling from "../images/creamceiling.jpg";
+import Parallax from "./Parallax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 
-const Residential = () => {
 
+
+const Residential = ({isNeeded}) => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
     return (
+        <>
+        <div className="residentialcont">
         <div className="residential">
 
             <div class="overlay"> </div>
@@ -21,6 +27,8 @@ const Residential = () => {
                     <h3>Your Home Is Important To Us Too!</h3>
                     <h3>And Our Reputation Was Built On Care and Quality!</h3>
 
+                </div>
+                </div>
                 </div>
 
                 <div className="brickdownchitown">
@@ -52,18 +60,10 @@ const Residential = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
-                </div>
-                <div className="cleanbreak"></div>
-            </div>
-            <div className="parallax"></div>
+                </div>       
+            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} isNeeded = {false} />
         </div>
+        </>
 
     )
 }

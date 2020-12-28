@@ -1,22 +1,20 @@
 import React from 'react';
-
+import bluemanroom from "../images/bluemanroom.jpg";
+import beigebasement from "../images/beigebasement.jpg";
 import CarouselComp from "./CarouselComp";
-//eslint-disable-next-line 
-// import Rev from "./Rev";
 import Cards from "./Cards";
-//eslint-disable-next-line 
-// import Services from "./Services";
-import Parralax from "./Parralax";
+import Parallax from "./Parallax";
 
 
-const Home = () => {
-
+const Home = props => {
+ const isNeeded = props;
     return (
 
         <div className="component-list">
             <CarouselComp />
+            <div className="cardzindexarea"></div>
             <Cards />
-            <Parralax />
+            <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} isNeeded={true} />
         </div>
 
     )

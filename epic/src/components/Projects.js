@@ -4,23 +4,25 @@ import rental1 from "../images/rental1.jpg";
 import officeclean from "../images/officeclean.jpg";
 import greenexterior from "../images/greenexterior.jpg";
 import commercialclean2 from "../images/commercialclean2.jpg";
+import paintsamples from "../images/paintsamples.jpg";
+import paintcarousel7 from "../images/paintcarousel7.jpg";
 import twodoor from "../images/twodoor.jpg";
-
-// import bluemanroom from "../images/bluemanroom.jpg";
-// import rental from "../images/rental.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import classNames from "classnames";
+import Parallax from "./Parallax";
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-const Projects = () => {
-
+const Projects = ({isNeeded}) => {
+const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
     return (
-        <div className="project">
-
+        <>
+        <div className="projectcont">
+        
             <div id="m1" className="modal fade" data-backdrop="false">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
@@ -148,12 +150,17 @@ const Projects = () => {
                 </div>
             </div>
 
+            <div className="project">
+
             <div class="overlay"> </div>
             <div className="project-style">
                 <div className="projy" data-aos="zoom-in">
                     <h1>Epic's Project Photo Gallery!</h1>
                     <h3>Check Out Images Of Our Detailed Work</h3>
                 </div>
+                </div>
+                </div>
+
                 <div className="brickdownchitown">
                     <div className="imgcontainer">
                         <img src={twodoor} alt="" />
@@ -204,20 +211,10 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-
-
-                </div>
             </div>
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
-                <div className="clean">
-                    <p>"Anyone Can Live In A House, But Homes Are <br />Created With Patience, Time, And Love." <br />- Jane Green</p>
-                    <p>"Life Is Art, Paint Your Dreams" <br />-Unknown</p>
-                    <p>"When You Want To Transform A Room Into An <br />Entirely Different Animal, Change The Color."<br />- Billy Baldwin" </p>
-                </div>
-                <div className="cleanbreak"></div>
-            </div>
+          <Parallax featuredImage1={paintcarousel7} featuredImage2={paintsamples} isNeeded = {false} />
         </div>
-
+</>
     )
 
 

@@ -1,15 +1,11 @@
 import React from 'react';
 import { Card } from "react-bootstrap";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
-//eslint-disable-next-line 
-// import paintroller from "../images/paintroller.png";
+
 import gorjusyep from "../images/gorjusyep.jpg";
 import beigebasement from "../images/beigebasement.jpg";
 import commercialslick from "../images/commercialslick.jpg";
-//eslint-disable-next-line 
-// import brushhouse from "../images/brushhouse.png";
-//eslint-disable-next-line 
-// import paintguy from "../images/paintguy.png";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,12 +18,7 @@ const Cards = () => {
     return (
 
         <div className="cards-container">
-            <div style={{
-                paddingLeft: "260px", paddingRight: "260px",
-                margin: "0 auto",
-                display: "flex",
-                justifyContent: "center"
-            }} className="cards-style">
+            <div className="cards-style">
 
                 <Card style={{ border: "none", margin: "0 auto" }}>
                     <Card.Body style={{

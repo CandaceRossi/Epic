@@ -1,6 +1,4 @@
-import React from 'react';
-//eslint-disable-next-line 
-// import axios from "axios";
+import React, {useState} from 'react';
 import { Route, Switch } from "react-router-dom";
 import './App.scss';
 import NavContainer from "./components/NavContainer";
@@ -9,6 +7,7 @@ import Mission from "./components/Mission";
 import Contact from "./components/Contact";
 import Residential from "./components/Residential";
 import Commercial from "./components/Commercial";
+import Parallax from "./components/Parallax";
 import Powerwashing from "./components/Powerwashing";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -20,6 +19,7 @@ function App() {
     document.querySelector("body").classList.add("loaded");
   })
 
+  const [isNeeded] = useState(false)
   // const [mapData, setMapData] = useState({});
 
   // useEffect(() => {
@@ -123,15 +123,19 @@ function App() {
         <div id="map"></div>
       </div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home} isNeeded={isNeeded} />
         <Route path="/Mission" component={Mission} />
         <Route path="/Contact" component={Contact} />
         <Route path="/Residential" component={Residential} />
         <Route path="/Commercial" component={Commercial} />
         <Route path="/Powerwashing" component={Powerwashing} />
         <Route path="/Projects" component={Projects} />
+        <Route path="/Parallax" component={Parallax} />
       </Switch>
-      <Footer />
+      <div className="lastbottom">
+         <Footer />
+      </div>
+    
     </div>
   );
 }
