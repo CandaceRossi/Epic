@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-import Parallax from "./Parralax";
+import Parallax from "./Parallax";
 import Aos from "aos";
+import twodoor from "../images/twodoor.jpg";
+import commercialclean2 from "../images/commercialclean2.jpg";
 import "aos/dist/aos.css";
 
 const Mission = ({isNeeded}) => {
@@ -9,8 +11,11 @@ const Mission = ({isNeeded}) => {
     }, []);
     return (
         <>
+        <div className="missioncont">
 
         <div className="mission">
+
+         <div class="overlay"> </div>
             <div className="mission-style">
                 <div className="missy" data-aos="zoom-in">
                     <h1>OUR MISSION</h1>
@@ -19,6 +24,15 @@ const Mission = ({isNeeded}) => {
                     <h2>We will provide exceptional customer service from start to finish </h2>
                     <h2>and I will personally come out and give you an estimate for your home painting project.</h2>
                 </div>
+                </div>
+                </div>
+
+                <div className="brickdownchitown">
+                    <div className="imgcontainer">
+                        <img src={twodoor} alt="" />
+                        <img src={commercialclean2} alt="" />
+                    </div>
+
                 <div className="brickup" data-aos="fade-up">
                     <div className="brickup1">
                         <h1>Meet Our Team</h1>
@@ -28,7 +42,11 @@ const Mission = ({isNeeded}) => {
                         <h3>Our Mission</h3>
                         <h3> We are a family owned business. Our mission is to work with our community to become
                         a helpful and reliable painting company.</h3>
+                        </div>
+                        </div>
                         <div className="contaflex">
+                        <div className="flexin">
+                            <div className="flexflexin">
                             <div data-aos="zoom-in">
                                 <div className="photoop"></div>
                                 <p>EMAIL:</p>
@@ -51,8 +69,9 @@ const Mission = ({isNeeded}) => {
                 </div>
             </div>
           
-        </div>
+        
           <Parallax isNeeded = {false} />
+          </div>
           </>
     )
 }

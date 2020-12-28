@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import commercialslick from "../images/commercialslick.jpg";
-import Parralax from "./Parralax";
+import Parallax from "./Parallax";
 // import classNames from "classnames";
 import commercialclean from "../images/commercialclean.jpg";
 
@@ -14,15 +14,21 @@ const Commercial = ({isNeeded}) => {
         Aos.init({ duration: 2000 });
     }, []);
     return (
-
+        <>
+<div className="commercialcont">
         <div className="commercial">
+
             <div class="overlay"> </div>
             <div className="commercial-style">
                 <div className="commey" data-aos="zoom-in">
                     <h1>COMMERCIAL</h1>
                     <h3>LET'S GET YOUR OFFICE A FRESH LOOK!</h3>
-                    <h3>WE ENSURE CLEANLINESS AND SUPERIOR PROJECT SATISFACTION!</h3>
+                    <h3>WE ENSURE CLEANLINESS & SUPERIOR PROJECT SATISFACTION!</h3>
+
                 </div>
+                </div>
+                </div>
+
                 <div className="brickdownchitown">
                     <div className="imgcontainer">
                         <img src={commercialslick} alt="" />
@@ -47,9 +53,9 @@ const Commercial = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <Parralax featuredImage1={commercialclean} featuredImage2={commercialclean} isNeeded = {false} />
+            <Parallax featuredImage1={commercialclean} featuredImage2={commercialclean} isNeeded = {false} />
         </div>
+        </>
 
     )
 }

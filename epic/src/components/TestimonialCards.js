@@ -7,11 +7,11 @@ const TestimonialCards = () => {
 
     return (
         <>
-    (
+    
         <div className="testimonialblock">
         
-                <h4 className="parapara2">One Aspect To Epic's Great Reputation Is Our Client Testimonials</h4>
-                <h5 className="parapara2">Our Work Both Residential And Commercial Is Top Notch, Don't Believe Us -</h5>
+                <h2 className="parapara2">One Aspect To Epic's Great Reputation Is Our Client Testimonials</h2>
+                <h4 className="parapara2">Our Work Both Residential And Commercial Is Top Notch, Don't Believe Us -</h4>
                 <h6 className="parapara2">Read Testimonials From Our Customers <span>Here</span></h6>
               
            

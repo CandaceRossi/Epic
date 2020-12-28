@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import powerwash12 from "../images/powerwash12.jpg";
-import Parallax from "./Parralax";
+import powerwashtool from "../images/powerwashtool.jpg";
+import powerwash9 from "../images/powerwash9.jpg";
+import Parallax from "./Parallax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -14,15 +16,21 @@ const Powerwashing = ({isNeeded}) => {
     //Epic is Capital Poster font
     // painting and powerwashing is Apertura Web font
     return (
-
+        <>
+        <div className="pressurewashcont">
         <div className="pressurewash">
+
             <div class="overlay"> </div>
             <div className="pressurewash-style">
                 <div className="pressy" data-aos="zoom-in">
                     <h1>POWERWASHING</h1>
                     <h3>Dirt? Oil? Grime? Mildew?</h3>
                     <h3>One Call Solves It All!</h3>
+
                 </div>
+                </div>
+                </div>
+
                 <div className="brickdownchitown">
                     <div className="imgcontainer">
                         <img src={powerwash12} alt="" />
@@ -35,8 +43,6 @@ const Powerwashing = ({isNeeded}) => {
                             <div className="bruckup" data-aos="fade-up">
                                 <h3>We Pride Ourselves In Customer Satisfaction.</h3>
                                 <h3>Call Our Office Today!</h3>
-                            {/* </div>
-                        </div> */}
                         <div className="contaflex">
                             <div className="flexin" data-aos="fade-right">
                                 <p>Whole Houses, Awnings, Roofs, Patio Cages</p>
@@ -48,9 +54,9 @@ const Powerwashing = ({isNeeded}) => {
                     </div>
                 </div>
             </div>
+             <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} isNeeded = {false} />
         </div>
-             <Parallax isNeeded = {false} />
-        </div>
+        </>
     )
 }
 export default Powerwashing;

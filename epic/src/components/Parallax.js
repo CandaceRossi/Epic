@@ -4,15 +4,16 @@ import TestimonialCards from "./TestimonialCards";
 
 
 
-const Parralax = props => {
+const Parallax = props => {
     console.log(props, "this is that shyt")
     // const altimageclasses = classNames("img1", "img2")
  const isNeeded = props.isNeeded;
 const featuredImage1 = props.featuredImage1;
 const featuredImage2 = props.featuredImage2;
+
     return (
         <>
-            <div style={{ "height": "auto", "backgroundColor": "whitesmoke" }}>
+            <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
                 <div className="cleanbreak">
                     <div>
                         <h1>Have Confidence In Who You Hire...</h1>
@@ -29,24 +30,19 @@ const featuredImage2 = props.featuredImage2;
                     </div>
                 </div>
             </div>
-            <div className="parallax">
-            </div>
+            <div className="parallax"></div>
            
-            <div>
+            {/* <div className="hometestimonyparallaxblock"> */}
             {isNeeded ?
                 <TestimonialCards /> : null }
             {isNeeded ?
             <div className="parallaxes"></div>
             : null }
             
-             </div>
-            {/* <div className="parallaxing">
-            </div> <div style={{ "height": "300px", "backgroundColor": "whitesmoke" }}>
-            </div> */}
-
+             {/* </div> */}
+    
         </>
     )
 }
-export default Parralax;
+export default Parallax;
 
-// className={altimageclasses}

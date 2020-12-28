@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react';
 import contactimg from "../images/contactimg.jpg";
 import googlemap from "../images/googlemap.PNG";
-import Parallax from "./Parralax";
-import classNames from "classnames";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 
 const Contact = ({isNeeded}) => {
-const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -122,7 +119,6 @@ const altimageclasses = classNames("img1", "img2")
                 </div>
                 {/* </div> */}
             </div>
-             <Parallax isNeeded = {false} />
         </>
     )
 }

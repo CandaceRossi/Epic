@@ -3,7 +3,7 @@ import bluemanroom from "../images/bluemanroom.jpg";
 import beigebasement from "../images/beigebasement.jpg";
 import CarouselComp from "./CarouselComp";
 import Cards from "./Cards";
-import Parralax from "./Parralax";
+import Parallax from "./Parallax";
 
 
 const Home = props => {
@@ -12,8 +12,9 @@ const Home = props => {
 
         <div className="component-list">
             <CarouselComp />
+            <div className="cardzindexarea"></div>
             <Cards />
-            <Parralax featuredImage1={bluemanroom} featuredImage2={beigebasement} isNeeded={true} />
+            <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} isNeeded={true} />
         </div>
 
     )
