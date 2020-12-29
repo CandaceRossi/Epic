@@ -2,6 +2,11 @@ import React, { useEffect } from 'react';
 import Parallax from "./Parallax";
 import Aos from "aos";
 import twodoor from "../images/twodoor.jpg";
+import danette from "../images/danette.jpg";
+import painter from "../images/painter.jpg";
+import dusty2 from "../images/dusty2.jpg";
+import floridafriendly from "../images/floridafriendly.jpg";
+import apainterperson from "../images/apainterperson.jpg";
 import commercialclean2 from "../images/commercialclean2.jpg";
 import "aos/dist/aos.css";
 
@@ -15,14 +20,12 @@ const Mission = ({isNeeded}) => {
 
         <div className="mission">
 
-         <div class="overlay"> </div>
+         <div className="overlay"> </div>
             <div className="mission-style">
                 <div className="missy" data-aos="zoom-in">
                     <h1>OUR MISSION</h1>
-                    <h2>Our mission is to become the only painting company you will ever want
-                    and need. </h2>
-                    <h2>We will provide exceptional customer service from start to finish </h2>
-                    <h2>and I will personally come out and give you an estimate for your home painting project.</h2>
+                    <h3>Our mission is to work with our community to become a helpful and reliable painting company. </h3>
+        
                 </div>
                 </div>
                 </div>
@@ -48,21 +51,27 @@ const Mission = ({isNeeded}) => {
                         <div className="flexin">
                             <div className="flexflexin">
                             <div data-aos="zoom-in">
-                                <div className="photoop"></div>
-                                <p>EMAIL:</p>
+                                <div className="photoop">
+                                <img src={painter} alt="" /> 
+                                </div>
+                                <p>Andrew Charles</p>
+                                <p>Owner & Paint Contractor</p>
                             </div>
                             <div data-aos="zoom-in">
-                                <div className="photoop"></div>
-                                <p>EMAIL:</p>
+                                <div className="photoop">
+                                <img src={apainterperson} alt="" /> 
+                                </div>
+                                <p>Brad Fontaine</p>
+                                <p>Paint Contractor</p>
                             </div>
                             <div data-aos="zoom-in">
-                                <div className="photoop"></div>
-                                <p>EMAIL:</p>
+                                <div className="photoop">
+                                <img src={danette} alt="" /> 
+                                </div>
+                                <p>Danette Rossi-Aaron</p>
+                                <p>Owner & Office Manager</p>
                             </div>
-                            <div data-aos="zoom-in">
-                                <div className="photoop"></div>
-                                <p>EMAIL:</p>
-                            </div>
+        
                         </div>
                     </div>
 
@@ -70,7 +79,7 @@ const Mission = ({isNeeded}) => {
             </div>
           
         
-          <Parallax isNeeded = {false} />
+          <Parallax featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
           </div>
           </>
     )

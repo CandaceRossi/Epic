@@ -61,7 +61,7 @@ const Residential = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>       
-            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} isNeeded = {false} />
+            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} respar={true} isNeeded = {false} />
         </div>
         </>
 

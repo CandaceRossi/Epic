@@ -54,7 +54,7 @@ const Powerwashing = ({isNeeded}) => {
                     </div>
                 </div>
             </div>
-             <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} isNeeded = {false} />
+             <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} powerpar={true} isNeeded = {false} />
         </div>
         </>
     )

@@ -1,15 +1,21 @@
 import React from 'react';
-// import classNames from "classnames";
+import classNames from "classnames";
 import TestimonialCards from "./TestimonialCards";
 
 
 
 const Parallax = props => {
     console.log(props, "this is that shyt")
-    // const altimageclasses = classNames("img1", "img2")
+    const altimageclasses = classNames("parallaxhome", "parallaxres", "parallaxcomm", "parallaxpower", "parallaxmiss", "parallaxproj")
  const isNeeded = props.isNeeded;
 const featuredImage1 = props.featuredImage1;
 const featuredImage2 = props.featuredImage2;
+const homepar = props.homepar;
+const respar = props.respar;
+const commpar = props.commpar;
+const powerpar = props.powerpar;
+const misspar = props.misspar;
+const projpar = props.projpar;
 
     return (
         <>
@@ -30,7 +36,19 @@ const featuredImage2 = props.featuredImage2;
                     </div>
                 </div>
             </div>
-            <div className="parallax"></div>
+            {homepar ?
+            <div className="parallaxhome"></div> :
+            respar ? 
+            <div className="parallaxres"></div> : 
+            commpar ?
+             <div className="parallaxcomm"></div> : 
+            powerpar ?
+            <div className="parallaxpower"></div> :
+            misspar ?
+           <div className="parallaxmiss"></div> : 
+            projpar ?
+           <div className="parallaxproj"></div> : null }
+            
            
             {/* <div className="hometestimonyparallaxblock"> */}
             {isNeeded ?

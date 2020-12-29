@@ -212,7 +212,7 @@ const altimageclasses = classNames("img1", "img2")
                         </div>
                     </div>
             </div>
-          <Parallax featuredImage1={paintcarousel7} featuredImage2={paintsamples} isNeeded = {false} />
+          <Parallax featuredImage1={paintcarousel7} featuredImage2={paintsamples} projpar={true} isNeeded = {false} />
         </div>
 </>
     )

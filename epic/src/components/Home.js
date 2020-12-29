@@ -14,7 +14,7 @@ const Home = props => {
             <CarouselComp />
             <div className="cardzindexarea"></div>
             <Cards />
-            <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} isNeeded={true} />
+            <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
         </div>
 
     )
