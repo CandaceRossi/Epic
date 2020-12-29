@@ -19,6 +19,7 @@ const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
+    //new commit
     return (
         <>
         <div className="projectcont">
