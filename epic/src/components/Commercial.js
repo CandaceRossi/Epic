@@ -3,6 +3,7 @@ import commercialslick from "../images/commercialslick.jpg";
 import Parallax from "./Parallax";
 // import classNames from "classnames";
 import commercialclean from "../images/commercialclean.jpg";
+import commercialshed from "../images/commercialshed.jpg";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -53,7 +54,7 @@ const Commercial = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>
-            <Parallax featuredImage1={commercialclean} featuredImage2={commercialclean} isNeeded = {false} />
+            <Parallax featuredImage1={commercialshed} featuredImage2={commercialclean} commpar={true} isNeeded = {false} />
         </div>
         </>
 

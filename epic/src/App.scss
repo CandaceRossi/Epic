@@ -1849,8 +1849,78 @@ body {
     color: #c9b0a2;
 }
 
-.parallax {
+.parallaxhome {
     background-image: url("../src/images/gorjus.jpg");
+    height: 500px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 500;
+    // top: 105%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.parallaxres {
+    background-image: url("../src/images/residentialparallax.jpg");
+    height: 500px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 500;
+    // top: 105%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.parallaxcomm {
+    background-image: url("../src/images/commercialparallax1.jpg");
+    height: 500px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 500;
+    // top: 105%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.parallaxpower {
+    background-image: url("../src/images/powerwash14.jpg");
+    height: 500px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 500;
+    // top: 105%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.parallaxproj {
+    background-image: url("../src/images/parallaxproject.jpg");
+    height: 500px;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 500;
+    // top: 105%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.parallaxmiss {
+    background-image: url("../src/images/paintingpainters.jpg");
     height: 500px;
     min-height: 500px;
     background-attachment: fixed;
@@ -1928,7 +1998,8 @@ body {
     display: flex;
     justify-content: center;
     // margin: 5px;
-    font-family: "CapitalPosterCdW00-Regular"f;
+    // font-family: "CapitalPosterCdW00-Regular";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #4b4842;
 }
 
@@ -1937,12 +2008,13 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    z-index: 300;
     .contact {
         display: block;
         width: 100%;
         height: 400px;
         // height: 100%;
-        z-index: 200;
+        z-index: 300;
         // min-height: 900px;
         background-image: url("./images/brick.jpg");
         opacity: 0.7;
@@ -2218,7 +2290,7 @@ body {
                 // height: 300px;
                 // padding-top: 55px;
                 display: flex;
-                justify-content: flex-start;
+                justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 h1,
@@ -2316,7 +2388,7 @@ body {
             display: block;
             height: auto;
             // display: flex;
-            width: 100%;
+            width: 60%;
             margin: 0 auto;
             padding-top: 70px;
             // align-items: baseline;
@@ -2436,7 +2508,7 @@ body {
         height: 400px;
         z-index: 300;
         opacity: 0.7;
-        background-position: 50% 80% !important;
+        background-position: 50% 30% !important;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
@@ -2466,7 +2538,7 @@ body {
                 align-items: center;
                 flex-direction: column;
                 h1,
-                h2 {
+                h3 {
                     z-index: 500;
                     font-size: 1.9rem;
                     margin: 0 auto;
@@ -2476,10 +2548,10 @@ body {
                     text-shadow: 1px 1px black;
                 }
                 h1 {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                    font-size: 87px;
-                    text-shadow: none;
+                    // font-family: Arial, Helvetica, sans-serif;
+                    // font-weight: bold;
+                    font-size: 52px;
+                    // text-shadow: none;
                 }
             }
         }
@@ -2580,16 +2652,22 @@ body {
                     height: auto;
                     flex-wrap: wrap;
                     margin: 0 auto;
-                    p {
-                        font-size: 1.35rem;
-                        width: 300px;
-                        margin: 0 auto;
-                    }
-                    .photoop {
-                        width: 175px;
-                        height: 145px;
-                        border: 2px solid #f86c0e;
-                        border-radius: 7px;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        p {
+                            font-size: 1.35rem;
+                            width: 300px;
+                            height: 60px;
+                            margin: 0 auto;
+                        }
+                        .photoop {
+                            width: 215px;
+                            height: 320px;
+                            border: 2px solid #f86c0e;
+                            border-radius: 7px;
+                        }
                     }
                 }
             }
@@ -2766,7 +2844,7 @@ body {
     .commercial {
         margin: 0 auto;
         display: block;
-        background-image: url("./images/commercialslick.jpg");
+        background-image: url("./images/commercialslickskape1.jpg");
         background-position: center !important;
         background-attachment: fixed;
         background-size: cover;
