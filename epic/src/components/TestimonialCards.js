@@ -10,9 +10,9 @@ const TestimonialCards = () => {
     
         <div className="testimonialblock">
         
-                <h2 className="parapara2">One Aspect To Epic's Great Reputation Is Our Client Testimonials</h2>
-                <h4 className="parapara2">Our Work Both Residential And Commercial Is Top Notch, Don't Believe Us -</h4>
-                <h6 className="parapara2">Read Testimonials From Our Customers <span>Here</span></h6>
+                <h2 className="parapara2">One Aspect To Our Great Reputation Is Our <span style={{ height: "35px", display: "flex", alignItems: "baseline", paddingLeft: "10px", paddingRight: "10px", fontSize:"2.6rem", fontFamily: "CapitalPosterCdW00-Regular"}}>Epic</span>  Client Testimonials</h2>
+                <h4 className="parapara2">Our Finished Product Is Top Notch, Don't Believe Us -</h4>
+               
               
            
         <div className="testimon-card-container" >
@@ -25,7 +25,7 @@ const TestimonialCards = () => {
                             </div>
                             <br />
                             <Card.Text>
-                                Epic's paint crew did a fantastic job! Solid coat, clean edges, & ...
+                                Epic's paint crew did a fantastic job! Solid coats brings a splash of color to workspace! <br/>-Jordan Peele
                         </Card.Text>
                         </div>
                     </Card.Body>
@@ -38,7 +38,7 @@ const TestimonialCards = () => {
                             </div>
                             <br />
                             <Card.Text>
-                                Easily one of the best choices I made. Epic made painting my home a breeze. ...
+                                Easily one of the best choices I made. Epic made painting my home a breeze. <br/>-Patricia Smith
                         </Card.Text>
                         </div>
                     </Card.Body>
