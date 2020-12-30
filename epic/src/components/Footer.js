@@ -1,6 +1,11 @@
 import React from "react";
 import OSHA_logo_black from "../images/OSHA_logo_black.png";
 import { Nav, Navbar } from "react-bootstrap";
+//<i class="fas fa-phone"></i>
+//<i class="fas fa-envelope"></i>
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const Footer = () => {
@@ -10,8 +15,8 @@ const Footer = () => {
                 <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
                 <div style-={{width: "100%"}}>
                 <div className="prefoo">
-                <p>239-555-5555</p>
-                <p>andrewcharles@epicpaint.com</p>
+                <p><span style={{marginRight: "10px"}}><FontAwesomeIcon icon={faPhone}/></span> 239-555-5555</p>
+                <p><span style={{marginRight: "10px"}}><FontAwesomeIcon icon={faEnvelope} /></span> andrewcharles@epicpaint.com</p>
                
                 <img src={OSHA_logo_black} style={{height: "70px", width:"350px", marginLeft: "-10px"}} alt="osha" />
                 </div>

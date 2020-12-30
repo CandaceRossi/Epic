@@ -7,15 +7,8 @@ import { Container, Carousel } from "react-bootstrap";
 
 const CarouselComp = () => {
     return (
-        <Container>
-
-            <ol className="carousel-indicators">
-                <li data-target="#carousel-example-2" data-slide-to="0" className="active"></li>
-                <li data-target="#carousel-example-2" data-slide-to="1"></li>
-                <li data-target="#carousel-example-2" data-slide-to="2"></li>
-            </ol>
-
-
+      
+<>
             <Carousel className="carousel-fade" data-ride="carousel">
                 <Carousel.Item className="carousel-item active">
                     {/* <div className="slidescss" style={{ backgroundImage: "url({paintcarousel5})", repeat: "no-repeat", position: "fixed", float: "center" }}>
@@ -51,16 +44,8 @@ const CarouselComp = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <a className="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
-
-        </Container>
+</>
+      
     );
 };
 
