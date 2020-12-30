@@ -20,7 +20,7 @@ const Residential = ({isNeeded}) => {
         <div className="residentialcont">
         <div className="residential">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="residential-style">
                 <div className="residy" data-aos="zoom-in">
                     <h1>RESIDENTIAL</h1>

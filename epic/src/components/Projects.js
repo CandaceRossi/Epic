@@ -153,7 +153,7 @@ const altimageclasses = classNames("img1", "img2")
 
             <div className="project">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="project-style">
                 <div className="projy" data-aos="zoom-in">
                     <h1>Epic's Project Photo Gallery!</h1>

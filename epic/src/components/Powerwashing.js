@@ -20,7 +20,7 @@ const Powerwashing = ({isNeeded}) => {
         <div className="pressurewashcont">
         <div className="pressurewash">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="pressurewash-style">
                 <div className="pressy" data-aos="zoom-in">
                     <h1>POWERWASHING</h1>

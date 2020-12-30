@@ -19,7 +19,7 @@ const Commercial = ({isNeeded}) => {
 <div className="commercialcont">
         <div className="commercial">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="commercial-style">
                 <div className="commey" data-aos="zoom-in">
                     <h1>COMMERCIAL</h1>

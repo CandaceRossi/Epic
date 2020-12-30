@@ -19,7 +19,7 @@ const Contact = ({isNeeded}) => {
             <div className="contactcont">
                 <div className="contact">
 
-                    <div class="overlay"> </div>
+                    <div className="overlay"> </div>
                     <div className="contact-style">
                         <div className="consty" data-aos="zoom-in">
                             <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
