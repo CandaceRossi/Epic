@@ -10,10 +10,6 @@ const Contact = ({isNeeded}) => {
         Aos.init({ duration: 2000 });
     }, []);
 
-    const foo = false;
-
-    if (foo)
-        return (<div> <h4>Loading...</h4></div>)
     return (
         <>
             <div className="contactcont">
@@ -117,7 +113,7 @@ const Contact = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>
-                {/* </div> */}
+              
             </div>
         </>
     )

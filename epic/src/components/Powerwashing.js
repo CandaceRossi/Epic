@@ -13,7 +13,6 @@ const Powerwashing = ({isNeeded}) => {
         Aos.init({ duration: 2000 });
     }, []);
 
-    //Epic is Capital Poster font
     // painting and powerwashing is Apertura Web font
     return (
         <>

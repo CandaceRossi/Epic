@@ -116,6 +116,11 @@ function App() {
     }()
   }
   SmoothScroll(document, 120, 12)
+
+  const foo = false;
+
+    if (foo)
+        return (<div> <h4>Loading...</h4></div>)
   return (
     <div className="App">
       <div className="fixed-top">

@@ -25,9 +25,8 @@ const Cards = () => {
                         background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "none", display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "row"
                     }}>
 
-                        {/* <div className="imagecard"> */}
+                     
                         <img className="firstimg" src={beigebasement} style={{ width: "370px", height: "250px", paddingTop: "15px", display: "flex" }} alt="room" />
-                        {/* </div> */}
                         <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
                             <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", width: "395px" }}>Beautiful Colors To Make Your Space Feel Just Right!</Card.Title>
                             <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", width: "360px", fontSize: "1.2rem", display: "flex", alignItems: "flex-start" }}>
@@ -44,8 +43,6 @@ const Cards = () => {
                         <Card.Text>
                             Fill in the form and we'll Get In Touch!
     </Card.Text>
-                        {/* </Card.Body> */}
-                        {/* <ListGroup className="list-group-flush"> */}
                         <div className="card-style">
                             <form action="/actionpage">
                                 <div className="row">
@@ -68,8 +65,6 @@ const Cards = () => {
                                 </div>
                             </form>
                         </div>
-
-                        {/* </ListGroup> */}
                     </Card.Body>
                 </Card>
             </div>
@@ -78,33 +73,3 @@ const Cards = () => {
     )
 }
 export default Cards;
-
-// <Card>
-//     <Card.Body>
-//         {/* <div className="elipses">
-//                             <img src={paintroller} style={{ width: "100%", height: "100%", paddingTop: "15px" }} alt="paint roller" />
-//                         </div> */}
-//         {/* <br /> */}
-//         <div className="imagecard">
-//             <img src={gorjusyep} style={{ width: "340px", height: "215px", paddingTop: "15px" }} alt="room" />
-//         </div>
-
-
-//         <Card.Title>Beautiful Colors To Make Your Space Feel Just Right!</Card.Title>
-//         {/* <Card.Text>
-//                             Contact our team today to learn more about our pricing
-//     </Card.Text> */}
-//         <ListGroup className="list-group-flush">
-//             <ListGroupItem>Commercial - Residential</ListGroupItem>
-//             {/* <ListGroupItem>Get a Quote Today!</ListGroupItem> */}
-//             {/* <ListGroupItem>Graffiti</ListGroupItem> */}
-//         </ListGroup>
-//         {/* <Card.Body> */}
-//         <Card.Text>
-//             Contact our team today to learn more about our pricing
-//     </Card.Text>
-//         {/* <Card.Link className="link" href="#"> <span> <FontAwesomeIcon icon={faGlobe} /> </span> epicpaintandwash.com/contact</Card.Link>
-//                         <Card.Link className="link" href="#"> <span> <FontAwesomeIcon icon={faMobile} /> </span> 239-555-5555</Card.Link> */}
-//         {/* </Card.Body> */}
-//     </Card.Body>
-// </Card> 

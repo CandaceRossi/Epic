@@ -4,13 +4,13 @@ import testimony1 from "../images/testimony1.jpg";
 import testimony2 from "../images/testimony2.jpg";
 
 const TestimonialCards = () => {
-
+//<span style={{ height: "35px", display: "flex", alignItems: "baseline", paddingLeft: "10px", paddingRight: "10px", fontSize:"2.6rem", fontFamily: "CapitalPosterCdW00-Regular"}}>Epic</span> 
     return (
         <>
     
         <div className="testimonialblock">
         
-                <h2 className="parapara2">One Aspect To Our Great Reputation Is Our <span style={{ height: "35px", display: "flex", alignItems: "baseline", paddingLeft: "10px", paddingRight: "10px", fontSize:"2.6rem", fontFamily: "CapitalPosterCdW00-Regular"}}>Epic</span>  Client Testimonials</h2>
+                <h2 className="parapara2">One Aspect To Our Great Reputation Is Our Client Testimonials</h2>
                 <h4 className="parapara2">Our Finished Product Is Top Notch, Don't Believe Us -</h4>
                
               
