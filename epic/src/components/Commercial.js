@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import commercialslick from "../images/commercialslick.jpg";
 import Parallax from "./Parallax";
-// import classNames from "classnames";
 import commercialclean from "../images/commercialclean.jpg";
 import commercialshed from "../images/commercialshed.jpg";
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 
 const Commercial = ({isNeeded}) => {
-// const altimageclasses = classNames("img1", "img2")
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -19,7 +16,7 @@ const Commercial = ({isNeeded}) => {
 <div className="commercialcont">
         <div className="commercial">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="commercial-style">
                 <div className="commey" data-aos="zoom-in">
                     <h1>COMMERCIAL</h1>

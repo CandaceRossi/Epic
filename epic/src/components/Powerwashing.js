@@ -13,14 +13,13 @@ const Powerwashing = ({isNeeded}) => {
         Aos.init({ duration: 2000 });
     }, []);
 
-    //Epic is Capital Poster font
     // painting and powerwashing is Apertura Web font
     return (
         <>
         <div className="pressurewashcont">
         <div className="pressurewash">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="pressurewash-style">
                 <div className="pressy" data-aos="zoom-in">
                     <h1>POWERWASHING</h1>

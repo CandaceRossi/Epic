@@ -10,16 +10,12 @@ const Contact = ({isNeeded}) => {
         Aos.init({ duration: 2000 });
     }, []);
 
-    const foo = false;
-
-    if (foo)
-        return (<div> <h4>Loading...</h4></div>)
     return (
         <>
             <div className="contactcont">
                 <div className="contact">
 
-                    <div class="overlay"> </div>
+                    <div className="overlay"> </div>
                     <div className="contact-style">
                         <div className="consty" data-aos="zoom-in">
                             <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
@@ -117,7 +113,7 @@ const Contact = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>
-                {/* </div> */}
+              
             </div>
         </>
     )

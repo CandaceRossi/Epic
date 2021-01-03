@@ -9,13 +9,13 @@ import paintcarousel7 from "../images/paintcarousel7.jpg";
 import twodoor from "../images/twodoor.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import classNames from "classnames";
+
 import Parallax from "./Parallax";
 import 'bootstrap/dist/css/bootstrap.css';
 
 
 const Projects = ({isNeeded}) => {
-const altimageclasses = classNames("img1", "img2")
+
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -153,7 +153,7 @@ const altimageclasses = classNames("img1", "img2")
 
             <div className="project">
 
-            <div class="overlay"> </div>
+            <div className="overlay"> </div>
             <div className="project-style">
                 <div className="projy" data-aos="zoom-in">
                     <h1>Epic's Project Photo Gallery!</h1>
