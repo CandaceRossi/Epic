@@ -1325,7 +1325,23 @@
  /* phone */
  
  @media (max-width: 500px) {
+     .testimonialblock {
+         width: 100%;
+     }
      .testimonial-cards {
+         width: 100%;
+         .card-body {
+             width: 100%;
+             div {
+                 width: 100%;
+             }
+             .card-text {
+                 width: 60%;
+                 font-size: 1.1rem;
+                 font-weight: bold;
+                 color: rgb(21, 29, 68);
+             }
+         }
          .card:first-child {
              display: none
          }
