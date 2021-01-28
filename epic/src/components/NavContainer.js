@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import classnames from "classnames";
 import TopNavComp from "./TopNavComp";
 import NavbarComp from "./NavbarComp";
+import Sidenav from "./Sidenav";
+import {useMediaQuery} from "react-responsive";
+
 
 export default class NavContainer extends Component {
+
     constructor(props) {
         super(props);
 
@@ -36,6 +40,17 @@ export default class NavContainer extends Component {
         });
     };
 
+isDesktopOrLaptop = () => { useMediaQuery(
+    {minDeviceWidth: 1224},
+    {deviceWidth: 1600}
+)
+}
+ 
+isMobile = () => {  useMediaQuery(
+    {minDeviceWidth: 300},
+    {deviceWidth: 500}
+)
+}
     render() {
         return (
             <div className={classnames("navCont", {

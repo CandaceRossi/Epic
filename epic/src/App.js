@@ -11,8 +11,8 @@ import Parallax from "./components/Parallax";
 import Powerwashing from "./components/Powerwashing";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-
-
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
 
 function App() {
   window.addEventListener("load", () => {
@@ -123,9 +123,14 @@ function App() {
         return (<div> <h4>Loading...</h4></div>)
   return (
     <div className="App">
+     <div style={{height: "100%", width: "70%"}}>
+     <SideDrawer/>
+    <Backdrop />
+        </div>
+    <div style={{marginTop: "-55px"}}>
       <div className="fixed-top">
         <NavContainer />
-        <div id="map"></div>
+        {/* <div id="map"></div> */}
       </div>
       <Switch>
         <Route exact path="/" component={Home} isNeeded={isNeeded} />
@@ -140,7 +145,7 @@ function App() {
       <div className="lastbottom">
          <Footer />
       </div>
-    
+    </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ const NavbarComp = () => {
     }
 
     return (
-        <div className="nav">
+        <header className="nav">
             <Navbar>
                 <Nav.Link href="/">HOME</Nav.Link>
                 <Nav.Link href="/Mission">MISSION</Nav.Link>
@@ -27,7 +27,7 @@ const NavbarComp = () => {
                 </NavDropdown>
                 <Nav.Link href="/Contact">CONTACT</Nav.Link>
             </Navbar>
-        </div>
+        </header>
     );
 }
 // }

@@ -5,7 +5,12 @@
     src: url("//db.onlinewebfonts.com/t/15be08ec87e82933a65354b3053e677a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/15be08ec87e82933a65354b3053e677a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/15be08ec87e82933a65354b3053e677a.woff") format("woff"), url("//db.onlinewebfonts.com/t/15be08ec87e82933a65354b3053e677a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/15be08ec87e82933a65354b3053e677a.svg#CapitalPosterCdW00-Regular") format("svg");
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;

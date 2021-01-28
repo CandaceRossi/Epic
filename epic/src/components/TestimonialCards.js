@@ -10,8 +10,8 @@ const TestimonialCards = () => {
     
         <div className="testimonialblock">
         
-                <h2 className="parapara2">One Aspect To Our Great Reputation Is Our Client Testimonials</h2>
-                <h4 className="parapara2">Our Finished Product Is Top Notch, Don't Believe Us -</h4>
+                <h2>One Aspect To Our Great Reputation Is Our Client Testimonials</h2>
+                <h4>Our Finished Product Is Top Notch, Don't Believe Us -</h4>
                
               
            
