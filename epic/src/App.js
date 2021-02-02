@@ -18,39 +18,26 @@ function App() {
   window.addEventListener("load", () => {
     document.querySelector("body").classList.add("loaded");
   })
-
-  const [isNeeded] = useState(false)
-  // const [mapData, setMapData] = useState({});
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const response = await axios.get("https://api.tomtom.com/search/2/poiSearch")
-  //     console.log("sumnabitch", response)
-  //     const tt = window.tt
-
-  //     const map = tt.response({
-  //       key: process.env.REACT_APP_TOM_TOM_API_KEY,
-  //       window: 'map',
-  //       center: [26.640629, -81.872307],
-  //       zoom: 16,
-  //       style: 'tomtom://vector/1/basic-main',
-  //       theme: {
-  //         style: 'main',
-  //         layer: 'basic',
-  //         source: 'vector'
-  //       }
-  //     })
-  //     map.addControl(new tt.FullscreenControl())
-  //     map.addControl(new tt.NavigationControl())
-
-  //     setMapData(fetchData)
-  //   }
-  // })
-  //smooth scrolling function high level
-  // function init() {
-  //   new SmoothScroll(document, 120, 12)
-  // }
-
+//state to display more than one parallax - only true for hompage
+  const [isNeeded] = useState(false);
+  //state for setting side nav open or closed
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+  //toggle for side nav drawer
+  const drawerToggleClickHandler = () => {
+  setSideDrawerOpen((prevState) => {
+    // return {sideDrawerOpen: !prevState.sideDrawerOpen};
+     return setSideDrawerOpen(!prevState);
+    });
+  };
+//backdrop handler for shading window when side nav is popped open
+  const backdropClickHandler = () => {
+    const myElement = document.getElementByClass("backdrop")
+    myElement.click(myElement.css("display", "none"))
+    // setSideDrawerOpen(false)
+// return {sideDrawerOpen: false};
+  };
+  
+//Smooth scroll code high level 
   function SmoothScroll(target, speed, smooth) {
     if (target === document)
       target = (document.scrollingElement
@@ -64,18 +51,14 @@ function App() {
       && document.documentElement
       ? document.documentElement
       : target // safari is the new IE
-
     target.addEventListener('mousewheel', scrolled, { passive: false })
     target.addEventListener('DOMMouseScroll', scrolled, { passive: false })
 
     function scrolled(e) {
       e.preventDefault(); // disable default scrolling
-
       var delta = normalizeWheelDelta(e)
-
       pos += -delta * speed
       pos = Math.max(0, Math.min(pos, target.scrollHeight - frame.clientHeight)) // limit scrolling
-
       if (!moving) update()
     }
 
@@ -91,17 +74,13 @@ function App() {
 
     function update() {
       moving = true
-
       var delta = (pos - target.scrollTop) / smooth
-
       target.scrollTop += delta
-
       if (Math.abs(delta) > 0.5)
         requestFrame(update)
       else
         moving = false
     }
-
     var requestFrame = function () { // requestAnimationFrame cross browser
       return (
         window.requestAnimationFrame ||
@@ -115,22 +94,30 @@ function App() {
       );
     }()
   }
-  SmoothScroll(document, 120, 12)
+  SmoothScroll(document, 120, 12) //call smoothscroll
 
+  //set backdrop to conditionally render with handler
+  let backdrop;
+  if (sideDrawerOpen) {
+    console.log("backdrop dropped")
+    backdrop = <Backdrop bdclick={backdropClickHandler} />;
+  }
+  //loading state for page render
   const foo = false;
-
     if (foo)
         return (<div> <h4>Loading...</h4></div>)
+
+
   return (
     <div className="App">
-     <div style={{height: "100%", width: "70%"}}>
-     <SideDrawer/>
-    <Backdrop />
-        </div>
+     {/* <div> */}
+        <SideDrawer show={sideDrawerOpen} />
+      {/* </div> */}
+        {backdrop}
     <div style={{marginTop: "-55px"}}>
       <div className="fixed-top">
-        <NavContainer />
-        {/* <div id="map"></div> */}
+        <NavContainer drawerClickHandler={drawerToggleClickHandler} />
+      </div>
       </div>
       <Switch>
         <Route exact path="/" component={Home} isNeeded={isNeeded} />
@@ -145,7 +132,7 @@ function App() {
       <div className="lastbottom">
          <Footer />
       </div>
-    </div>
+    
     </div>
   );
 }

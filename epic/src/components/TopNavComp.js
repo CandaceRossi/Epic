@@ -11,7 +11,7 @@ export default class TopNavComp extends Component {
             visible: true
         };
     }
-
+    
     // Adds an event listener when the component is mount.
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
@@ -34,8 +34,7 @@ export default class TopNavComp extends Component {
             visible
         });
     };
-
-    render() {
+   render() {
         return (
             <div>
             
@@ -44,9 +43,9 @@ export default class TopNavComp extends Component {
                 }, "topNav")}>
                     <div className="navsort"> 
                     <div>
-                        <DrawerToggleButton />
+                        <DrawerToggleButton click={this.props.click}/>
                     </div>
-                        <a className="sortnav">
+                        <a href="/" className="sortnav">
                             <div className="titlestyle"><h1>EPIC</h1></div>
                              </a>
                             <div className="sorting">

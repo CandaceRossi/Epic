@@ -12,7 +12,7 @@ const NavbarComp = () => {
     }
 
     return (
-        <header className="nav">
+        <header className="navbootstrap">
             <Navbar>
                 <Nav.Link href="/">HOME</Nav.Link>
                 <Nav.Link href="/Mission">MISSION</Nav.Link>
