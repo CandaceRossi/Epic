@@ -4,6 +4,7 @@ import beigebasement from "../images/beigebasement.jpg";
 import CarouselComp from "./CarouselComp";
 import Cards from "./Cards";
 import Parallax from "./Parallax";
+import '../sass/home.scss';
 
 
 const Home = props => {

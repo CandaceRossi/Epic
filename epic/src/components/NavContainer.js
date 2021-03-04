@@ -4,6 +4,7 @@ import TopNavComp from "./TopNavComp";
 import NavbarComp from "./NavbarComp";
 import Sidenav from "./Sidenav";
 import {useMediaQuery} from "react-responsive";
+import '../sass/navbars.scss';
 
 
 export default class NavContainer extends Component {

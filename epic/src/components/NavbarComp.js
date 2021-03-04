@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import '../sass/navbars.scss';
 
 
 const NavbarComp = () => {

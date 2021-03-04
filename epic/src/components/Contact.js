@@ -3,6 +3,7 @@ import contactimg from "../images/contactimg.jpg";
 import googlemap from "../images/googlemap.PNG";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../sass/contact.scss';
 
 
 const Contact = ({isNeeded}) => {

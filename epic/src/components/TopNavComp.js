@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classnames from "classnames";
 import DrawerToggleButton from "./SideDrawer/DrawerToggleButton";
+import '../sass/navbars.scss';
 
 export default class TopNavComp extends Component {
     constructor(props) {
@@ -42,7 +43,7 @@ export default class TopNavComp extends Component {
                     "topNav--hidden": !this.state.visible
                 }, "topNav")}>
                     <div className="navsort"> 
-                    <div>
+                    <div className="toolbartoggle-button">
                         <DrawerToggleButton click={this.props.click}/>
                     </div>
                         <a href="/" className="sortnav">

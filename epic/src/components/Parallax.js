@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from "classnames";
 import TestimonialCards from "./TestimonialCards";
-
+import '../sass/parallax.scss';
 
 
 const Parallax = props => {

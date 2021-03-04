@@ -1,4 +1,5 @@
 import React from "react";
+import '../../sass/sidedrawer.scss';
 
 const DrawerToggleButton = props => {
     return (

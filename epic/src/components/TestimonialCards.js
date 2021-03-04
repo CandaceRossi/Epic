@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from "react-bootstrap";
 import testimony1 from "../images/testimony1.jpg";
 import testimony2 from "../images/testimony2.jpg";
+import '../sass/cards.scss';
 
 const TestimonialCards = () => {
 //<span style={{ height: "35px", display: "flex", alignItems: "baseline", paddingLeft: "10px", paddingRight: "10px", fontSize:"2.6rem", fontFamily: "CapitalPosterCdW00-Regular"}}>Epic</span> 

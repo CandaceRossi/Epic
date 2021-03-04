@@ -5,6 +5,7 @@ import commercialclean from "../images/commercialclean.jpg";
 import commercialshed from "../images/commercialshed.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../sass/commercial.scss';
 
 
 const Commercial = ({isNeeded}) => {

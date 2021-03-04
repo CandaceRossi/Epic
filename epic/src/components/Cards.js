@@ -8,6 +8,7 @@ import commercialslick from "../images/commercialslick.jpg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
+import '../sass/cards.scss';
 
 
 

@@ -6,19 +6,20 @@ import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import '../sass/footer.scss';
 
 
 const Footer = () => {
     return (
         <div className="footing">
-            <div className="prefooter" style={{ width: "auto", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+            <div className="prefooter" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                 <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
                 {/* <div style-={{width: "100%"}}> */}
                 <div className="prefoo">
-                <a><span style={{marginRight: "10px"}}><FontAwesomeIcon icon={faPhone}/></span> 239-555-5555</a>
-                <a><span style={{marginRight: "10px"}}><FontAwesomeIcon icon={faEnvelope} /></span> andrewcharles@epicpaint.com</a>
+                <a><span ><FontAwesomeIcon icon={faPhone}/></span> 239-555-5555</a>
+                <a><span ><FontAwesomeIcon icon={faEnvelope}/></span> andrewcharles@epicpaint.com</a>
                
-                <img src={OSHA_logo_black} style={{height: "70px", width:"350px", marginLeft: "-10px"}} alt="osha" />
+                <img src={OSHA_logo_black} style={{height: "70px", width:"350px"}} alt="osha" />
                 </div> 
            
                  {/* <div className="spacer" /> */}

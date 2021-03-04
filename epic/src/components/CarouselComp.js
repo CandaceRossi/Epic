@@ -3,6 +3,7 @@ import paintcarousel5 from "../images/paintcarousel5.jpg";
 import blurpainter from "../images/blurpainter.jpg";
 import accentwall from "../images/accentwall.jpg";
 import { Container, Carousel } from "react-bootstrap";
+import '../sass/carousel.scss';
 
 
 const CarouselComp = () => {

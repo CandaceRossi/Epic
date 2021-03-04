@@ -1,0 +1,232 @@
+.contactcont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    .contact {
+        display: block;
+        width: 100%;
+        height: 400px;
+        z-index: 300;
+        background-image: url("../images/brick.jpg");
+        opacity: 0.7;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        .overlay {
+            width: 80%;
+            min-height: 800px;
+            float: left;
+            left: -400px;
+            background: rgba(21, 29, 68, 0.658);
+            position: absolute;
+            transform: skew(-25deg);
+        }
+        .contact-style {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .consty {
+                margin: 0px;
+                margin-top: 5%;
+                width: 70%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                h1,
+                h2 {
+                    z-index: 500;
+                    font-size: 1.9rem;
+                    margin: 0 auto;
+                    padding: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #f8f1ed;
+                    text-shadow: 1px 1px black;
+                }
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 600 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0.7;
+        background: linear-gradient( #54504a, rgb(138, 140, 141));
+        img {
+            width: 575px;
+            height: 345px;
+            margin: -2px 0px 0px 175px;
+            // z-index: 600;
+        }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            .brickup1 {
+                margin: 0px auto;
+                width: 100%;
+                height: 70%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    color: rgb(255, 255, 255);
+                    z-index: 500;
+                    padding: 5px;
+                }
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 3px;
+                    border-top: 3px solid black;
+                }
+            }
+            .bruckup {
+                color: white;
+                width: 100%;
+                height: auto;
+                padding-bottom: 70px;
+                .contaflex {
+                    height: auto;
+                    display: flex;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-top: 20px;
+                    justify-content: center;
+                    align-items: baseline;
+                    .flexin {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            font-size: 1.35rem;
+                            width: 330px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .location {
+        margin: 0 auto;
+        box-sizing: border-box !important;
+        padding: 40px;
+        // padding-left: 170px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        // display: block;
+        z-index: 500;
+        img {
+            width: 680px;
+            max-width: 50%;
+            height: 550px;
+        }
+        .rightflex {
+            border: 2px solid red;
+            box-sizing: border-box !important;
+            width: 50%;
+            // max-width: 500px;
+            // min-width: 680px;
+            display: flex;
+            margin: 0 auto !important;
+            flex-direction: column;
+            background: white;
+            h1,
+            h2 {
+                box-sizing: border-box !important;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center !important;
+                padding-bottom: 20px;
+                z-index: 500;
+                color: rgb(44, 52, 88);
+            }
+            .row,
+            .col {
+                background-color: white;
+            }
+            input[type=text],
+            select,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            input[type=submit] {
+                background-color: rgb(44, 52, 88);
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+                margin-top: -30px;
+            }
+            input[type=submit]:hover {
+                background-color: rgb(49, 67, 153);
+            }
+            .formcontainer {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                // padding: 20px;
+            }
+            .col-25 {
+                float: left !important;
+                width: 25%;
+                margin-top: 6px;
+            }
+            .col-75 {
+                float: left !important;
+                width: 75%;
+                margin-top: 6px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table !important;
+                clear: both;
+            }
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .col-25,
+                .col-75,
+                input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
