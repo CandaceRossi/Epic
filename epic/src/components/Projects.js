@@ -9,6 +9,7 @@ import paintcarousel7 from "../images/paintcarousel7.jpg";
 import twodoor from "../images/twodoor.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../sass/projects.scss';
 
 import Parallax from "./Parallax";
 import 'bootstrap/dist/css/bootstrap.css';

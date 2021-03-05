@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from "classnames";
 import TestimonialCards from "./TestimonialCards";
-
+import '../sass/parallax.scss';
 
 
 const Parallax = props => {
@@ -21,7 +21,7 @@ const projpar = props.projpar;
         <>
             <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
                 <div className="cleanbreak">
-                    <div>
+                    <div className="cleanbreakdiv">
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
                     </div>
@@ -30,7 +30,7 @@ const projpar = props.projpar;
                 <div className="clean">
                 
                     <img src={featuredImage2} alt="" />
-                    <div>
+                    <div className="cleandiv">
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
                     </div>

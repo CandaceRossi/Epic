@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import '../sass/navbars.scss';
 
 
 const NavbarComp = () => {
@@ -12,7 +13,7 @@ const NavbarComp = () => {
     }
 
     return (
-        <div className="nav">
+        <header className="navbootstrap">
             <Navbar>
                 <Nav.Link href="/">HOME</Nav.Link>
                 <Nav.Link href="/Mission">MISSION</Nav.Link>
@@ -27,9 +28,8 @@ const NavbarComp = () => {
                 </NavDropdown>
                 <Nav.Link href="/Contact">CONTACT</Nav.Link>
             </Navbar>
-        </div>
+        </header>
     );
 }
-// }
 
 export default NavbarComp;

@@ -3,6 +3,7 @@ import paintcarousel5 from "../images/paintcarousel5.jpg";
 import blurpainter from "../images/blurpainter.jpg";
 import accentwall from "../images/accentwall.jpg";
 import { Container, Carousel } from "react-bootstrap";
+import '../sass/carousel.scss';
 
 
 const CarouselComp = () => {
@@ -10,7 +11,7 @@ const CarouselComp = () => {
       
 <>
             <Carousel className="carousel-fade" data-ride="carousel">
-                <Carousel.Item className="carousel-item active">
+                <Carousel.Item className="carousel-item-active">
                     <img className="slidescss" style={{ backgroundImage: "url({paintcarousel5})", repeat: "no-repeat", position: "fixed", float: "center" }} src={paintcarousel5} alt="first slide" />
                     <Carousel.Caption className="carousel-caption">
                         <h3 className="h3-responsive">Light mask</h3>

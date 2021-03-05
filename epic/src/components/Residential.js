@@ -7,6 +7,7 @@ import exteriorres from "../images/exteriorres.jpg";
 import Parallax from "./Parallax";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../sass/residential.scss';
 
 
 

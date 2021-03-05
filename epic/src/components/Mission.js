@@ -9,6 +9,7 @@ import floridafriendly from "../images/floridafriendly.jpg";
 import apainterperson from "../images/apainterperson.jpg";
 import commercialclean2 from "../images/commercialclean2.jpg";
 import "aos/dist/aos.css";
+import '../sass/mission.scss';
 
 const Mission = ({isNeeded}) => {
     useEffect(() => {

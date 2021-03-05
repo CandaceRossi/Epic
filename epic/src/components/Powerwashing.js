@@ -5,6 +5,7 @@ import powerwash9 from "../images/powerwash9.jpg";
 import Parallax from "./Parallax";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import '../sass/powerwashing.scss';
 
 
 const Powerwashing = ({isNeeded}) => {
