@@ -1,8 +1,6 @@
 import React from "react";
 import OSHA_logo_black from "../images/OSHA_logo_black.png";
 import { Nav, Navbar } from "react-bootstrap";
-//<i class="fas fa-phone"></i>
-//<i class="fas fa-envelope"></i>
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -31,13 +29,12 @@ const Footer = () => {
                 </div>             
             </div>
             <footer className="footer">
-                <Navbar >
-                    <Nav.Link href="/">HOME</Nav.Link>
-                    <Nav.Link href="/Mission">MISSION</Nav.Link>
-                    <Nav.Link href="/Projects">PROJECTS</Nav.Link>
-                    <Nav.Link href="/Contact">CONTACT</Nav.Link>
-                </Navbar>
-
+                <nav className="anavforfooter">
+                    <a id="atagforfooter" href="/">HOME</a>
+                    <a id="atagforfooter" href="/Mission">MISSION</a>
+                    <a id="atagforfooter" href="/Projects">PROJECTS</a>
+                    <a id="atagforfooter" href="/Contact">CONTACT</a>
+                </nav>
             </footer>
         </div>
     );
