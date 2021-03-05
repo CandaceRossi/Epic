@@ -1,5 +1,4 @@
 .side-drawer {
-    // padding-top: 215px;
     height: 100%;
     background: white;
     color: black;
@@ -61,20 +60,7 @@
     transform: translateX(0);
 }
 
-// @media (min-width: 769px) {
-//     .toolbartoggle-button {
-//         display: none !important;
-//     }
-//     .titlestyle {
-//         margin-left: 0px;
-//     }
-// }
-// @media (max-width: 768px) {
-//     .toolbartoggle-button {
-//         display: none !important;
-//     }
-// }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
     .toggle-button {
         margin-top: 90%;
         margin-right: 20px;
@@ -82,7 +68,7 @@
         flex-direction: column;
         justify-content: space-around;
         height: 24px;
-        width: 30px;
+        max-width: 30px;
         background: transparent;
         border: none;
         cursor: pointer;

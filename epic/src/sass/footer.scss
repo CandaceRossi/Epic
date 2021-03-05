@@ -378,10 +378,6 @@
             width: 100%;
             height: 65px;
             margin: 0 auto !important;
-            // display: flex;
-            // justify-content: flex-start !important;
-            // align-content: center;
-            // background: #54504a;
             z-index: 800;
             .navbar {
                 z-index: 999;
@@ -389,10 +385,12 @@
                 height: 65px;
                 background: #54504a;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 align-items: center;
                 a {
                     width: auto;
+                    padding: 10px;
+                    margin: 0px;
                     color: #d6cec3;
                     z-index: 999;
                 }

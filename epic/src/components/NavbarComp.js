@@ -31,6 +31,5 @@ const NavbarComp = () => {
         </header>
     );
 }
-// }
 
 export default NavbarComp;

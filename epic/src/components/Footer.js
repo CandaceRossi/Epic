@@ -14,17 +14,12 @@ const Footer = () => {
         <div className="footing">
             <div className="prefooter" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                 <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
-                {/* <div style-={{width: "100%"}}> */}
                 <div className="prefoo">
                 <a><span ><FontAwesomeIcon icon={faPhone}/></span> 239-555-5555</a>
                 <a><span ><FontAwesomeIcon icon={faEnvelope}/></span> andrewcharles@epicpaint.com</a>
                
                 <img src={OSHA_logo_black} style={{height: "70px", width:"350px"}} alt="osha" />
                 </div> 
-           
-                 {/* <div className="spacer" /> */}
-                {/* </div> */}
-                {/* <div>  */}
                 <div className="sortnav">
                     <div><h1>EPIC</h1></div>
 
@@ -33,8 +28,7 @@ const Footer = () => {
                             <h3>POWERWASHING</h3>
                     </div>
                     </div>
-                </div>
-                             {/* </div> */}
+                </div>             
             </div>
             <footer className="footer">
                 <Navbar >

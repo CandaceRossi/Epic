@@ -29,8 +29,8 @@ const Cards = () => {
                      
                         <img className="firstimg" src={beigebasement} style={{ width: "370px", height: "250px", paddingTop: "15px", display: "flex" }} alt="room" />
                         <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
-                            <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", width: "395px" }}>Beautiful Colors To Make Your Space Feel Just Right!</Card.Title>
-                            <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", width: "360px", fontSize: "1.2rem", display: "flex", alignItems: "flex-start" }}>
+                            <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "395px" }}>Beautiful Colors To Make Your Space Feel Just Right!</Card.Title>
+                            <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "360px", fontSize: "1.2rem", display: "flex", alignItems: "flex-start" }}>
                                 Preparation is key! Our team starts by protecting all areas, removing electric plates and door handles –
                                 patching holes and de-glossing trim so that the finish product is beautiful and durable.
                             </Card.Text>

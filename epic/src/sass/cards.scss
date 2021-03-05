@@ -92,6 +92,7 @@
 
 @media (max-width: 500px) {
     .testimonialblock {
+        z-index: 800;
         margin: 0 auto;
         height: auto;
         width: 100%;
@@ -99,6 +100,20 @@
         justify-content: center !important;
         align-items: center;
         flex-direction: column;
+        .parapara2 {
+            z-index: 800;
+            margin: 0 auto;
+            width: 85%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 800;
+            // margin: 5px;
+            // font-family: "CapitalPosterCdW00-Regular";
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(21, 29, 68);
+        }
         h2,
         h4 {
             margin: 0 auto;
@@ -106,17 +121,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 7px;
+            z-index: 800;
         }
         h2 {
-            font-size: 1.5rem !important;
+            margin: 0 auto;
+            font-size: 1.4rem !important;
+            z-index: 800;
         }
         h4 {
-            font-size: 1.1rem !important;
+            margin: 0 auto;
+            font-size: 1.2rem !important;
+            z-index: 800;
         }
     }
     .testimonial-cards {
         width: 100%;
+        z-index: 800;
         .card {
             margin: 15px auto;
             padding: 5px;
@@ -128,15 +148,18 @@
             background: #d6cec3;
             opacity: 0.9;
             border: none;
+            z-index: 800;
             .card-body {
                 width: 100%;
                 display: flex;
                 justify-content: space-evenly;
+                z-index: 800;
                 div {
                     width: 100%;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
+                    z-index: 800;
                 }
                 .card-text {
                     display: flex;
@@ -144,14 +167,18 @@
                     margin: 0 auto;
                     width: 75%;
                     font-size: 1.1rem;
-                    font-weight: bold;
+                    // font-weight: bold;
+                    font-style: italic;
+                    font-weight: normal;
                     color: rgb(21, 29, 68);
+                    z-index: 800;
                 }
                 .elipse-testimonial {
                     display: flex;
                     margin: 0 auto;
                     width: 110px !important;
                     height: 110px !important;
+                    z-index: 800;
                 }
             }
         }
@@ -315,18 +342,17 @@
 
 @media (max-width: 500px) {
     .cards-container {
-        width: 100%;
+        width: 90%;
         height: 100%;
         margin: 0 auto !important;
         position: relative !important;
-        padding-top: 315px;
-        top: 60%!important;
-        left: 0%!important;
+        padding-top: 270px;
+        // top: 60%!important;
+        // left: 0%!important;
         z-index: 500;
         display: flex !important;
         flex-direction: column !important;
         .cards-style {
-            margin: 0 auto !important;
             width: 100%;
             height: 400px;
             z-index: 4;
@@ -341,9 +367,9 @@
         }
         .card:first-of-type {
             margin: 0 auto !important;
-            width: 100%;
-            min-width: 300px !important;
-            min-height: 240px;
+            // width: 100%;
+            min-width: 100% !important;
+            min-height: 320px;
             height: auto;
             display: flex !important;
             justify-content: center !important;
@@ -375,20 +401,20 @@
         }
         .card {
             margin: 0 auto;
-            margin-top: 15px;
+            // margin-top: 45px;
             padding: none !important;
-            width: 20%;
+            width: 100%;
             min-width: 340px !important;
             height: auto;
             background: rgb(21, 29, 68) !important;
             color: #d6cec3;
             position: relative!important;
-            top: 130!important;
+            // top: 130!important;
             .card-body {
                 padding: none !important;
                 margin: 0 auto;
                 width: 100%;
-                height: auto;
+                height: auto !important;
                 display: flex;
                 flex-direction: column;
             }
@@ -405,7 +431,7 @@
             }
             .card-title {
                 width: 100%;
-                margin: 5px auto;
+                margin: 0 auto;
                 display: flex;
                 height: auto !important;
             }
@@ -415,21 +441,23 @@
                 width: 100%;
                 margin: 0 auto;
                 height: 20px !important;
+                // height: auto;
             }
-            .list-group-flush {
-                width: 100%;
-                height: auto;
-                margin: 0 auto !important;
-                .list-group-item {
-                    width: 100%;
-                    display: flex;
-                    margin: 0 auto !important;
-                    justify-content: center !important;
-                    height: 25px;
-                    align-items: center;
-                    padding: none !important;
-                }
-            }
+            // .list-group-flush {
+            //     width: 100%;
+            //     height: auto;
+            //     margin: 0 auto !important;
+            //     .list-group-item {
+            //         width: 100%;
+            //         display: flex;
+            //         margin: 0 auto !important;
+            //         justify-content: center !important;
+            //         height: 25px;
+            //         align-items: center;
+            //         padding: none !important;
+            //         // border: 1px solid red;
+            //     }
+            // }
             .link {
                 display: flex;
                 justify-content: flex-start !important;
