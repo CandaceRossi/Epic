@@ -40,7 +40,7 @@ const Mission = ({isNeeded}) => {
                 <div className="brickup" data-aos="fade-up">
                     <div className="brickup1">
                         <h1>Meet Our Team</h1>
-                        <div className="line"></div>
+                        <div className="line"></div> 
                     </div>
                     <div className="bruckup" data-aos="fade-up">
                         <h3>Our Mission</h3>
@@ -52,25 +52,26 @@ const Mission = ({isNeeded}) => {
                         <div className="flexin">
                             <div className="flexflexin">
                             <div data-aos="zoom-in">
-                                <div className="photoop">
+                                {/* <div className="photoop"> */}
                                 <img src={painter} alt="" /> 
-                                </div>
+                                
                                 <p>Andrew Charles</p>
-                                <p>Owner & Paint Contractor</p>
+                                <p>Owner & Contractor</p>
+                                {/* </div> */}
                             </div>
                             <div data-aos="zoom-in">
-                                <div className="photoop">
+                                {/* <div className="photoop"> */}
                                 <img src={apainterperson} alt="" /> 
-                                </div>
                                 <p>Brad Fontaine</p>
                                 <p>Paint Contractor</p>
+                                {/* </div> */}
                             </div>
                             <div data-aos="zoom-in">
-                                <div className="photoop">
+                                {/* <div className="photoop"> */}
                                 <img src={danette} alt="" /> 
-                                </div>
-                                <p>Danette Rossi-Aaron</p>
-                                <p>Owner & Office Manager</p>
+                                <p>Danette Aaron</p>
+                                <p>Office Manager</p>
+                                {/* </div> */}
                             </div>
         
                         </div>
@@ -78,9 +79,7 @@ const Mission = ({isNeeded}) => {
 
                 </div>
             </div>
-          
-        
-          <Parallax featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
+            <Parallax featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
           </div>
           </>
     )

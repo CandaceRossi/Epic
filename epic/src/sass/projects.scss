@@ -3,8 +3,6 @@
     display: block;
     width: 100%;
     height: 100%;
-    // display: flex;
-    // flex-direction: column;
     z-index: 300;
     .modal {
         margin-top: 265px;
@@ -18,16 +16,16 @@
         margin: 0 auto;
         display: block;
         width: 100%;
-        height: 400px;
+        height: 550px;
         z-index: 300;
         background-image: url("../images/residentialclean3.jpg");
         opacity: 0.7;
         background-position: 50% 80% !important;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: 100% auto;
         background-repeat: no-repeat;
         .overlay {
-            width: 80%;
+            width: 90%;
             min-height: 800px;
             float: left;
             left: -400px;
@@ -42,20 +40,25 @@
             flex-direction: column;
             z-index: 400;
             .projy {
+                padding-top: 105px;
                 margin: 0px;
                 margin-top: 5%;
-                width: 70%;
-                // height: 300px;
-                // padding-top: 55px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                margin-left: 1%;
+                width: 60% !important;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
                 h1,
                 h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
                     z-index: 500;
                     font-size: 1.9rem;
-                    margin: 0 auto;
+                    margin: 0px;
                     padding: 12px;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     color: #f8f1ed;
@@ -135,8 +138,11 @@
             color: white;
             width: 100%;
             height: auto;
-            padding-bottom: 70px;
+            margin: 0 auto;
+            // padding-bottom: 70px;
             h3 {
+                margin: 0 auto;
+                width: 95%;
                 display: flex;
                 justify-content: flex-start;
                 font-size: 1.55rem;
@@ -246,6 +252,263 @@
             }
             .photoop:hover {
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .projectcont {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 300;
+        .modal {
+            margin-top: 65px;
+            top: 95% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%);
+            position: absolute !important;
+            z-index: 500;
+        }
+        .project {
+            margin: 0px;
+            display: block;
+            max-width: 100%;
+            height: 400px;
+            z-index: 300;
+            background-image: url("../images/residentialclean3.jpg");
+            opacity: 0.7;
+            background-position: 50% 20% !important;
+            background-attachment: fixed;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            .overlay {
+                width: 100%;
+                min-height: 800px;
+                float: left;
+                left: -400px;
+                background: rgba(21, 29, 68, 0.658);
+                position: absolute;
+                transform: skew(-25deg);
+            }
+            .project-style {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                z-index: 400;
+                .projy {
+                    margin: 0px;
+                    margin-top: 5%;
+                    margin-left: 1.2%;
+                    width: 60% !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    h1,
+                    h3 {
+                        // width: 100%;
+                        z-index: 500;
+                        font-size: 1.4rem;
+                        margin: 0 auto !important;
+                        padding: 12px;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        color: #f8f1ed;
+                        text-shadow: 1px 1px black;
+                    }
+                    h1 {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        .brickdownchitown {
+            // position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            z-index: 400;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient( #54504a, rgb(138, 140, 141));
+            .imgcontainer {
+                height: auto;
+                padding-top: 75px;
+                // margin: 0px 0px 0px 145px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 690px;
+            }
+            img {
+                display: flex;
+                justify-content: center;
+                width: 255px;
+                height: 345px;
+                margin: -2px 0px 0px 0px;
+            }
+            .brickup {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+                padding-right: 0px;
+                .brickup1 {
+                    margin: 0 auto;
+                    width: 100%;
+                    // height: 70%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        width: 100%;
+                        margin: 0 auto;
+                        display: flex;
+                        // flex-direction: column;
+                        justify-content: center;
+                        font-size: 50px;
+                        color: rgb(255, 255, 255);
+                        z-index: 500;
+                        padding: 15px;
+                    }
+                    .line {
+                        margin: 0 auto;
+                        width: 100px;
+                        height: 3px;
+                        border-top: 3px solid black;
+                    }
+                }
+            }
+            .bruckup {
+                color: white;
+                width: 690px;
+                height: auto;
+                margin: 0 auto;
+                padding-bottom: 30px;
+                h3 {
+                    // margin: 0 auto;
+                    // width: 95%;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.55rem;
+                }
+                h3:first-of-type {
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                }
+            }
+            .contaflex {
+                display: block;
+                height: auto;
+                // display: flex;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0px;
+                padding-top: 0px;
+                .flexin {
+                    height: auto;
+                    display: flex;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .flexflexin {
+                        display: flex;
+                        justify-content: center;
+                        // flex-wrap: wrap;
+                        width: 100%;
+                        height: auto;
+                        flex-wrap: wrap;
+                        margin: 0px;
+                        .photoop {
+                            margin: 15px auto;
+                            width: 255px;
+                            height: 247px;
+                            padding-bottom: 20px;
+                            .one {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/rental.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            .two {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/rental1.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            .three {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/officeclean.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            .four {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/greenexterior.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            .five {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/rental.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            .six {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/officeclean.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            .seven {
+                                width: 250px;
+                                height: 200px;
+                                // border: 2px solid white;
+                                background-image: url("../images/rental.jpg");
+                                background-size: cover;
+                                background-position: 50% 45%;
+                            }
+                            p {
+                                display: flex;
+                                justify-content: center;
+                                color: rgb(255, 255, 255);
+                                font-size: 1.35rem;
+                                height: auto;
+                                width: 100%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+                .photoop:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
