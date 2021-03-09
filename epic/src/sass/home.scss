@@ -58,60 +58,32 @@
 
 /* phone */
 
-// @media only screen and (max-width: 500px) {
-//     .cardzindexarea {
-//         margin: 0 auto;
-//         margin-top: 235px;
-//         height: 60px;
-//         width: 100%;
-//         z-index: 500;
-//         background: whitesmoke;
-//         position: relative;
-//         bottom: 0;
-//         // // border: 1px solid yellow;
-//         // display: none;
-//     }
-// }
-// @media only screen and (max-width: 800px) {
-//     .cardzindexarea {
-//         margin: 0 auto;
-//         margin-top: 335px;
-//         height: 160px;
-//         width: 100%;
-//         z-index: 500;
-//         background: whitesmoke;
-//         position: relative;
-//         bottom: 0;
-//         // // border: 1px solid yellow;
-//         display: none;
-//     }
-// }
-// @media only screen and (max-width: 1025px) {
-//     .cardzindexarea {
-//         // display: none !important;
-//         margin: 0 auto;
-//         margin-top: 435px !important;
-//         height: 260px !important;
-//         width: 100%;
-//         z-index: 500;
-//         background: whitesmoke;
-//         position: relative;
-//         bottom: 0;
-//     }
-// }
-// @media only screen and (max-width: 1367px) {
-//     .cardzindexarea {
-//         // display: none;
-//         margin: 0 auto;
-//         margin-top: 535px !important;
-//         height: 380px !important;
-//         width: 100%;
-//         z-index: 500;
-//         background: whitesmoke;
-//         position: relative;
-//         bottom: 0;
-//     }
-// }
+.cardzindexareaphone {
+    margin: 0 auto;
+    margin-top: 255px;
+    height: 0px;
+    width: 100%;
+    z-index: 500;
+    background: whitesmoke;
+    position: relative;
+    bottom: 0;
+    // // border: 1px solid yellow;
+    // display: none;
+}
+
+//tablet
+.cardzindexareatablet {
+    // display: none !important;
+    margin: 0 auto;
+    // margin-top: 435px !important;
+    height: 0px !important;
+    width: 100%;
+    z-index: 500;
+    background: whitesmoke;
+    position: relative;
+    bottom: 0;
+}
+
 .cardzindexarea {
     margin: 0 auto;
     margin-top: 635px;

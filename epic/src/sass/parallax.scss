@@ -43,47 +43,45 @@
 
 /* tablet */
 
-@media (max-width: 800px) {
-    .cleanbreak {
-        margin: 0 auto;
-        margin-top: 210px;
-        padding-left: 260px;
-        padding-right: 260px;
-        width: 800px;
-        height: 578px;
+.cleanbreaktablet {
+    margin: 0 auto;
+    margin-top: 210px;
+    // padding-left: 260px;
+    // padding-right: 260px;
+    width: 800px;
+    height: 578px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    z-index: 400;
+    position: relative;
+    .img2 {
         display: flex;
         justify-content: center;
-        align-items: center;
-        background: whitesmoke;
-        z-index: 400;
-        position: relative;
-        .img2 {
-            display: flex;
-            justify-content: center;
-            width: 375px;
-            height: 245px;
+        width: 375px;
+        height: 245px;
+        margin: 0 auto;
+        padding: none;
+    }
+    .cleanbreakdiv {
+        width: 50%;
+        min-width: 355px;
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        h1 {
             margin: 0 auto;
-            padding: none;
+            width: 100%;
+            color: rgb(44, 52, 88);
+            font-size: 2rem;
         }
-        .cleanbreakdiv {
-            width: 50%;
-            min-width: 355px;
-            display: flex;
-            flex-direction: column;
-            padding: none;
-            h1 {
-                margin: 0 auto;
-                width: 100%;
-                color: rgb(44, 52, 88);
-                font-size: 2rem;
-            }
-            p {
-                margin: 0 auto;
-                width: 100%;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 1.7rem;
-                color: rgb(44, 52, 88);
-            }
+        p {
+            margin: 0 auto;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.7rem;
+            color: rgb(44, 52, 88);
         }
     }
 }
@@ -91,52 +89,50 @@
 
 /* phone */
 
-@media (max-width: 500px) {
-    .cleanbreak {
-        box-sizing: border-box;
-        width: 90% !important;
-        margin: 0 auto !important;
-        justify-content: space-around !important;
-        height: 100% !important;
-        display: flex;
+.cleanbreakphone {
+    box-sizing: border-box;
+    width: 90% !important;
+    margin: 0 auto !important;
+    justify-content: space-around !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke !important;
+    z-index: 400 !important;
+    position: relative;
+    padding: 5px 5px 25px 5px!important;
+    .cleanbreakdiv {
+        margin: 0px !important;
         flex-direction: column;
-        background: whitesmoke !important;
-        z-index: 400 !important;
-        position: relative;
-        padding: 5px 5px 25px 5px!important;
-        .cleanbreakdiv {
-            margin: 0px !important;
-            flex-direction: column;
-            width: 100%!important;
-            display: flex !important;
-            padding: none !important;
-            h1 {
-                width: 60%;
-                margin: 0 auto !important;
-                height: auto;
-                color: rgb(44, 52, 88);
-                font-size: 1.4rem;
-            }
-            p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-                width: 60%;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 1.1rem;
-                color: rgb(44, 52, 88);
-            }
-        }
-        img {
-            display: flex !important;
-            justify-content: center !important;
-            width: 100%;
-            max-width: 390px;
-            height: 245px;
+        width: 100%!important;
+        display: flex !important;
+        padding: none !important;
+        h1 {
+            width: 60%;
             margin: 0 auto !important;
-            padding: 0px !important;
+            height: auto;
+            color: rgb(44, 52, 88);
+            font-size: 1.4rem;
         }
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 60%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            color: rgb(44, 52, 88);
+        }
+    }
+    img {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100%;
+        max-width: 390px;
+        height: 245px;
+        margin: 0 auto !important;
+        padding: 0px !important;
     }
 }
 
@@ -185,49 +181,47 @@
 
 /* tablet */
 
-@media (max-width: 800px) {
-    .clean {
-        margin: 0 auto;
-        margin-top: 210px;
-        padding-left: 260px;
-        padding-right: 260px;
-        width: 800px;
-        height: 578px;
+.cleantablet {
+    margin: 0 auto;
+    margin-top: 210px;
+    // padding-left: 260px;
+    // padding-right: 260px;
+    width: 800px;
+    height: 578px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
+    z-index: 400;
+    position: relative;
+    .img1 {
         display: flex;
         justify-content: center;
-        align-items: center;
-        background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
-        z-index: 400;
-        position: relative;
-        .img1 {
-            display: flex;
-            justify-content: center;
-            background-image: url("../images/paintcarousel2.jpg");
-            background-size: cover;
-            width: 575px;
-            height: 345px;
-            margin: -2px 0px 0px 0px;
-            padding: none;
+        background-image: url("../images/paintcarousel2.jpg");
+        background-size: cover;
+        width: 575px;
+        height: 345px;
+        margin: -2px 0px 0px 0px;
+        padding: none;
+    }
+    .cleandiv {
+        width: 50%;
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        h1 {
+            margin: 0 auto;
+            width: 100%;
+            color: rgb(44, 52, 88);
+            font-size: 2rem;
         }
-        .cleandiv {
-            width: 50%;
-            min-width: 50%;
-            display: flex;
-            flex-direction: column;
-            padding: none;
-            h1 {
-                margin: 0 auto;
-                width: 100%;
-                color: rgb(44, 52, 88);
-                font-size: 2rem;
-            }
-            p {
-                margin: 0 auto;
-                width: 100%;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 1.7rem;
-                color: rgb(44, 52, 88);
-            }
+        p {
+            margin: 0 auto;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.7rem;
+            color: rgb(44, 52, 88);
         }
     }
 }
@@ -235,55 +229,53 @@
 
 /* phone */
 
-@media (max-width: 500px) {
-    .clean {
-        width: 100% !important;
-        margin: 0 auto !important;
-        justify-content: space-around !important;
-        height: 100% !important;
-        display: flex;
+.cleanphone {
+    width: 100% !important;
+    margin: 0 auto !important;
+    justify-content: space-around !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
+    z-index: 400 !important;
+    position: relative;
+    padding: 25px 0px 5px 0px!important;
+    .cleandiv {
+        margin: 0px !important;
         flex-direction: column;
-        background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
-        z-index: 400 !important;
-        position: relative;
-        padding: 25px 0px 5px 0px!important;
-        .cleandiv {
-            margin: 0px !important;
-            flex-direction: column;
-            width: 100% !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: none !important;
+        h1 {
+            margin: 0 auto !important;
             display: flex;
             justify-content: center !important;
             align-items: center !important;
-            padding: none !important;
-            h1 {
-                margin: 0 auto !important;
-                display: flex;
-                justify-content: center !important;
-                align-items: center !important;
-                width: 60%;
-                color: whitesmoke;
-                font-size: 1.4rem;
-                padding: 0px;
-            }
-            p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-                width: 60%;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 1.1rem;
-                color: whitesmoke;
-            }
+            width: 60%;
+            color: whitesmoke;
+            font-size: 1.4rem;
+            padding: 0px;
         }
-        img {
-            display: flex !important;
-            justify-content: center !important;
-            max-width: 90%;
-            height: 245px;
-            margin: 0 auto !important;
-            padding: 0px !important;
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 60%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            color: whitesmoke;
         }
+    }
+    img {
+        display: flex !important;
+        justify-content: center !important;
+        max-width: 90%;
+        height: 245px;
+        margin: 0 auto !important;
+        padding: 0px !important;
     }
 }
 

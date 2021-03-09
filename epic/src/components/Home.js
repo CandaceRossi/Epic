@@ -21,14 +21,16 @@ const Home = props => {
 
         <div className="component-list">
             <CarouselComp />
-            <div className="cardzindexarea"></div>
             <DesktopBreakpoint>
+             <div className="cardzindexarea"></div>
             <Cards />
             </DesktopBreakpoint>
             <TabletBreakpoint>
+             <div className="cardzindexareatablet"></div>
                 <CardsTablet />
             </TabletBreakpoint>
             <PhoneBreakpoint>
+             <div className="cardzindexareaphone"></div>
                 <CardsPhone />
             </PhoneBreakpoint>
             <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />

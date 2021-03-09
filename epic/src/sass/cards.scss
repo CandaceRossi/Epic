@@ -335,7 +335,7 @@
 
 .cardscontainertablet {
     margin: 0 auto !important;
-    margin-top: -795px!important;
+    margin-top: 650px!important;
     // margin-top: -560px !important;
     // margin-top: 600px !important;
     width: 100% !important;
@@ -352,8 +352,8 @@
         margin: 0 auto;
         // border: 1px solid red !important;
         width: 100%;
-        min-width: 680px !important;
-        height: 320px;
+        // min-width: 680px !important;
+        height: 290px;
         display: flex !important;
         justify-content: center !important;
         .card {
@@ -361,6 +361,7 @@
             background: #d6cec3 !important;
             display: flex;
             justify-content: center !important;
+            align-items: center !important;
         }
     }
 }
@@ -368,18 +369,19 @@
 //tablet
 .cardsstyletablet {
     margin: 0 auto !important;
-    max-width: 100% !important;
-    height: 300px !important;
+    width: 100% !important;
+    height: 380px !important;
     z-index: 4;
     // padding-left: 0px;
     // padding-right: 0px;
     // padding-left: 260px !important;
     // padding-right: 260px !important;
     display: flex !important;
+    flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
     img {
-        width: 400px !important;
+        max-width: 390px !important;
         z-index: 400;
     }
     .card-title {
@@ -417,8 +419,6 @@
             // margin-bottom: none;
             // margin-left: 5%;
             // margin-right: 5%;
-            padding-top: 5px;
-            // padding-bottom: 5px;
             background: rgb(21, 29, 68);
             color: #d6cec3;
         }
@@ -427,8 +427,8 @@
             margin: 5px auto;
             display: flex;
             height: auto !important;
-            font-size: 1.6rem !important;
-            padding-bottom: 2px;
+            font-size: 1.65rem !important;
+            padding: 15px 0px 10px 0px;
         }
         .card-text {
             display: flex;
@@ -438,10 +438,10 @@
             height: auto !important;
         }
         .card-text:nth-child(2) {
-            font-size: 1rem;
+            font-size: 1.4rem;
         }
         .list-group-flush {
-            width: 100%;
+            width: 100%!important;
             height: auto;
             margin: 0 auto !important;
             .list-group-item {
@@ -464,24 +464,34 @@
             // margin: auto;
             padding: none !important;
             margin: 0 auto;
-            font-size: .8rem !important;
+            font-size: 1.2rem !important;
             color: #d6cec3;
         }
     }
     .row {
-        padding: 5px;
+        width: 100px;
+        margin: 0px !important;
+        // height: 21px !important;
+        padding: 15px !important;
+        display: flex;
+        justify-content: flex-end !important;
+        flex-wrap: nowrap !important;
+        align-items: baseline !important;
         input {
-            width: 70% !important;
+            margin: 0px !important;
+            width: 598px !important;
             padding: 8px;
         }
         label {
-            width: 100% !important;
+            padding: 0px !important;
+            margin: 0px !important;
+            width: 100px!important;
             font-size: 1.7em;
         }
     }
     .landingbutton {
         margin: 0 auto;
-        width: 50% !important;
+        width: 100% !important;
         padding: 5px;
         font-size: 1.4em;
     }
@@ -489,12 +499,12 @@
 
 //phone 
 .cardscontainerphone {
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin: 0 auto !important;
-    margin-top: 190px !important;
+    margin-top: 0px !important;
     position: relative !important;
-    padding-top: 60px;
+    padding-top: 0px;
     // top: 60%!important;
     // left: 0%!important;
     z-index: 500;
