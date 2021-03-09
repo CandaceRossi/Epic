@@ -6,6 +6,7 @@ import { Container, Carousel } from "react-bootstrap";
 import '../sass/carousel.scss';
 
 
+
 const CarouselComp = () => {
     return (
       

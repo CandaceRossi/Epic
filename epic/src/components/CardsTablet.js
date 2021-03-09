@@ -11,14 +11,13 @@ import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
 import '../sass/cards.scss';
 
 
-
-const Cards = () => {
+const CardsTablet = () => {
 
     return (
-        
+     
 
-        <div className="cards-container">
-            <div className="cards-style">
+        <div className="cardscontainertablet">
+            <div className="cardsstyletablet">
 
                 <Card style={{ border: "none", margin: "0 auto" }}>
                     <Card.Body style={{
@@ -70,8 +69,6 @@ const Cards = () => {
             </div>
         </div>
     
-           
-       
     )
 }
-export default Cards;
+export default CardsTablet;

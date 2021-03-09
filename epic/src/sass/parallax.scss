@@ -289,6 +289,7 @@
 
 .parallaxhome {
     background-image: url("../../src/images/gorjus.jpg");
+    width: 100%;
     height: 500px;
     min-height: 500px;
     background-attachment: fixed;
@@ -303,6 +304,7 @@
 .parallaxres {
     background-image: url("../../src/images/residentialparallax.jpg");
     height: 500px;
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -316,6 +318,7 @@
 .parallaxcomm {
     background-image: url("../../src/images/commercialparallax1.jpg");
     height: 500px;
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -329,6 +332,7 @@
 .parallaxpower {
     background-image: url("../../src/images/powerwash14.jpg");
     height: 500px;
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -342,6 +346,7 @@
 .parallaxproj {
     background-image: url("../../src/images/parallaxproject.jpg");
     height: 500px;
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -355,6 +360,7 @@
 .parallaxmiss {
     background-image: url("../../src/images/paintingpainters.jpg");
     height: 500px;
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -368,6 +374,7 @@
 .parallaxes {
     background-image: url("../../src/images/gorjusyep.jpg");
     height: 500px;
+    width: 100%;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -380,6 +387,8 @@
 .parallaxing {
     background-image: url("../../src/images/officeclean.jpg");
     min-height: 500px;
+    width: 100%;
+    height: 500%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -415,104 +424,114 @@
 @media (max-width: 500px) {
     .parallaxhome {
         background-image: url("../../src/images/gorjus.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
         margin: 0 auto;
+        display: block;
     }
     .parallaxres {
         background-image: url("../../src/images/residentialparallax.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
         margin: 0 auto;
+        display: block;
     }
     .parallaxcomm {
         background-image: url("../../src/images/commercialparallax1.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
         margin: 0 auto;
+        display: block;
     }
     .parallaxpower {
         background-image: url("../../src/images/powerwash14.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
         margin: 0 auto;
+        display: block;
     }
     .parallaxproj {
         background-image: url("../../src/images/parallaxproject.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
         margin: 0 auto;
+        display: block;
     }
     .parallaxmiss {
         background-image: url("../../src/images/paintingpainters.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
         margin: 0 auto;
+        display: block;
     }
     .parallaxes {
         background-image: url("../../src/images/gorjusyep.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
+        margin: 0 auto;
+        display: block;
     }
     .parallaxing {
         background-image: url("../../src/images/officeclean.jpg");
-        height: 100%;
-        // min-height: 200px;
-        width: 100%;
+        height: 200px !important;
+        min-height: 200px;
+        width: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover !important;
         z-index: 500;
         position: relative;
+        margin: 0 auto;
+        display: block;
     }
 }

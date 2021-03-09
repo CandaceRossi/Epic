@@ -11,21 +11,15 @@ import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
 import '../sass/cards.scss';
 
 
-
-const Cards = () => {
+const CardsPhone = () => {
 
     return (
-        
-
-        <div className="cards-container">
-            <div className="cards-style">
-
+        <div className="cardscontainerphone">
+            <div className="cardsstylephone">
                 <Card style={{ border: "none", margin: "0 auto" }}>
                     <Card.Body style={{
                         background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "none", display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "row"
                     }}>
-
-                     
                         <img className="firstimg" src={beigebasement} style={{ width: "370px", height: "250px", paddingTop: "15px", display: "flex" }} alt="room" />
                         <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
                             <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "395px" }}>Beautiful Colors To Make Your Space Feel Just Right!</Card.Title>
@@ -42,7 +36,7 @@ const Cards = () => {
                         <Card.Title>We'll Call You!</Card.Title>
                         <Card.Text>
                             Fill in the form and we'll Get In Touch!
-    </Card.Text>
+                        </Card.Text>
                         <div className="card-style">
                             <form action="/actionpage">
                                 <div className="row">
@@ -69,9 +63,6 @@ const Cards = () => {
                 </Card>
             </div>
         </div>
-    
-           
-       
     )
 }
-export default Cards;
+export default CardsPhone;
