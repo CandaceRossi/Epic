@@ -4,20 +4,19 @@
     background: whitesmoke;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
     flex-direction: column;
     z-index: 800;
     height: 300px;
-    // background-color: whitesmoke;
     .parapara2 {
-        margin: 5px;
-        height: 100%;
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: auto;
         display: flex;
-        justify-content: center;
-        align-items: baseline;
+        justify-content: center !important;
+        align-items: center !important;
         z-index: 800;
-        // margin: 5px;
-        // font-family: "CapitalPosterCdW00-Regular";
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: rgb(21, 29, 68);
     }
@@ -41,7 +40,7 @@
     background: #d6cec3;
     color: #d6cec3;
     .card {
-        margin: 25px 60px;
+        margin: 25px auto;
         padding: 5px;
         display: flex;
         width: 25%;
@@ -81,15 +80,6 @@
 }
 
 
-/* tablet */
-
-@media (max-width: 800px) {
-    .testimonial-cards {
-        width: 100%;
-    }
-}
-
-
 /* phone */
 
 @media (max-width: 500px) {
@@ -105,12 +95,11 @@
         .parapara2 {
             z-index: 800;
             margin: 0 auto;
-            width: 85%;
+            width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 800;
             // margin: 5px;
             // font-family: "CapitalPosterCdW00-Regular";
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -119,19 +108,19 @@
         h2,
         h4 {
             margin: 0 auto;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 80%!important;
             z-index: 800;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
         }
         h2 {
-            margin: 0 auto;
+            margin: 0 auto !important;
             font-size: 1.4rem !important;
             z-index: 800;
         }
         h4 {
-            margin: 0 auto;
+            margin: 0 auto !important;
             font-size: 1.2rem !important;
             z-index: 800;
         }
@@ -145,7 +134,7 @@
             display: flex;
             justify-content: space-between;
             width: 75%;
-            min-width: 375px !important;
+            min-width: 320px !important;
             height: 135px;
             background: #d6cec3;
             opacity: 0.9;
@@ -273,7 +262,7 @@
         }
         .card-title {
             width: 100%;
-            margin: 5px auto;
+            margin: 5px auto !important;
             display: flex;
             height: auto !important;
         }
@@ -335,7 +324,7 @@
 
 .cardscontainertablet {
     margin: 0 auto !important;
-    margin-top: 650px!important;
+    margin-top: -420px!important;
     // margin-top: -560px !important;
     // margin-top: 600px !important;
     width: 100% !important;

@@ -10,13 +10,13 @@ import '../sass/footer.scss';
 const Footer = () => {
     return (
         <div className="footing">
-            <div className="prefooter" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+            <div className="prefooter" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}>
                 <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
                 <div className="prefoo">
                 <a><span ><FontAwesomeIcon icon={faPhone}/></span> 239-555-5555</a>
                 <a><span ><FontAwesomeIcon icon={faEnvelope}/></span> andrewcharles@epicpaint.com</a>
                
-                <img src={OSHA_logo_black} style={{height: "70px", width:"350px"}} alt="osha" />
+                <img src={OSHA_logo_black} alt="osha" />
                 </div> 
                 <div className="sortnav">
                     <div><h1>EPIC</h1></div>

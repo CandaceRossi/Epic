@@ -1,12 +1,18 @@
 import React, { useEffect } from 'react';
 import commercialslick from "../images/commercialslick.jpg";
 import Parallax from "./Parallax";
+import ParallaxTablet from "./ParallaxTablet";
+import ParallaxPhone from "./ParallaxPhone";
 import commercialclean from "../images/commercialclean.jpg";
 import commercialshed from "../images/commercialshed.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import '../sass/commercial.scss';
 
+
+import DesktopBreakpoint from '../components/responsive_utilities/desktop_breakpoint';
+import TabletBreakpoint from '../components/responsive_utilities/tablet_breakpoint';
+import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint';
 
 const Commercial = ({isNeeded}) => {
     useEffect(() => {
@@ -52,7 +58,15 @@ const Commercial = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>
-            <Parallax featuredImage1={commercialshed} featuredImage2={commercialclean} commpar={true} isNeeded = {false} />
+            <DesktopBreakpoint>
+            <Parallax featuredImage1={commercialshed} featuredImage2={commercialclean} misspar={true} isNeeded={false} />
+           </DesktopBreakpoint>
+           <TabletBreakpoint>
+                 <ParallaxTablet featuredImage1={commercialshed} featuredImage2={commercialclean} homepar={true} isNeeded={false} />
+            </TabletBreakpoint>
+            <PhoneBreakpoint>
+                 <ParallaxPhone featuredImage1={commercialshed} featuredImage2={commercialclean} homepar={true} isNeeded={false} />
+            </PhoneBreakpoint>
         </div>
         </>
 

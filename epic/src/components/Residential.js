@@ -5,10 +5,15 @@ import exteriorres2 from "../images/exteriorres2.jpg";
 import exteriorres from "../images/exteriorres.jpg";
 // import creamceiling from "../images/creamceiling.jpg";
 import Parallax from "./Parallax";
+import ParallaxTablet from "./ParallaxTablet";
+import ParallaxPhone from "./ParallaxPhone";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import '../sass/residential.scss';
 
+import DesktopBreakpoint from '../components/responsive_utilities/desktop_breakpoint';
+import TabletBreakpoint from '../components/responsive_utilities/tablet_breakpoint';
+import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint';
 
 
 
@@ -62,7 +67,15 @@ const Residential = ({isNeeded}) => {
                         </div>
                     </div>
                 </div>       
-            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} respar={true} isNeeded = {false} />
+            <DesktopBreakpoint>
+            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} misspar={true} isNeeded={false} />
+           </DesktopBreakpoint>
+           <TabletBreakpoint>
+                 <ParallaxTablet featuredImage1={exteriorres} featuredImage2={exteriorres2} homepar={true} isNeeded={false} />
+            </TabletBreakpoint>
+            <PhoneBreakpoint>
+                 <ParallaxPhone featuredImage1={exteriorres} featuredImage2={exteriorres2} homepar={true} isNeeded={false} />
+            </PhoneBreakpoint>
         </div>
         </>
 

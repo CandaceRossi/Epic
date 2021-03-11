@@ -28,7 +28,9 @@ const Contact = ({isNeeded}) => {
                 </div>
 
                 <div className="brickdownchitown">
+                 <div className="imgcontainer">
                     <img src={contactimg} alt="" />
+                    </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
                             <h1>Contact Us!</h1>
@@ -103,8 +105,8 @@ const Contact = ({isNeeded}) => {
                                     <div className="col-25">
                                         <label for="subject">Subject</label>
                                     </div>
-                                    <div className="col-75">
-                                        <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: "200px" }}></textarea>
+                                    <div className="col-75 text-area">
+                                        <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: "100px" }}></textarea>
                                     </div>
                                 </div>
                                 <div className="row">

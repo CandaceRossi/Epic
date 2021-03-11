@@ -21,7 +21,8 @@ const NavbarComp = () => {
                 <NavDropdown title="SERVICES" className="basic-nav-dropdown"
                     show={show}
                     onMouseEnter={showDropdown}
-                    onMouseLeave={hideDropdown}>
+                    onMouseLeave={hideDropdown}
+                    >
                     <NavDropdown.Item className="droptop" href="/Residential">Residential Painting</NavDropdown.Item>
                     <NavDropdown.Item className="droptop" href="/Commercial">Commercial Painting</NavDropdown.Item>
                     <NavDropdown.Item className="droptop" href="/Powerwashing">Powerwashing</NavDropdown.Item>

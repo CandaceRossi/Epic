@@ -3,10 +3,15 @@ import powerwash12 from "../images/powerwash12.jpg";
 import powerwashtool from "../images/powerwashtool.jpg";
 import powerwash9 from "../images/powerwash9.jpg";
 import Parallax from "./Parallax";
+import ParallaxTablet from "./ParallaxTablet";
+import ParallaxPhone from "./ParallaxPhone";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import '../sass/powerwashing.scss';
 
+import DesktopBreakpoint from '../components/responsive_utilities/desktop_breakpoint';
+import TabletBreakpoint from '../components/responsive_utilities/tablet_breakpoint';
+import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint';
 
 const Powerwashing = ({isNeeded}) => {
 
@@ -41,8 +46,8 @@ const Powerwashing = ({isNeeded}) => {
                             <div className="line"></div>
                             </div>
                             <div className="bruckup" data-aos="fade-up">
-                                <h3>We Pride Ourselves In Customer Satisfaction.</h3>
-                                <h3>Call Our Office Today!</h3>
+                                <h3>We Pride Ourselves In Customer Satisfaction. Call Our Office Today!</h3>
+                                <h3>One of our specialties is powerwashing! If your surfaces are in need of refreshening - We can make it happen!</h3>
                         <div className="contaflex">
                             <div className="flexin" data-aos="fade-right">
                                 <p>Whole Houses, Awnings, Roofs, Patio Cages</p>
@@ -54,7 +59,15 @@ const Powerwashing = ({isNeeded}) => {
                     </div>
                 </div>
             </div>
-             <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} powerpar={true} isNeeded = {false} />
+            <DesktopBreakpoint>
+            <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} misspar={true} isNeeded={false} />
+           </DesktopBreakpoint>
+           <TabletBreakpoint>
+                 <ParallaxTablet featuredImage1={powerwash9} featuredImage2={powerwashtool} homepar={true} isNeeded={false} />
+            </TabletBreakpoint>
+            <PhoneBreakpoint>
+                 <ParallaxPhone featuredImage1={powerwash9} featuredImage2={powerwashtool} homepar={true} isNeeded={false} />
+            </PhoneBreakpoint>
         </div>
         </>
     )

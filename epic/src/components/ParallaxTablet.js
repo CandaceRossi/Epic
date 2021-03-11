@@ -19,9 +19,9 @@ const projpar = props.projpar;
 
     return (
         <>
-            <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
+            <div style={{ display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"1170px", position: "relative", background: "whitesmoke"}}>
                 <div className="cleanbreaktablet">
-                    <div className="cleanbreakdiv">
+                    <div className="cleanbreakdivtablet">
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
                     </div>
@@ -30,7 +30,7 @@ const projpar = props.projpar;
                 <div className="cleantablet">
                 
                     <img src={featuredImage2} alt="" />
-                    <div className="cleandiv">
+                    <div className="cleandivtablet">
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
                     </div>
