@@ -1,0 +1,574 @@
+.missioncont {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    .mission {
+        background-image: url("../images/together.jpg");
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: 550px;
+        z-index: 300;
+        opacity: 0.7;
+        background-position: 50% 30%!important;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        .overlay {
+            width: 90%;
+            min-height: 800px;
+            float: left;
+            left: -400px;
+            background: rgba(21, 29, 68, 0.658);
+            position: absolute;
+            transform: skew(-25deg);
+        }
+        .mission-style {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .missy {
+                padding-top: 105px;
+                margin: 0px;
+                margin-top: 5%;
+                margin-left: 1%;
+                width: 60% !important;
+                h1,
+                h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 500;
+                    font-size: 1.9rem;
+                    margin: 0px;
+                    padding: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #f8f1ed;
+                    text-shadow: 1px 1px black;
+                }
+                h1 {
+                    font-size: 52px;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
+        background: linear-gradient( #54504a, rgb(138, 140, 141));
+        .imgcontainer {
+            height: auto;
+            padding-top: 75px;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 575px;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            width: 255px;
+            height: 345px;
+            margin: -2px 0px 0px 0px;
+        }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            padding-right: 5%;
+            .brickup1 {
+                margin: 0 auto;
+                width: 100%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    color: rgb(255, 255, 255);
+                    z-index: 500;
+                    padding: 15px;
+                }
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 3px;
+                    border-top: 3px solid black;
+                }
+            }
+        }
+        .bruckup {
+            color: white;
+            width: 690px;
+            height: auto;
+            margin: 0 auto;
+            h3 {
+                margin: 0 auto;
+                width: 95%;
+                display: flex;
+                justify-content: flex-start;
+                font-size: 1.55rem;
+            }
+        }
+        .contaflex {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 70px;
+            .flexin {
+                height: auto;
+                display: flex;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding: 0px;
+                padding-top: 10px;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: baseline;
+                .flexflexin {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    div {
+                        width: 245px;
+                        margin: 5px 65px;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        padding-bottom: 30px;
+                        p {
+                            font-size: 1.35rem;
+                            height: 30px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                        }
+                        img {
+                            padding: 0px;
+                            margin: 0px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.missionconttablet {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    .missiontablet {
+        background-image: url("../images/together.jpg");
+        margin: 0px;
+        display: block;
+        max-width: 100%;
+        height: 350px;
+        // height: 100%;
+        z-index: 300;
+        opacity: 0.7;
+        background-position: 50% 20% !important;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        .overlay {
+            width: 110% !important;
+            min-height: 800px;
+            float: left;
+            left: -400px;
+            background: rgba(21, 29, 68, 0.658);
+            position: absolute;
+            transform: skew(-25deg);
+        }
+        .mission-styletablet {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .missy {
+                padding-top: 105px;
+                margin: 0px;
+                margin-top: 5%;
+                margin-left: 3%;
+                width: 60% !important;
+                h1,
+                h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 500;
+                    font-size: 1.4rem;
+                    margin: 0px;
+                    padding: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #f8f1ed;
+                    text-shadow: 1px 1px black;
+                }
+                h1 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: flex-start;
+        padding-left: 0%;
+        background: linear-gradient( #54504a, rgb(138, 140, 141));
+        .imgcontainer {
+            height: auto;
+            padding-top: 55px;
+            margin: 0 auto !important;
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            width: 575px;
+        }
+        img {
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            width: 255px;
+            height: 345px;
+            // margin: -2px 0px 0px 0px;
+        }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            padding-right: 0%;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0 auto;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 40px;
+                    color: rgb(255, 255, 255);
+                    z-index: 500;
+                    padding: 15px;
+                }
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 3px;
+                    border-top: 3px solid black;
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto;
+            color: white;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding-left: 5%;
+            padding-right: 5%;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            h3 {
+                margin: 0 auto !important;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 1.55rem;
+            }
+        }
+        .contaflex {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 70px;
+            .flexin {
+                height: auto;
+                display: flex;
+                width: 100% !important;
+                margin: 0px !important;
+                padding: 0px;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                .flexflexin {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    flex-wrap: wrap;
+                    margin: 0px;
+                    div {
+                        width: 185px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        height: 100%;
+                        p:first-of-type {
+                            width: 100%;
+                            font-size: 1.4rem;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+                        p {
+                            width: 100%;
+                            font-size: 1.25rem;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+                        img {
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: 500px) {
+//     .missioncont {
+//         margin: 0 auto;
+//         margin-top: 105px;
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 300;
+//         .mission {
+//             background-image: url("../images/together.jpg");
+//             margin: 0 auto;
+//             display: block;
+//             max-width: 100%;
+//             height: 400px;
+//             z-index: 300;
+//             opacity: 0.7;
+//             background-position: 50% 30% !important;
+//             background-attachment: fixed;
+//             background-size: cover;
+//             background-repeat: no-repeat;
+//             .overlay {
+//                 min-width: 80%;
+//                 min-height: 800px;
+//                 float: left;
+//                 left: -400px;
+//                 background: rgba(21, 29, 68, 0.658);
+//                 position: absolute;
+//                 transform: skew(-25deg);
+//             }
+//             .mission-style {
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: flex-start;
+//                 flex-direction: column;
+//                 z-index: 400;
+//                 .missy {
+//                     margin: 0px;
+//                     margin-top: 5%;
+//                     width: 60%;
+//                     // height: 300px;
+//                     // padding-top: 55px;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     flex-direction: column;
+//                     h1,
+//                     h3 {
+//                         z-index: 500;
+//                         font-size: 1.9rem;
+//                         margin: 0 auto;
+//                         padding: 12px;
+//                         font-family: Verdana, Geneva, Tahoma, sans-serif;
+//                         color: #f8f1ed;
+//                         text-shadow: 1px 1px black;
+//                     }
+//                     h1 {
+//                         // font-family: Arial, Helvetica, sans-serif;
+//                         // font-weight: bold;
+//                         font-size: 52px;
+//                         // text-shadow: none;
+//                     }
+//                 }
+//             }
+//         }
+//         .brickdownchitown {
+//             position: relative;
+//             margin: 0 auto;
+//             width: 100%;
+//             height: 100%;
+//             z-index: 400;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: center;
+//             align-items: flex-start;
+//             background: linear-gradient( #54504a, rgb(138, 140, 141));
+//             .imgcontainer {
+//                 height: auto;
+//                 padding-top: 75px;
+//                 margin: 0px 0px 0px 145px;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: flex-start;
+//                 width: 575px;
+//             }
+//             img {
+//                 display: flex;
+//                 justify-content: center;
+//                 width: 255px;
+//                 height: 345px;
+//                 margin: -2px 0px 0px 0px;
+//             }
+//             .brickup {
+//                 display: flex;
+//                 justify-content: center;
+//                 flex-direction: column;
+//                 margin: 0 auto;
+//                 width: 50%;
+//                 height: auto;
+//                 padding-right: 85px;
+//                 .brickup1 {
+//                     margin: 0 auto;
+//                     width: 100%;
+//                     // height: 70%;
+//                     padding-top: 30px;
+//                     padding-bottom: 40px;
+//                     display: flex;
+//                     flex-direction: column;
+//                     justify-content: center;
+//                     align-items: center;
+//                     h1 {
+//                         width: 100%;
+//                         margin: 0 auto;
+//                         display: flex;
+//                         justify-content: center;
+//                         font-size: 50px;
+//                         color: rgb(255, 255, 255);
+//                         z-index: 500;
+//                         // top: 0;
+//                         // left: 0;
+//                         padding: 15px;
+//                         // position: absolute;
+//                     }
+//                     .line {
+//                         margin: 0 auto;
+//                         width: 100px;
+//                         height: 3px;
+//                         border-top: 3px solid black;
+//                     }
+//                 }
+//             }
+//             .bruckup {
+//                 color: white;
+//                 width: 100%;
+//                 height: auto;
+//                 padding-bottom: 70px;
+//                 h3 {
+//                     display: flex;
+//                     justify-content: flex-start;
+//                     font-size: 1.55rem;
+//                 }
+//             }
+//             .contaflex {
+//                 display: block;
+//                 height: auto;
+//                 // display: flex;
+//                 width: 60%;
+//                 margin: 0 auto;
+//                 padding-top: 70px;
+//                 // align-items: baseline;
+//                 // padding-left: 400px;
+//                 // padding-right: 400px;
+//                 // justify-content: center;
+//                 // flex-wrap: wrap;
+//                 // align-items: baseline;
+//                 .flexin {
+//                     height: auto;
+//                     display: flex;
+//                     width: 100%;
+//                     margin: 0 auto;
+//                     padding-top: 20px;
+//                     justify-content: center;
+//                     align-items: baseline;
+//                     .flexflexin {
+//                         display: flex;
+//                         justify-content: center;
+//                         // flex-wrap: wrap;
+//                         width: 100%;
+//                         height: auto;
+//                         flex-wrap: wrap;
+//                         margin: 0 auto;
+//                         div {
+//                             display: flex;
+//                             flex-direction: column;
+//                             height: 100%;
+//                             p {
+//                                 font-size: 1.35rem;
+//                                 width: 300px;
+//                                 height: 60px;
+//                                 margin: 0 auto;
+//                             }
+//                             .photoop {
+//                                 width: 215px;
+//                                 height: 320px;
+//                                 //  border: 2px solid #f86c0e;
+//                                 border-radius: 7px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
