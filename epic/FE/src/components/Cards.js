@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Card } from "react-bootstrap";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 
@@ -9,10 +9,44 @@ import commercialslick from "../images/commercialslick.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
 import '../sass/cards.scss';
+import axios from "axios";
 
 
 
-const Cards = () => {
+const Cards = (props) => {
+const [name, setName] = useState('')
+const [phone, setPhone] = useState('')
+
+
+// const.handleClick = (e) => {
+//     e.preventDefault();
+
+//     if(e.target.id === name) {
+//         setName(e.target.value)
+//     } else {
+//         setPhone(e.target.value)
+//     }
+// }
+//form submission function to backend
+const submitEmailForm = (e) => {
+    e.preventDefault();
+
+    const dataToSubmit = {
+        name }
+  axios
+      .post("api/form", dataToSubmit)
+    //   .then(function(response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function(error) {
+    //     console.log(error);
+    //   });
+  
+//   obj.open("post", form.action, true);
+//   obj.setRequestHeader("Content-Type", "application/json");
+//   obj.send(JSON.stringify({ name: form.name.value, phone: form.phone.value}));
+//   return false; //Do Not Forget
+};
 
     return (
         
@@ -44,7 +78,7 @@ const Cards = () => {
                             Fill in the form and we'll Get In Touch!
     </Card.Text>
                         <div className="card-style">
-                            <form action="/actionpage">
+                            <form action="/axios/email" method="POST" onsubmit={submitEmailForm}>
                                 <div className="row">
                                     <div className="col-25">
                                         <label for="name">Name</label>
