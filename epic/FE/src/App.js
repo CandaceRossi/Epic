@@ -133,13 +133,14 @@ function App() {
         <SideDrawer show={sideDrawerOpen} />
      
         {backdrop}
-    <div style={{marginTop: "-55px"}}>
+    <div>
       <div className="fixed-top">
         <NavContainer drawerClickHandler={drawerToggleClickHandler} />
       </div>
       </div>
       <Switch>
         <Route exact path="/" component={Home} isNeeded={isNeeded} />
+        
         <Route path="/Mission" component={Mission} />
         <Route path="/Contact" component={Contact} />
         <Route path="/Residential" component={Residential} />
@@ -147,7 +148,8 @@ function App() {
         <Route path="/Powerwashing" component={Powerwashing} />
         <Route path="/Projects" component={Projects} />
         <Route path="/Parallax" component={Parallax} />
-      </Switch>
+
+  </Switch>
       <div className="lastbottom">
          <Footer />
       </div>

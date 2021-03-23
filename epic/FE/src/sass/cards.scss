@@ -207,6 +207,9 @@
             color: rgb(21, 29, 68) !important;
             background: #d6cec3 !important;
         }
+        .card-text {
+            font-size: 1.3rem !important;
+        }
     }
 }
 
@@ -517,20 +520,22 @@
         margin: 0 auto !important;
         // width: 100%;
         min-width: 100% !important;
-        min-height: 320px;
+        min-height: 230px;
         height: auto;
         display: flex !important;
         justify-content: center !important;
-        .card {
-            color: rgb(21, 29, 68) !important;
-            background: #d6cec3 !important;
-            .card-style .imagecard .card-title {
-                font-size: 1.3rem!important;
-            }
-            .card-text {
-                font-size: 1rem;
-            }
+        // .card {
+        //     color: rgb(21, 29, 68) !important;
+        //     background: #d6cec3 !important;
+        .card-title {
+            width: 100%;
+            padding-bottom: 10px;
+            font-size: 1.4rem!important;
         }
+        .card-text {
+            font-size: 1.2rem !important;
+        }
+        // }
     }
 }
 
@@ -583,6 +588,7 @@
             margin: 0 auto;
             display: flex;
             height: auto !important;
+            font-size: 1.5rem !important;
         }
         .card-text {
             display: flex;
@@ -624,19 +630,22 @@
         padding: 5px;
         input {
             width: 100%;
-            padding: 8px;
+            padding: 6px;
         }
         label {
             width: 100%;
             display: flex;
             justify-content: flex-start;
-            font-size: 1.7em;
+            font-size: 1.5em;
         }
     }
     .landingbutton {
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 5px;
-        font-size: 1.4em;
+        padding: 1px !important;
+        font-size: 1.5em;
     }
 }
