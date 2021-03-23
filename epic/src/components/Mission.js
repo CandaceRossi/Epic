@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import Parallax from "./Parallax";
+import ParallaxTablet from "./ParallaxTablet";
+import ParallaxPhone from "./ParallaxPhone";
 import Aos from "aos";
 import twodoor from "../images/twodoor.jpg";
 import danette from "../images/danette.jpg";
@@ -10,6 +12,11 @@ import apainterperson from "../images/apainterperson.jpg";
 import commercialclean2 from "../images/commercialclean2.jpg";
 import "aos/dist/aos.css";
 import '../sass/mission.scss';
+
+import DesktopBreakpoint from '../components/responsive_utilities/desktop_breakpoint';
+import TabletBreakpoint from '../components/responsive_utilities/tablet_breakpoint';
+import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint';
+
 
 const Mission = ({isNeeded}) => {
     useEffect(() => {
@@ -79,7 +86,15 @@ const Mission = ({isNeeded}) => {
 
                 </div>
             </div>
+            <DesktopBreakpoint>
             <Parallax featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
+           </DesktopBreakpoint>
+           <TabletBreakpoint>
+                 <ParallaxTablet featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
+            </TabletBreakpoint>
+            <PhoneBreakpoint>
+                 <ParallaxPhone featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
+            </PhoneBreakpoint>          
           </div>
           </>
     )

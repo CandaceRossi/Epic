@@ -12,11 +12,10 @@ import '../sass/cards.scss';
 
 
 
-
-
 const Cards = () => {
 
     return (
+        
 
         <div className="cards-container">
             <div className="cards-style">
@@ -70,7 +69,9 @@ const Cards = () => {
                 </Card>
             </div>
         </div>
-
+    
+           
+       
     )
 }
 export default Cards;

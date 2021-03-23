@@ -12,7 +12,14 @@ import "aos/dist/aos.css";
 import '../sass/projects.scss';
 
 import Parallax from "./Parallax";
+import ParallaxTablet from "./ParallaxTablet";
+import ParallaxPhone from "./ParallaxPhone";
 import 'bootstrap/dist/css/bootstrap.css';
+
+
+import DesktopBreakpoint from '../components/responsive_utilities/desktop_breakpoint';
+import TabletBreakpoint from '../components/responsive_utilities/tablet_breakpoint';
+import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint';
 
 
 const Projects = ({isNeeded}) => {
@@ -214,7 +221,15 @@ const Projects = ({isNeeded}) => {
                         </div>
                     </div>
             </div>
-          <Parallax featuredImage1={paintcarousel7} featuredImage2={paintsamples} projpar={true} isNeeded = {false} />
+            <DesktopBreakpoint>
+            <Parallax featuredImage1={paintcarousel7} featuredImage2={paintsamples} misspar={true} isNeeded={false} />
+           </DesktopBreakpoint>
+           <TabletBreakpoint>
+                 <ParallaxTablet featuredImage1={paintcarousel7} featuredImage2={paintsamples} homepar={true} isNeeded={false} />
+            </TabletBreakpoint>
+            <PhoneBreakpoint>
+                 <ParallaxPhone featuredImage1={paintcarousel7} featuredImage2={paintsamples} homepar={true} isNeeded={false} />
+            </PhoneBreakpoint>
         </div>
 </>
     )

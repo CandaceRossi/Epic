@@ -1,9 +1,8 @@
 .commercialcont {
+    margin: 0 auto;
     display: block;
     width: 100%;
     height: 100%;
-    // display: flex;
-    // flex-direction: column;
     z-index: 300;
     .commercial {
         margin: 0 auto;
@@ -11,14 +10,14 @@
         background-image: url("../images/commercialslickskape1.jpg");
         background-position: center !important;
         background-attachment: fixed;
-        background-size: cover;
-        width: 100%;
-        height: 400px;
+        background-size: 100% auto;
+        max-width: 100%;
+        height: 550px;
         z-index: 300;
         opacity: 0.7;
         background-repeat: no-repeat;
         .overlay {
-            width: 80%;
+            width: 90%;
             min-height: 800px;
             float: left;
             left: -400px;
@@ -33,20 +32,21 @@
             flex-direction: column;
             z-index: 400;
             .commey {
+                padding-top: 105px;
                 margin: 0px;
                 margin-top: 5%;
-                // height: 300px;
-                // padding-top: 55px;
-                // margin: 45px 0px;
-                width: 70%;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
+                margin-left: 1%;
+                width: 60%;
                 h1,
                 h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
                     z-index: 500;
                     font-size: 1.9rem;
-                    margin: 0 auto;
+                    margin: 0px;
                     padding: 12px;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     color: #f8f1ed;
@@ -61,19 +61,23 @@
     .brickdownchitown {
         position: relative;
         margin: 0 auto;
-        // margin-top: 35px;
         width: 100%;
         height: 100%;
-        z-index: 600;
+        z-index: 400;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        // z-index: 200;
+        align-items: flex-start;
+        padding-left: 10%;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
         .imgcontainer {
-            margin: 0px 0px 0px 145px;
+            height: auto;
+            padding-top: 75px;
+            padding-bottom: 70px;
+            margin: 0px 0px 0px 0px;
             display: flex;
             justify-content: center;
+            align-items: flex-start;
             width: 575px;
         }
         img {
@@ -83,34 +87,37 @@
             width: 575px;
             height: 345px;
             margin: -2px 0px 0px 0px;
-            padding: none;
         }
         .brickup {
             display: flex;
+            justify-content: center;
             flex-direction: column;
             margin: 0 auto;
             width: 50%;
             height: auto;
-            padding-right: 85px;
+            padding-right: 5%;
             .brickup1 {
                 margin: 0px auto;
                 width: 100%;
-                height: 70%;
+                // height: 70%;
                 padding-top: 30px;
                 padding-bottom: 40px;
                 display: flex;
                 flex-direction: column;
-                // justify-content: flex-start;
+                justify-content: center;
                 align-items: center;
                 h1 {
                     width: 100%;
+                    margin: 0 auto;
                     display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
+                    justify-content: center;
                     font-size: 50px;
                     color: rgb(255, 255, 255);
-                    z-index: 500px;
+                    z-index: 500;
+                    // top: 0;
+                    // left: 0;
                     padding: 15px;
+                    // position: absolute;
                 }
                 .line {
                     margin: 0 auto;
@@ -124,8 +131,10 @@
             color: white;
             width: 100%;
             height: auto;
-            padding-bottom: 70px;
+            margin: 0 auto;
             h3 {
+                margin: 0 auto;
+                width: 95%;
                 display: flex;
                 justify-content: flex-start;
                 font-size: 1.55rem;
@@ -141,11 +150,13 @@
                     display: flex;
                     flex-direction: column;
                     width: 100%;
+                    height: auto;
+                    padding-bottom: 35px;
                     p {
                         display: flex;
                         justify-content: flex-start;
                         font-size: 1.35rem;
-                        width: 245px;
+                        width: 230px;
                         margin: 0 auto;
                     }
                 }
