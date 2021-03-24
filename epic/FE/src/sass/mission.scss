@@ -450,7 +450,7 @@
                 h1 {
                     // font-family: Arial, Helvetica, sans-serif;
                     // font-weight: bold;
-                    font-size: 32px;
+                    font-size: 24px;
                     // text-shadow: none;
                 }
             }
@@ -458,45 +458,47 @@
     }
     .brickdownchitown {
         position: relative;
-        margin: 0 auto;
-        width: 100%;
+        margin: 0 auto !important;
+        width: 100% !important;
         height: 100%;
         z-index: 400;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: center !important;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
+        padding-left: 0px;
         .imgcontainer {
             height: auto;
-            padding-top: 75px;
-            margin: 0px 0px 0px 145px;
+            padding-top: 35px;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            width: 575px;
+            width: 310px;
+            margin: 0 auto;
         }
         img {
             display: flex;
             justify-content: center;
-            width: 255px;
-            height: 345px;
-            margin: -2px 0px 0px 0px;
+            width: 155px;
+            height: 245px;
+            // margin: -2px 0px 0px 0px;
+            margin: 0 auto;
+            // margin-left: 0px;
         }
         .brickup {
             display: flex;
             justify-content: center;
             flex-direction: column;
             margin: 0 auto;
-            width: 50%;
+            width: 100%;
             height: auto;
-            padding-right: 85px;
+            // padding-right: 85px;
+            padding-right: 0px;
             .brickup1 {
                 margin: 0 auto;
                 width: 100%;
                 // height: 70%;
-                padding-top: 30px;
-                padding-bottom: 40px;
+                padding-top: 10px;
+                padding-bottom: 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -506,12 +508,12 @@
                     margin: 0 auto;
                     display: flex;
                     justify-content: center;
-                    font-size: 50px;
+                    font-size: 35px;
                     color: rgb(255, 255, 255);
                     z-index: 500;
                     // top: 0;
                     // left: 0;
-                    padding: 15px;
+                    padding: 5px;
                     // position: absolute;
                 }
                 .line {
@@ -524,22 +526,31 @@
         }
         .bruckup {
             color: white;
-            width: 100%;
-            height: auto;
-            padding-bottom: 70px;
+            margin: 0 auto !important;
+            width: 90% !important;
+            height: 100%;
+            padding-bottom: 20px;
             h3 {
+                width: 100% !important;
+                height: 100%;
+                margin: 0 auto !important;
                 display: flex;
-                justify-content: flex-start;
-                font-size: 1.55rem;
+                // align-items: center !important;
+                justify-content: center !important;
+                font-size: 1.15rem;
+                padding-bottom: 7px;
+            }
+            h3:first-of-type {
+                font-size: 1.45rem;
             }
         }
         .contaflex {
             display: block;
             height: auto;
             // display: flex;
-            width: 60%;
+            width: 100%;
             margin: 0 auto;
-            padding-top: 70px;
+            padding-top: 10px;
             // align-items: baseline;
             // padding-left: 400px;
             // padding-right: 400px;
@@ -551,9 +562,9 @@
                 display: flex;
                 width: 100%;
                 margin: 0 auto;
-                padding-top: 20px;
+                padding-top: 0px;
                 justify-content: center;
-                align-items: baseline;
+                align-items: center;
                 .flexflexin {
                     display: flex;
                     justify-content: center;
@@ -565,18 +576,26 @@
                     div {
                         display: flex;
                         flex-direction: column;
-                        height: 100%;
+                        align-items: center;
+                        height: auto;
+                        width: 100% !important;
+                        margin: 0 auto;
+                        padding: 0px;
+                        padding-bottom: 15px;
                         p {
-                            font-size: 1.35rem;
-                            width: 300px;
-                            height: 60px;
+                            display: flex;
+                            justify-content: center !important;
+                            font-size: 1.15rem;
+                            width: 100% !important;
+                            height: 25px;
                             margin: 0 auto;
                         }
                         .photoop {
-                            width: 215px;
-                            height: 320px;
+                            width: 115px;
+                            height: auto;
                             //  border: 2px solid #f86c0e;
                             border-radius: 7px;
+                            z-index: 400;
                         }
                     }
                 }
