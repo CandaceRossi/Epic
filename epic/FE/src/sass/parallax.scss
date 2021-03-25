@@ -342,7 +342,8 @@
     img {
         display: flex !important;
         justify-content: center !important;
-        max-width: 90%;
+        // max-width: 90%;
+        max-width: 375px;
         height: 245px;
         margin: 0 auto !important;
         padding: 0px !important;

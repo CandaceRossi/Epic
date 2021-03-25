@@ -19,7 +19,7 @@ const ContactPhone = ({isNeeded}) => {
                     <div className="overlay"> </div>
                     <div className="contact-stylephone">
                         <div className="consty" data-aos="zoom-in">
-                            <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
+                            <h1>SCHEDULE A FREE ESTIMATE!</h1>
                             <h2>We appreciate our customer's business.</h2>
                             <h2>We guarantee great service from professionals you can count on.</h2>
                             <h2>Contact us today to get set up with a specialist who can help.</h2>
@@ -30,7 +30,7 @@ const ContactPhone = ({isNeeded}) => {
                 <div className="brickdownchitown">
                  <div className="imgcontainer">
                     <img src={contactimg} alt="" />
-                    </div>
+                  </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
                             <h1>Contact Us!</h1>
@@ -41,24 +41,18 @@ const ContactPhone = ({isNeeded}) => {
                             <h3>We look forward to providing you with excellent service.</h3>
                             <div className="contaflex">
                                 <div className="flexin" data-aos="fade-right">
-                                    <p>EMAIL:</p>
-                                    <p>ANDREWCHARLES@EPIC.COM</p>
+                                    <p>EMAIL: ANDREWCHARLES@EPIC.COM</p>
                                 </div>
                                 <div className="flexin" data-aos="zoom-in">
-                                    <p>PHONE:</p>
-                                    <p>(239)826-4326</p>
+                                    <p>PHONE: (239)826-432</p>  
                                 </div>
                                 <div className="flexin" data-aos="fade-left">
-                                    <p>HOURS OF OPERATION:</p>
-                                    <p>Mon - Fri: 8AM - 6PM</p>
-                                    <p>Sat & Sun: 10AM - 3PM</p>
+                                    <p>HOURS OF OPERATION: <br /> Mon - Fri: 8AM - 6PM <br /> Sat & Sun: 10AM - 3PM</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
 
                 <div className="location" >
                     <img src={googlemap} alt="map" />

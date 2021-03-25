@@ -4,6 +4,7 @@
     margin-top: -165px;
     width: 100%;
     // max-height: 550px;
+    padding-top: 150px;
     padding-bottom: 65px;
     max-height: 550px !important;
     z-index: 100;
@@ -15,6 +16,8 @@
         overflow: hidden;
         margin: 0 auto;
         z-index: 100;
+        float: center;
+        position: fixed;
     }
     .carousel-item {
         -webkit-background-attachment: fixed!important;
@@ -29,18 +32,20 @@
     .carousel-fade .carousel-item-next,
     .carousel-fade .carousel-item-prev,
     .carousel-fade .carousel-item.active {
-        -webkit-transform: none;
-        transform: none;
+        -webkit-transform: 0.4s ease-in-out !important;
+        transform: 0.4s ease-in-out !important;
         width: 100%;
         margin: 0 auto;
         z-index: 100;
     }
     // #carouselExampleIndicators {
-    //     display: none !important;
+    //     display: flex;
+    //     border: 1px solid red;
     // }
-    // .carousel-control {
-    //     display: none !important;
-    // }
+    .carousel-indicators li {
+        display: none;
+        // border: 1px solid red;
+    }
 }
 
 
@@ -79,8 +84,8 @@
         .carousel-fade .carousel-item-next,
         .carousel-fade .carousel-item-prev,
         .carousel-fade .carousel-item.active {
-            -webkit-transform: none;
-            transform: none;
+            -webkit-transform: 0.4s ease-in-out !important;
+            transform: 0.4s ease-in-out !important;
         }
     }
 }
