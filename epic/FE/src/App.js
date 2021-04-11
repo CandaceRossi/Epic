@@ -29,6 +29,18 @@ function App() {
      return setSideDrawerOpen(!prevState);
     });
   };
+  //state for contact forms
+  const [name, setName] = setState("");
+  const [phone, setPhone] = setState("");
+
+  //handlers for contact forms
+  const onNameChange = e => {
+    setName(e.target.value)
+  }
+  const onPhoneChange = e => {
+    setPhone(e.target.value)
+  }
+
 // //form submission function to backend
 // function submitEmailForm(form) {
 //   var obj = new XMLHttpRequest();
@@ -48,6 +60,27 @@ function App() {
 //   obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value}));
 //   return false; //Do Not Forget
 // }
+
+const submitEmail = e => {
+        e.preventDefault();
+        axios({
+          method: "POST", 
+          url:"/send", 
+          data:  this.state
+        }).then((response)=>{
+          if (response.data.status === 'success'){
+              alert("Message Sent."); 
+              this.resetForm()
+          }else if(response.data.status === 'fail'){
+              alert("Message failed to send.")
+          }
+        })
+}
+
+const resetForm = () => {
+        setName("");
+        setPhone("");
+}
 //backdrop handler for shading window when side nav is popped open
   const backdropClickHandler = () => {
     const myElement = document.getElementById("backdrop")
@@ -140,7 +173,7 @@ function App() {
       </div>
       </div>
       <Switch>
-        <Route exact path="/" component={Home} isNeeded={isNeeded} />
+        <Route exact path="/" component={Home} isNeeded={isNeeded} submitEmail={submitEmail} />
         
         <Route path="/Mission" component={Mission} />
         <Route path="/Contact" component={Contact} />
