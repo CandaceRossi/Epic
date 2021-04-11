@@ -36,7 +36,7 @@ const CommercialPhone = ({isNeeded}) => {
                     </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
-                            <h1>Commercial Painting Services</h1>
+                            <h1>Commercial Paint Services</h1>
                             <div className="line"></div>
                         </div>
                         <div className="bruckup" data-aos="fade-up">
@@ -45,7 +45,7 @@ const CommercialPhone = ({isNeeded}) => {
                             <div className="contaflex">
                                 <div className="flexin" data-aos="fade-right">
                                     <p>Drywall, Plaster
-                                    Doors, Moldings Sheetrock, Baseboard</p>
+                                     <br /> Doors, Moldings  <br /> Sheetrock, Baseboards</p>
                                 </div>
                                 <div className="flexin" data-aos="fade-left">
                                     <p>Perimeter Fences & Walls <br /> Wood and Stucco Repair</p>

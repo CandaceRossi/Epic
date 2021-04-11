@@ -35,7 +35,7 @@ const ResidentialPhone = ({isNeeded}) => {
                     </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
-                            <h1>Expert Painting Service In Florida</h1>
+                            <h1>Expert Paint Service</h1>
                             <div className="line"></div>
                         </div>
                         <div className="bruckup" data-aos="fade-up">

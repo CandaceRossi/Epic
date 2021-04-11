@@ -20,7 +20,7 @@ const ProjectsPhone = ({isNeeded}) => {
    
     return (
         <>
-        <div className="projectcont">
+        <div className="projectcontphone">
         
             <div id="m1" className="modal fade" data-backdrop="false">
                 <div className="modal-dialog" role="document">
@@ -149,10 +149,10 @@ const ProjectsPhone = ({isNeeded}) => {
                 </div>
             </div>
 
-            <div className="project">
+            <div className="projectphone">
 
             <div className="overlay"> </div>
-            <div className="project-style">
+            <div className="project-stylephone">
                 <div className="projy" data-aos="zoom-in">
                     <h1>Epic's Project Photo Gallery!</h1>
                     <h3>Check Out Images Of Our Detailed Work</h3>

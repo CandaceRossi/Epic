@@ -49,26 +49,26 @@ const MissionPhone = ({isNeeded}) => {
                         <div className="flexin">
                             <div className="flexflexin">
                             <div data-aos="zoom-in">
-                                {/* <div className="photoop"> */}
+                                <div className="photoop">
                                 <img src={painter} alt="" /> 
                                 
                                 <p>Andrew Charles</p>
                                 <p>Owner & Contractor</p>
-                                {/* </div> */}
+                                </div>
                             </div>
                             <div data-aos="zoom-in">
-                                {/* <div className="photoop"> */}
+                                <div className="photoop">
                                 <img src={apainterperson} alt="" /> 
                                 <p>Brad Fontaine</p>
                                 <p>Paint Contractor</p>
-                                {/* </div> */}
+                                </div>
                             </div>
                             <div data-aos="zoom-in">
-                                {/* <div className="photoop"> */}
+                                <div className="photoop">
                                 <img src={danette} alt="" /> 
                                 <p>Danette Aaron</p>
                                 <p>Office Manager</p>
-                                {/* </div> */}
+                                </div>
                             </div>
         
                         </div>

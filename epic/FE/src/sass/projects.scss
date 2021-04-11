@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     z-index: 300;
+    padding-top: 88px;
     .modal {
         // margin-top: 265px;
         height: auto;
@@ -508,6 +509,317 @@
                     flex-wrap: wrap;
                     margin: 0px;
                     margin-top: -50px;
+                    .photoop {
+                        // margin: 15px auto;
+                        // width: 255px !important;
+                        // height: 247px;
+                        // padding-bottom: 20px;
+                        .one {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/rental.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        .two {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/rental1.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        .three {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/officeclean.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        .four {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/greenexterior.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        .five {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/rental.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        .six {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/officeclean.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        .seven {
+                            width: auto!important;
+                            height: 200px;
+                            // border: 2px solid white;
+                            background-image: url("../images/rental.jpg");
+                            background-size: cover;
+                            background-position: 50% 45%;
+                        }
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            color: rgb(255, 255, 255);
+                            font-size: 1.35rem;
+                            height: auto;
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .photoop:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.projectcontphone {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    margin-top: 0px !important;
+    .modal {
+        // margin-top: 265px;
+        height: auto;
+        top: 145% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        position: absolute !important;
+        z-index: 700;
+        .modal-header {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+            .close {
+                max-width: 35px;
+            }
+            h4 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .modal-body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 1.4rem;
+            }
+        }
+        .modal-footer {
+            width: 100%;
+            button {
+                max-width: 100%;
+            }
+        }
+    }
+    .projectphone {
+        background-image: url("../images/residentialclean3.jpg");
+        // margin: 0px;
+        // display: block;
+        // max-width: 100%;
+        // height: 350px;
+        // // height: 100%;
+        // z-index: 300;
+        opacity: 0.7;
+        // background-position: 50% 20% !important;
+        // background-attachment: fixed;
+        // background-size: 100% auto;
+        // background-repeat: no-repeat;
+        display: table;
+        width: 100%;
+        height: 200px !important;
+        // padding: 100px 0;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        .overlay {
+            width: 150% !important;
+            min-height: 800px;
+            float: left;
+            left: -400px;
+            background: rgba(21, 29, 68, 0.658);
+            position: absolute;
+            transform: skew(-25deg);
+        }
+        .project-stylephone {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .projy {
+                // padding-top: 105px;
+                margin: 0px;
+                margin-top: 1%;
+                margin-left: 3%;
+                margin-bottom: 3%;
+                width: 60% !important;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+                h1,
+                h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 500;
+                    font-size: 1.2rem;
+                    margin: 0px;
+                    padding: 3px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #f8f1ed;
+                    text-shadow: 1px 1px black;
+                }
+                h1 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // align-items: flex-start;
+        // padding-left: 10%;
+        padding-left: 3px;
+        background: linear-gradient( #54504a, rgb(138, 140, 141));
+        .imgcontainer {
+            height: auto;
+            padding-top: 35px;
+            // margin: 0px 0px 0px 0px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            width: 310px;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            width: 155px;
+            height: 245px;
+            margin: 0 auto;
+            // margin: -2px 0px 0px 0px;
+        }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            padding-right: 0%;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0 auto;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    color: rgb(255, 255, 255);
+                    z-index: 500;
+                    padding: 5px;
+                }
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 3px;
+                    border-top: 3px solid black;
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto;
+            color: white;
+            width: 90%;
+            height: auto;
+            display: flex;
+            // padding-left: 5%;
+            // padding-right: 5%;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            h3 {
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 1.15rem;
+                padding-bottom: 7px;
+                font-weight: lighter;
+            }
+        }
+        .contaflex {
+            display: block;
+            height: auto;
+            // display: flex;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 10px;
+            // border: 1px solid transparent;
+            .flexin {
+                height: auto;
+                display: flex;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding: 0px;
+                justify-content: center;
+                // flex-wrap: wrap;
+                align-items: center;
+                .flexflexin {
+                    display: flex;
+                    justify-content: center;
+                    // flex-wrap: wrap;
+                    width: 100%;
+                    height: auto;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    // margin-top: -50px;
                     .photoop {
                         // margin: 15px auto;
                         // width: 255px !important;

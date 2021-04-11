@@ -36,7 +36,7 @@ const PowerwashingPhone = ({isNeeded}) => {
                     </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
-                            <h1>Call Us Today For A Free Quote!</h1>
+                            <h1>Call Us For A Quote!</h1>
                             <div className="line"></div>
                             </div>
                             <div className="bruckup" data-aos="fade-up">
@@ -44,7 +44,7 @@ const PowerwashingPhone = ({isNeeded}) => {
                                 <h3>One of our specialties is powerwashing! If your surfaces are in need of refreshening - We can make it happen!</h3>
                         <div className="contaflex">
                             <div className="flexin" data-aos="fade-right">
-                                <p>Whole Houses, Awnings, Roofs, Patio Cages</p>
+                                <p>Whole Houses, Awnings, <br /> Roofs, Patio Cages</p>
                             </div>
                             <div className="flexin" data-aos="fade-left">
                                 <p>Pool Decks, Driveways, Pavers</p>
