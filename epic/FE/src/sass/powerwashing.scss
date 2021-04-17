@@ -376,7 +376,7 @@
         // background-attachment: fixed;
         // background-size: 100% auto;
         .overlay {
-            width: 150%;
+            width: 130%;
             min-height: 800px;
             float: left;
             left: -400px;
@@ -394,8 +394,8 @@
             // align-items: space-between;
             .pressy {
                 // padding-top: 105px;
-                margin: 0px;
-                margin-top: 1%;
+                // margin: 0px;
+                margin-top: 5%;
                 margin-left: 3%;
                 margin-bottom: 3%;
                 width: 60%;
@@ -413,6 +413,10 @@
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     color: #f8f1ed;
                     text-shadow: 1px 1px black;
+                }
+                h3:first-of-type {
+                    width: 100%;
+                    font-size: 1.15rem;
                 }
                 h1 {
                     font-size: 24px !important;

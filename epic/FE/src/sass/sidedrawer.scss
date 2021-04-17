@@ -13,8 +13,10 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
     overflow-y: auto;
+    display: flex;
+    align-items: center;
     ul {
-        height: 100%;
+        height: auto;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -24,6 +26,7 @@
             display: flex;
             flex-direction: column !important;
             justify-content: center;
+            align-items: flex-start;
             a {
                 margin-left: 10px;
                 width: 200px;
@@ -31,30 +34,15 @@
                 text-decoration: none;
                 color: black;
                 font-size: 1.2rem;
-                border: none;
             }
         }
         li:hover {
-            margin: 0.5rem 0;
-            display: flex;
-            flex-direction: column !important;
-            justify-content: center;
+            color: slategrey;
         }
     }
     a:hover,
     a:active {
-        // border: 1px solid green !important;
-        // color: red !important;
-        color: blue;
-        background: transparent;
-        margin-left: 10px;
-        margin-bottom: -18.5px;
-        margin-top: -18px;
-        width: 200px;
-        cursor: pointer !important;
-        text-decoration: none;
-        font-size: 1.2rem;
-        border: none;
+        color: midnightblue;
     }
 }
 
