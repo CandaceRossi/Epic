@@ -576,6 +576,7 @@
                     padding: 15px;
                     align-items: center;
                     border: 4px solid #54504a;
+                    overflow: hidden!important;
                 }
                 a:hover {
                     max-width: 200px !important;
@@ -598,6 +599,7 @@
                     width: auto;
                     max-width: 200px;
                     height: auto;
+                    overflow: hidden!important;
                     // left: auto;
                     // display: inline-block !important;
                     // position: relative;
@@ -621,10 +623,11 @@
                     // clear: both;
                     // flex-direction: column;
                     min-width: inherit;
-                    border: 1px solid red;
+                    // border: 1px solid red;
                     // left: 0 !important;
                     // right: 0 !important;
                     // position: relative;
+                    overflow: hidden!important;
                 }
                 .droptop:hover {
                     width: auto !important;
@@ -643,6 +646,7 @@
                     display: block !important;
                     box-sizing: border-box !important;
                     position: relative;
+                    overflow: hidden!important;
                 }
             }
             
