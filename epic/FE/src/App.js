@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import axios from 'axios';
 import { Route, Switch } from "react-router-dom";
 import './App.scss';
 import NavContainer from "./components/NavContainer";
@@ -30,15 +31,20 @@ function App() {
     });
   };
   //state for contact forms
-  const [name, setName] = setState("");
-  const [phone, setPhone] = setState("");
-
+  const [name, setName] = useState("");
+  const [lname, setLName] = useState("");
+  const [country, setCountry] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [clientText, setClientText] = useState("");
   //handlers for contact forms
   const onNameChange = e => {
     setName(e.target.value)
+    console.log("what in the fuck")
   }
   const onPhoneChange = e => {
     setPhone(e.target.value)
+    console.log("what in the luck")
   }
 
 // //form submission function to backend
@@ -63,20 +69,21 @@ function App() {
 
 const submitEmail = e => {
         e.preventDefault();
+        console.log(e, "this is email submission")
         axios({
           method: "POST", 
           url:"/send", 
-          data:  this.state
+          data: {name, phone}
         }).then((response)=>{
           if (response.data.status === 'success'){
               alert("Message Sent."); 
-              this.resetForm()
+              resetForm()
           }else if(response.data.status === 'fail'){
               alert("Message failed to send.")
           }
         })
 }
-
+// handler to reset contact forms after submission
 const resetForm = () => {
         setName("");
         setPhone("");
@@ -173,10 +180,10 @@ const resetForm = () => {
       </div>
       </div>
       <Switch>
-        <Route exact path="/" component={Home} isNeeded={isNeeded} submitEmail={submitEmail} />
+        <Route exact path="/" component={Home} isNeeded={isNeeded} submitEmail={submitEmail} name={name} phone={phone} onNameChange={onNameChange} onPhoneChange={onPhoneChange} />
         
         <Route path="/Mission" component={Mission} />
-        <Route path="/Contact" component={Contact} />
+        <Route path="/Contact" component={Contact} submitEmail={submitEmail} onNameChange={(name) => `${name}`} onPhoneChange={(phone) => `${phone}`} />
         <Route path="/Residential" component={Residential} />
         <Route path="/Commercial" component={Commercial} />
         <Route path="/Powerwashing" component={Powerwashing} />

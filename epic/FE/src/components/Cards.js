@@ -14,39 +14,20 @@ import axios from "axios";
 
 
 const Cards = (props) => {
-const [name, setName] = useState('')
-const [phone, setPhone] = useState('')
+//  let {onNameChange, onPhoneChange, submitEmail} = props;
+ const [name, setName] = useState("");
+ const [phone, setPhone] = useState("");
+ 
 
+ const onNameChange = e => {
+    setName(e.target.value)
+    console.log("what in the fuck")
+  }
+  const onPhoneChange = e => {
+    setPhone(e.target.value)
+    console.log("what in the luck")
+  }
 
-// const.handleClick = (e) => {
-//     e.preventDefault();
-
-//     if(e.target.id === name) {
-//         setName(e.target.value)
-//     } else {
-//         setPhone(e.target.value)
-//     }
-// }
-//form submission function to backend
-const submitEmailForm = (e) => {
-    e.preventDefault();
-
-    const dataToSubmit = {
-        name }
-  axios
-      .post("api/form", dataToSubmit)
-    //   .then(function(response) {
-    //     console.log(response);
-    //   })
-    //   .catch(function(error) {
-    //     console.log(error);
-    //   });
-  
-//   obj.open("post", form.action, true);
-//   obj.setRequestHeader("Content-Type", "application/json");
-//   obj.send(JSON.stringify({ name: form.name.value, phone: form.phone.value}));
-//   return false; //Do Not Forget
-};
 
     return (
         
@@ -78,12 +59,12 @@ const submitEmailForm = (e) => {
                             Fill in the form and we'll Get In Touch!
     </Card.Text>
                         <div className="card-style">
-                            <form action="/axios/email" method="POST" onsubmit={submitEmailForm}>
+                            <form onSubmit={props.submitEmail}>
                                 <div className="row">
                                     <div className="col-25">
                                         <label for="name">Name</label>
                                     </div><div className="col-75">
-                                        <input style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="your full name.." />
+                                        <input onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="your full name.." />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -91,7 +72,7 @@ const submitEmailForm = (e) => {
                                         <label for="phone">Phone</label>
                                     </div>
                                     <div className="col-75">
-                                        <input style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="your phone number.." />
+                                        <input onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="your phone number.." />
                                     </div>
                                 </div>
                                 <div className="row">

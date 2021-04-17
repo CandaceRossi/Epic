@@ -18,14 +18,14 @@ import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint
 
 
 const Home = props => {
- const isNeeded = props;
+ const {isNeeded, onNameChange, onPhoneChange, submitEmail, name, phone} = props;
     return (
 
         <div className="component-list">
             <CarouselComp />
             <DesktopBreakpoint>
              <div className="cardzindexarea"></div>
-            <Cards />
+            <Cards submitEmail={submitEmail} name={name} phone={phone} onNameChange={onNameChange} onPhoneChange={onPhoneChange} />
              <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
             </DesktopBreakpoint>
             <TabletBreakpoint>
