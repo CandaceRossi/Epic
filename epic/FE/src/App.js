@@ -90,9 +90,9 @@ const resetForm = () => {
 }
 //backdrop handler for shading window when side nav is popped open
   const backdropClickHandler = () => {
-    const myElement = document.getElementById("backdrop")
-    // const matches = myElement.querySelectorAll("div")
-    myElement.click(myElement.css("display", "none"))
+    // const myElement = document.getElementsByClassName(".backdrop")
+    // // const matches = myElement.querySelectorAll("div")
+    // myElement.click(myElement.css("display", "none"))
     setSideDrawerOpen(false)
 // return {sideDrawerOpen: false};
   };

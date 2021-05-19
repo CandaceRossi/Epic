@@ -1,719 +1,737 @@
-.topNav {
-    box-sizing: border-box !important;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-height: 135px;
-    background: whitesmoke;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    // transition for slow shrink top nav banner
-    transition: top 0.6s;
-    .navsort {
-        box-sizing: border-box !important;
-        margin-left: 0.5rem;
-        width: 100%;
-        height: 135px;
-        display: flex;
-        align-items: center !important;
-        margin: 0 auto;
-        padding: 0 1rem;
-        .sortnav {
-            text-decoration: none;
-            color: #000000;
-            box-sizing: border-box !important;
-            max-width: 380px;
-            height: auto;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: baseline !important;
-            .titlestyle {
+            .topNav {
+                box-sizing: border-box !important;
+                display: block;
+                margin: 0 auto;
                 width: 100%;
-                min-height: 100%;
-                margin: 0px;
-                display: flex;
-                align-items: baseline !important;
-                h1 {
-                    width: 105px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: baseline !important;
-                    justify-content: baseline !important;
-                    margin: 0 auto;
-                    margin-top: 40px;
-                    min-height: 130px;
-                    font-size: 112px;
-                    font-family: "CapitalPosterCdW00-Regular";
-                }
-            }
-        }
-        .sorting {
-            box-sizing: border-box;
-            margin: 0 auto !important;
-            height: 130px;
-            .titlestyle2 {
-                height: 130px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: baseline !important;
-                h3 {
-                    width: 100%;
-                    height: 30px;
-                    margin: 0 auto;
-                    font-size: 30px;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-family: apertura;
-                }
-            }
-        }
-        .titlestyle3 {
-            height: 100%;
-            display: flex;
-            justify-content: space-around;
-            min-width: 430px;
-            align-items: flex-end;
-            z-index: 1000;
-            p {
-                margin: 0 auto;
-                padding: 8px;
-                color: #d6cec3;
-            }
-            a {
-                margin: 5px;
-                padding: 8px;
-            }
-        }
-    }
-    .sortnav:hover {
-        cursor: pointer;
-    }
-}
-
-
-/* tablet */
-
-@media (max-width: 800px) {
-    .topNav {
-        box-sizing: border-box !important;
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        max-height: 135px;
-        background: whitesmoke;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        // transition for slow shrink top nav banner
-        transition: top 0.6s;
-        .navsort {
-            box-sizing: border-box !important;
-            margin-left: 0.5rem;
-            width: 100%;
-            height: 135px;
-            display: flex;
-            align-items: center !important;
-            margin: 0 auto;
-            padding: 0 1rem;
-            .sortnav {
-                text-decoration: none;
-                color: #000000;
-                box-sizing: border-box !important;
-                max-width: 380px;
-                min-height: 100%;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: baseline !important;
-                border: none;
-                .titlestyle {
-                    width: 100%;
-                    min-height: 100%;
-                    margin: 0px;
-                    display: flex;
-                    align-items: baseline !important;
-                    border: none;
-                    h1 {
-                        width: 105px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: baseline !important;
-                        justify-content: baseline !important;
-                        ;
-                        margin: 0 auto;
-                        margin-top: 40px;
-                        min-height: 130px;
-                        font-size: 112px;
-                        font-family: "CapitalPosterCdW00-Regular";
-                    }
-                }
-            }
-            .sortnav:hover {
+                max-height: 135px;
                 background: whitesmoke;
-                text-decoration: none;
-                color: #000000;
-                box-sizing: border-box !important;
-                max-width: 380px;
-                min-height: 100%;
-                margin: 0px;
-                display: flex;
-                justify-content: center;
-                align-items: baseline !important;
-                border: none;
-                margin-top: -38px;
-            }
-            .sorting {
-                box-sizing: border-box;
-                margin: 0 auto !important;
-                height: 130px;
-                .titlestyle2 {
-                    height: 130px;
-                    margin: 0 auto;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: baseline !important;
-                    h3 {
-                        width: 100%;
-                        height: 30px;
-                        margin: 0 auto;
-                        font-size: 30px;
-                        font-style: normal;
-                        font-weight: 500;
-                        font-family: apertura;
-                    }
-                }
-            }
-            .titlestyle3 {
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                min-width: 430px;
-                align-items: flex-end;
-                p {
-                    margin: 0 auto;
-                    padding: 8px;
-                    color: #d6cec3;
-                }
-                a {
-                    margin: 5px;
-                    padding: 8px;
-                }
-            }
-        }
-        .sortnav:hover {
-            cursor: pointer;
-        }
-    }
-}
-
-
-/* phone */
-
-@media (max-width: 500px) {
-    .topNav {
-        box-sizing: border-box !important;
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        max-height: 105px;
-        background: whitesmoke;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        // transition for slow shrink top nav banner
-        transition: top 0.6s;
-        .navsort {
-            box-sizing: border-box !important;
-            margin-left: 0.5rem;
-            width: 100%;
-            height: 105px;
-            display: flex;
-            align-items: center !important;
-            margin: 0 auto;
-            padding: 0 1rem;
-            .sortnav {
-                text-decoration: none;
-                color: #000000;
-                max-width: 180px;
-                height: auto;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: baseline !important;
-                border: none;
-                .titlestyle {
+                position: fixed;
+                top: 0;
+                z-index: 999;
+                // transition for slow shrink top nav banner
+                transition: top 0.6s;
+                .navsort {
+                    box-sizing: border-box !important;
+                    margin-left: 0.5rem;
                     width: 100%;
-                    min-height: 105px;
-                    margin: 0px;
+                    height: 135px;
                     display: flex;
-                    align-items: baseline !important;
-                    border: none;
-                    padding-bottom: 10px;
-                    h1 {
-                        width: 85px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: baseline !important;
-                        justify-content: baseline !important;
-                        margin: 0 auto;
-                        margin-top: 45px;
-                        min-height: 105px;
-                        font-size: 85px;
-                        font-family: "CapitalPosterCdW00-Regular";
-                    }
-                }
-            }
-            .sortnav:hover {
-                background: whitesmoke;
-                text-decoration: none;
-                color: #000000;
-                box-sizing: border-box !important;
-                max-width: 140px;
-                min-height: 100%;
-                margin: 0px;
-                display: flex;
-                justify-content: center;
-                align-items: baseline !important;
-                border: none;
-            }
-            .sorting {
-                box-sizing: border-box;
-                margin: 0px !important;
-                height: 105px;
-                display: flex;
-                align-items: flex-end;
-                .titlestyle2 {
-                    height: 45px;
+                    align-items: center !important;
                     margin: 0 auto;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: baseline !important;
-                    padding-bottom: 4px;
-                    h3 {
-                        width: 100%;
-                        height: 18px;
+                    padding: 0 1rem;
+                    .sortnav {
+                        text-decoration: none;
+                        color: #000000;
+                        box-sizing: border-box !important;
+                        max-width: 380px;
+                        height: auto;
                         margin: 0 auto;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 500;
-                        font-family: apertura;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline !important;
+                        .titlestyle {
+                            width: 100%;
+                            min-height: 100%;
+                            margin: 0px;
+                            display: flex;
+                            align-items: baseline !important;
+                            h1 {
+                                width: 105px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: baseline !important;
+                                justify-content: baseline !important;
+                                margin: 0 auto;
+                                margin-top: 40px;
+                                min-height: 130px;
+                                font-size: 112px;
+                                font-family: "CapitalPosterCdW00-Regular";
+                            }
+                        }
+                    }
+                    .sorting {
+                        box-sizing: border-box;
+                        margin: 0 auto !important;
+                        height: 130px;
+                        .titlestyle2 {
+                            height: 130px;
+                            margin: 0 auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: baseline !important;
+                            h3 {
+                                width: 100%;
+                                height: 30px;
+                                margin: 0 auto;
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-family: apertura;
+                            }
+                        }
+                    }
+                    .titlestyle3 {
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        min-width: 430px;
+                        align-items: flex-end;
+                        z-index: 1000;
+                        p {
+                            margin: 0 auto;
+                            padding: 8px;
+                            color: #d6cec3;
+                        }
+                        a {
+                            margin: 5px;
+                            padding: 8px;
+                        }
                     }
                 }
-            }
-            .titlestyle3 {
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
-                min-width: 430px;
-                align-items: flex-end;
-                p {
-                    display: none;
-                }
-                a {
-                    display: none;
+                .sortnav:hover {
+                    cursor: pointer;
                 }
             }
-        }
-        .sortnav:hover {
-            cursor: pointer;
-        }
-    }
-}
-
-.topNav--hidden {
-    margin: 0 auto;
-    max-height: 85px;
-    transition: top 0.6s;
-    z-index: 999;
-    transition: all 0.4s ease !important;
-    .navsort {
-        width: 100%;
-        height: 85px;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-        margin: 0 auto;
-        transition: all 0.4s ease !important;
-        .sortnav {
-            margin: 0px;
-            max-width: 150px;
-            height: 85px;
-            .titlestyle {
-                margin: 0px;
-                padding: 0px;
-                max-width: 100%;
-                height: 85px;
-                display: flex;
-                h1 {
-                    transition: all 0.4s ease !important;
-                    height: 85px !important;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: baseline !important;
-                    margin: 0px;
-                    margin-top: 8px !important;
+            /* tablet */
+            
+            @media (max-width: 800px) {
+                .topNav {
+                    box-sizing: border-box !important;
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-height: 135px;
+                    background: whitesmoke;
+                    position: fixed;
+                    top: 0;
                     z-index: 999;
-                    font-size: 70px;
-                    width: 75px;
-                    color: black;
+                    // transition for slow shrink top nav banner
+                    transition: top 0.6s;
+                    .navsort {
+                        box-sizing: border-box !important;
+                        margin-left: 0.5rem;
+                        width: 100%;
+                        height: 135px;
+                        display: flex;
+                        align-items: center !important;
+                        margin: 0 auto;
+                        padding: 0 1rem;
+                        .sortnav {
+                            text-decoration: none;
+                            color: #000000;
+                            box-sizing: border-box !important;
+                            max-width: 380px;
+                            min-height: 100%;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline !important;
+                            border: none;
+                            .titlestyle {
+                                width: 100%;
+                                min-height: 100%;
+                                margin: 0px;
+                                display: flex;
+                                align-items: baseline !important;
+                                border: none;
+                                h1 {
+                                    width: 105px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: baseline !important;
+                                    justify-content: baseline !important;
+                                    ;
+                                    margin: 0 auto;
+                                    margin-top: 40px;
+                                    min-height: 130px;
+                                    font-size: 112px;
+                                    font-family: "CapitalPosterCdW00-Regular";
+                                }
+                            }
+                        }
+                        .sortnav:hover {
+                            background: whitesmoke;
+                            text-decoration: none;
+                            color: #000000;
+                            box-sizing: border-box !important;
+                            max-width: 380px;
+                            min-height: 100%;
+                            margin: 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline !important;
+                            border: none;
+                            margin-top: -38px;
+                        }
+                        .sorting {
+                            box-sizing: border-box;
+                            margin: 0 auto !important;
+                            height: 130px;
+                            .titlestyle2 {
+                                height: 130px;
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                align-items: baseline !important;
+                                h3 {
+                                    width: 100%;
+                                    height: 30px;
+                                    margin: 0 auto;
+                                    font-size: 30px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-family: apertura;
+                                }
+                            }
+                        }
+                        .titlestyle3 {
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            min-width: 430px;
+                            align-items: flex-end;
+                            p {
+                                margin: 0 auto;
+                                padding: 8px;
+                                color: #d6cec3;
+                            }
+                            a {
+                                margin: 5px;
+                                padding: 8px;
+                            }
+                        }
+                    }
+                    .sortnav:hover {
+                        cursor: pointer;
+                    }
                 }
             }
-        }
-        .sorting {
-            box-sizing: border-box;
-            top: -55px;
-            width: 100%;
-            height: 85px;
-            display: flex;
-            align-items: flex-end !important;
-            flex-direction: column;
-            justify-content: center;
-            .titlestyle2 {
-                height: 85px;
-                margin: 0 auto;
-                display: flex;
-                align-items: baseline;
-                h3 {
+            /* phone */
+            
+            @media (max-width: 500px) {
+                .topNav {
+                    box-sizing: border-box !important;
+                    display: block;
+                    margin: 0 auto;
                     width: 100%;
-                    max-height: 30px;
-                    margin: -10px 0 0 0;
-                    font-size: 23px;
+                    max-height: 105px;
+                    background: whitesmoke;
+                    position: fixed;
+                    top: 0;
+                    z-index: 999;
+                    // transition for slow shrink top nav banner
+                    transition: top 0.6s;
+                    .navsort {
+                        box-sizing: border-box !important;
+                        margin-left: 0.5rem;
+                        width: 100%;
+                        height: 105px;
+                        display: flex;
+                        align-items: center !important;
+                        margin: 0 auto;
+                        padding: 0 1rem;
+                        .sortnav {
+                            text-decoration: none;
+                            color: #000000;
+                            max-width: 180px;
+                            height: auto;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline !important;
+                            border: none;
+                            .titlestyle {
+                                width: 100%;
+                                min-height: 105px;
+                                margin: 0px;
+                                display: flex;
+                                align-items: baseline !important;
+                                border: none;
+                                padding-bottom: 10px;
+                                h1 {
+                                    width: 85px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: baseline !important;
+                                    justify-content: baseline !important;
+                                    margin: 0 auto;
+                                    margin-top: 45px;
+                                    min-height: 105px;
+                                    font-size: 85px;
+                                    font-family: "CapitalPosterCdW00-Regular";
+                                }
+                            }
+                        }
+                        .sortnav:hover {
+                            background: whitesmoke;
+                            text-decoration: none;
+                            color: #000000;
+                            box-sizing: border-box !important;
+                            max-width: 140px;
+                            min-height: 100%;
+                            margin: 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline !important;
+                            border: none;
+                        }
+                        .sorting {
+                            box-sizing: border-box;
+                            margin: 0px !important;
+                            height: 105px;
+                            display: flex;
+                            align-items: flex-end;
+                            .titlestyle2 {
+                                height: 45px;
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                align-items: baseline !important;
+                                padding-bottom: 4px;
+                                h3 {
+                                    width: 100%;
+                                    height: 18px;
+                                    margin: 0 auto;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-family: apertura;
+                                }
+                            }
+                        }
+                        .titlestyle3 {
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            min-width: 430px;
+                            align-items: flex-end;
+                            p {
+                                display: none;
+                            }
+                            a {
+                                display: none;
+                            }
+                        }
+                    }
+                    .sortnav:hover {
+                        cursor: pointer;
+                    }
                 }
             }
-        }
-    }
-}
-
-
-/* tablet */
-
-@media (max-width: 800px) {
-    .topNav--hidden {
-        margin: 0 auto;
-        max-height: 85px;
-        transition: top 0.6s;
-        z-index: 999;
-        transition: all 0.4s ease !important;
-        .navsort {
-            width: 100%;
-            height: 85px;
-            display: flex;
-            align-items: center;
-            box-sizing: border-box;
-            margin: 0 auto;
-            transition: all 0.4s ease !important;
-            .sortnav {
-                margin: 0px;
-                max-width: 150px;
-                height: 85px;
-                border: none;
-                .titlestyle {
-                    margin: 0px;
-                    padding: 0px;
-                    max-width: 100%;
+            
+            .topNav--hidden {
+                margin: 0 auto;
+                max-height: 85px;
+                transition: top 0.6s;
+                z-index: 999;
+                transition: all 0.4s ease !important;
+                .navsort {
+                    width: 100%;
                     height: 85px;
                     display: flex;
-                    h1 {
+                    align-items: center;
+                    box-sizing: border-box;
+                    margin: 0 auto;
+                    transition: all 0.4s ease !important;
+                    .sortnav {
+                        margin: 0px;
+                        max-width: 150px;
+                        height: 85px;
+                        .titlestyle {
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                            height: 85px;
+                            display: flex;
+                            h1 {
+                                transition: all 0.4s ease !important;
+                                height: 85px !important;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: baseline !important;
+                                margin: 0px;
+                                margin-top: 8px !important;
+                                z-index: 999;
+                                font-size: 70px;
+                                width: 75px;
+                                color: black;
+                            }
+                        }
+                    }
+                    .sorting {
+                        box-sizing: border-box;
+                        top: -55px;
+                        width: 100%;
+                        height: 85px;
+                        display: flex;
+                        align-items: flex-end !important;
+                        flex-direction: column;
+                        justify-content: center;
+                        .titlestyle2 {
+                            height: 85px;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: baseline;
+                            h3 {
+                                width: 100%;
+                                max-height: 30px;
+                                margin: -10px 0 0 0;
+                                font-size: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* tablet */
+            
+            @media (max-width: 800px) {
+                .topNav--hidden {
+                    margin: 0 auto;
+                    max-height: 85px;
+                    transition: top 0.6s;
+                    z-index: 999;
+                    transition: all 0.4s ease !important;
+                    .navsort {
+                        width: 100%;
+                        height: 85px;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin: 0 auto;
                         transition: all 0.4s ease !important;
-                        height: 85px !important;
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: baseline !important;
-                        margin: 0px;
-                        margin-top: 8px !important;
-                        z-index: 999;
-                        font-size: 70px;
-                        width: 75px;
-                        color: black;
+                        .sortnav {
+                            margin: 0px;
+                            max-width: 150px;
+                            height: 85px;
+                            border: none;
+                            .titlestyle {
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                                height: 85px;
+                                display: flex;
+                                h1 {
+                                    transition: all 0.4s ease !important;
+                                    height: 85px !important;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: baseline !important;
+                                    margin: 0px;
+                                    margin-top: 8px !important;
+                                    z-index: 999;
+                                    font-size: 70px;
+                                    width: 75px;
+                                    color: black;
+                                }
+                            }
+                        }
+                        .sortnav:hover {
+                            background: whitesmoke;
+                            text-decoration: none;
+                            color: #000000;
+                            box-sizing: border-box !important;
+                            max-width: 380px;
+                            min-height: 100%;
+                            margin: 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline !important;
+                            border: none;
+                        }
+                        .sorting {
+                            box-sizing: border-box;
+                            top: -55px;
+                            width: 100%;
+                            height: 85px;
+                            display: flex;
+                            align-items: flex-end !important;
+                            flex-direction: column;
+                            justify-content: center;
+                            .titlestyle2 {
+                                height: 85px;
+                                margin: 0 auto;
+                                display: flex;
+                                align-items: baseline;
+                                h3 {
+                                    width: 100%;
+                                    max-height: 30px;
+                                    margin: -10px 0 0 0;
+                                    font-size: 23px;
+                                }
+                            }
+                        }
                     }
                 }
             }
-            .sortnav:hover {
-                background: whitesmoke;
-                text-decoration: none;
-                color: #000000;
-                box-sizing: border-box !important;
-                max-width: 380px;
-                min-height: 100%;
-                margin: 0px;
-                display: flex;
-                justify-content: center;
-                align-items: baseline !important;
-                border: none;
-            }
-            .sorting {
-                box-sizing: border-box;
-                top: -55px;
-                width: 100%;
-                height: 85px;
-                display: flex;
-                align-items: flex-end !important;
-                flex-direction: column;
-                justify-content: center;
-                .titlestyle2 {
-                    height: 85px;
+            /* phone */
+            
+            @media (max-width: 500px) {
+                .topNav--hidden {
                     margin: 0 auto;
-                    display: flex;
-                    align-items: baseline;
-                    h3 {
+                    max-height: 85px;
+                    transition: top 0.6s;
+                    z-index: 999;
+                    transition: all 0.4s ease !important;
+                    .navsort {
                         width: 100%;
-                        max-height: 30px;
-                        margin: -10px 0 0 0;
-                        font-size: 23px;
+                        height: 85px;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin: 0 auto;
+                        transition: all 0.4s ease !important;
+                        .sortnav {
+                            margin: 0px;
+                            max-width: 150px;
+                            height: 85px;
+                            border: none;
+                            .titlestyle {
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                                height: 85px;
+                                display: flex;
+                                justify-content: baseline !important;
+                                align-items: baseline !important;
+                                border: none;
+                                h1 {
+                                    // transition: all 0.4s ease !important;
+                                    height: 85px !important;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: baseline !important;
+                                    margin: 0px;
+                                    margin-top: 8px !important;
+                                    z-index: 999;
+                                    font-size: 70px;
+                                    width: 70px;
+                                    color: black;
+                                }
+                            }
+                        }
+                        .sortnav:hover {
+                            background: white !important;
+                            margin: 0px !important;
+                        }
+                        .sorting {
+                            box-sizing: border-box;
+                            top: -55px;
+                            width: 100%;
+                            height: 85px;
+                            display: flex;
+                            align-items: flex-end !important;
+                            flex-direction: column;
+                            justify-content: center;
+                            .titlestyle2 {
+                                height: 85px;
+                                margin: 0 auto;
+                                display: flex;
+                                align-items: flex-end;
+                                padding-bottom: 6px;
+                                h3 {
+                                    width: 100%;
+                                    max-height: 20px;
+                                    margin: -2px 0 0 0;
+                                    font-size: 16px;
+                                    font-family: apertura;
+                                }
+                            }
+                        }
                     }
                 }
             }
-        }
-    }
-}
-
-
-/* phone */
-
-@media (max-width: 500px) {
-    .topNav--hidden {
-        margin: 0 auto;
-        max-height: 85px;
-        transition: top 0.6s;
-        z-index: 999;
-        transition: all 0.4s ease !important;
-        .navsort {
-            width: 100%;
-            height: 85px;
-            display: flex;
-            align-items: center;
-            box-sizing: border-box;
-            margin: 0 auto;
-            transition: all 0.4s ease !important;
-            .sortnav {
-                margin: 0px;
-                max-width: 150px;
-                height: 85px;
-                border: none;
-                .titlestyle {
-                    margin: 0px;
-                    padding: 0px;
-                    max-width: 100%;
-                    height: 85px;
+            
+            .spacer {
+                flex: 1;
+            }
+            
+            .navbootstrap {
+                width: 100vw;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                display: flex;
+                justify-content: center;
+                .navbar {
+                    top: 135px;
+                    z-index: 999;
+                    width: 100%;
+                    height: 65px;
+                    background: #54504a;
                     display: flex;
-                    justify-content: baseline !important;
-                    align-items: baseline !important;
+                    justify-content: space-around !important;
+                    align-items: center;
+                }
+                a {
+                    width: auto;
+                    max-width: 200px !important;
+                    box-sizing: border-box;
+                    color: goldenrod;
+                    text-decoration: none;
+                    font-weight: bold;
+                    box-sizing: border-box;
+                    padding: 15px;
+                    align-items: center;
+                    border: 4px solid #54504a;
+                    overflow: hidden!important;
+                }
+                a:hover {
+                    max-width: 200px !important;
+                    box-sizing: border-box !important;
+                    height: 65px;
+                    display: flex;
+                    background: #54504a;
+                    border-bottom: 4px solid #d6cec3;
+                    color: #d6cec3;
+                    box-sizing: border-box;
+                }
+                .basic-nav-dropdown {
+                    width: auto;
+                    max-width: 200px !important;
+                    // left: 0 !important;
+                    // right: 0 !important;
+                    // position: absolute;
+                }
+                .basic-nav-dropdown menu {
+                    width: auto;
+                    max-width: 200px;
+                    height: auto;
+                    overflow: hidden!important;
+                    // left: auto;
+                    // display: inline-block !important;
+                    // position: relative;
+                    box-sizing: border-box !important;
+                    // left: 0 !important;
+                    // right: 0 !important;
+                    // position: relative;
+                    // display: inline-block !important;
+                }
+                .droptop {
+                    // width: auto;
+                    // max-width: 200px;
+                    height: auto !important;
+                    color: #54504a;
                     border: none;
-                    h1 {
-                        // transition: all 0.4s ease !important;
-                        height: 85px !important;
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: baseline !important;
-                        margin: 0px;
-                        margin-top: 8px !important;
-                        z-index: 999;
-                        font-size: 70px;
-                        width: 70px;
-                        color: black;
-                    }
+                    // white-space: normal !important;
+                    max-width: 200px !important;
+                    // width: 100%;
+                    // display: inline-block !important;
+                    // overflow-x: hidden;
+                    // clear: both;
+                    // flex-direction: column;
+                    min-width: inherit;
+                    // border: 1px solid red;
+                    // left: 0 !important;
+                    // right: 0 !important;
+                    // position: relative;
+                    overflow: hidden!important;
+                }
+                .droptop:hover {
+                    width: auto !important;
+                    max-width: 200px !important;
+                    // white-space: normal !important;
+                    height: auto;
+                    // border: none;
+                    // padding: none;
+                    // height: auto;
+                    // display: block !important;
+                    // position: relative !important;
+                }
+                .nav-item:hover .droptop {
+                    width: auto !important;
+                    max-width: 200px !important;
+                    display: block !important;
+                    box-sizing: border-box !important;
+                    position: relative;
+                    overflow: hidden!important;
                 }
             }
-            .sortnav:hover {
-                background: white !important;
-                margin: 0px !important;
+            
+            // @media (max-width: 800px) {
+            //     .navbootstrap {
+            //         width: 100%;
+            //         height: auto;
+            //         z-index: 999;
+            //     }
+            //     .navbar {
+            //         z-index: 999;
+            //         width: 100%;
+            //         height: 65px;
+            //         background: #54504a;
+            //         display: flex;
+            //         justify-content: space-evenly;
+            //         flex-wrap: wrap;
+            //         align-items: center;
+            //     }
+            //     a {
+            //         width: auto;
+            //         color: goldenrod;
+            //         text-decoration: none;
+            //         font-weight: bold;
+            //         align-items: center;
+            //         border: 4px solid #54504a;
+            //     }
+            //     a:hover {
+            //         box-sizing: border-box;
+            //         height: 65px;
+            //         width: auto;
+            //         display: flex;
+            //         background: #54504a;
+            //         border-bottom: 4px solid #d6cec3;
+            //         color: #d6cec3;
+            //     }
+            //     .droptop {
+            //         color: #54504a;
+            //         border: none;
+            //     }
+            //     .droptop:hover {
+            //         border: none;
+            //         padding: none;
+            //         height: auto;
+            //     }
+            //     .nav-item:hover .droptop {
+            //         display: block !important
+            //     }
+            // }
+            /* phone */
+            
+            @media (max-width: 500px) {
+                .navbootstrap {
+                    z-index: 0;
+                    display: none !important;
+                }
             }
-            .sorting {
-                box-sizing: border-box;
-                top: -55px;
+            
+            .navCont {
                 width: 100%;
                 height: 85px;
-                display: flex;
-                align-items: flex-end !important;
-                flex-direction: column;
-                justify-content: center;
-                .titlestyle2 {
-                    height: 85px;
-                    margin: 0 auto;
-                    display: flex;
-                    align-items: flex-end;
-                    padding-bottom: 6px;
-                    h3 {
-                        width: 100%;
-                        max-height: 20px;
-                        margin: -2px 0 0 0;
-                        font-size: 16px;
-                        font-family: apertura;
-                    }
-                }
+                background: whitesmoke;
+                position: fixed;
+                z-index: 999;
+                top: 0;
+                transition: top 0.6s;
             }
-        }
-    }
-}
-
-.spacer {
-    flex: 1;
-}
-
-.navbootstrap {
-    width: 100vw;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    .navbar {
-        top: 135px;
-        z-index: 999;
-        width: 100%;
-        height: 65px;
-        background: #54504a;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    a {
-        width: auto;
-        box-sizing: border-box;
-        color: goldenrod;
-        text-decoration: none;
-        font-weight: bold;
-        box-sizing: border-box;
-        padding: 15px;
-        align-items: center;
-        border: 4px solid #54504a;
-    }
-    a:hover {
-        max-width: 200px !important;
-        box-sizing: border-box !important;
-        height: 65px;
-        display: flex;
-        background: #54504a;
-        border-bottom: 4px solid #d6cec3;
-        color: #d6cec3;
-        box-sizing: border-box;
-    }
-    .basic-nav-dropdown {
-        width: auto;
-        max-width: 200px;
-        // position: static;
-    }
-    .basic-nav-dropdow menu {
-        width: auto;
-        max-width: 200px;
-        left: auto;
-        position: static;
-        box-sizing: border-box !important;
-        // position: relative;
-    }
-    .droptop {
-        // width: auto;
-        // max-width: 200px;
-        color: #54504a;
-        border: none;
-        white-space: normal;
-        width: 200px;
-        max-width: 100%;
-    }
-    .droptop:hover {
-        width: auto !important;
-        max-width: 200px;
-        // border: none;
-        // padding: none;
-        // height: auto;
-    }
-    .nav-item:hover .droptop {
-        width: auto !important;
-        max-width: 200px !important;
-        display: block !important;
-        box-sizing: border-box !important;
-    }
-}
-
-// @media (max-width: 800px) {
-//     .navbootstrap {
-//         width: 100%;
-//         height: auto;
-//         z-index: 999;
-//     }
-//     .navbar {
-//         z-index: 999;
-//         width: 100%;
-//         height: 65px;
-//         background: #54504a;
-//         display: flex;
-//         justify-content: space-evenly;
-//         flex-wrap: wrap;
-//         align-items: center;
-//     }
-//     a {
-//         width: auto;
-//         color: goldenrod;
-//         text-decoration: none;
-//         font-weight: bold;
-//         align-items: center;
-//         border: 4px solid #54504a;
-//     }
-//     a:hover {
-//         box-sizing: border-box;
-//         height: 65px;
-//         width: auto;
-//         display: flex;
-//         background: #54504a;
-//         border-bottom: 4px solid #d6cec3;
-//         color: #d6cec3;
-//     }
-//     .droptop {
-//         color: #54504a;
-//         border: none;
-//     }
-//     .droptop:hover {
-//         border: none;
-//         padding: none;
-//         height: auto;
-//     }
-//     .nav-item:hover .droptop {
-//         display: block !important
-//     }
-// }
-
-/* phone */
-
-@media (max-width: 500px) {
-    .navbootstrap {
-        z-index: 0;
-        display: none !important;
-    }
-}
-
-.navCont {
-    width: 100%;
-    height: 85px;
-    background: whitesmoke;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    transition: top 0.6s;
-}
-
-// @media (max-width: 800px) {
-//     .navCont {
-//         width: 100%;
-//         height: auto !important;
-//         z-index: 999;
-//     }
-// }
-// /* phone */
-// @media (max-width: 500px) {
-//     .navCont {
-//         width: 100%;
-//         height: auto;
-//         z-index: 999;
-//     }
-// }
-.navCont--hidden {
-    top: -55px;
-    z-index: 999;
-    transition: all 0.4s ease !important;
-}
+            
+            // @media (max-width: 800px) {
+            //     .navCont {
+            //         width: 100%;
+            //         height: auto !important;
+            //         z-index: 999;
+            //     }
+            // }
+            // /* phone */
+            // @media (max-width: 500px) {
+            //     .navCont {
+            //         width: 100%;
+            //         height: auto;
+            //         z-index: 999;
+            //     }
+            // }
+            .navCont--hidden {
+                top: -55px;
+                z-index: 999;
+                transition: all 0.4s ease !important;
+            }
