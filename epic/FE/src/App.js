@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import axios from 'axios';
 import { Route, Switch } from "react-router-dom";
 import './App.scss';
 import NavContainer from "./components/NavContainer";
@@ -31,63 +30,26 @@ function App() {
     });
   };
   //state for contact forms
-  const [name, setName] = useState("");
-  const [lname, setLName] = useState("");
-  const [country, setCountry] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [clientText, setClientText] = useState("");
-  //handlers for contact forms
-  const onNameChange = e => {
-    setName(e.target.value)
-    console.log("what in the fuck")
-  }
-  const onPhoneChange = e => {
-    setPhone(e.target.value)
-    console.log("what in the luck")
-  }
+  // const [name, setName] = useState("");
+  // const [lname, setLName] = useState("");
+  // const [country, setCountry] = useState("");
+  // const [phone, setPhone] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [clientText, setClientText] = useState("");
 
-// //form submission function to backend
-// function submitEmailForm(form) {
-//   var obj = new XMLHttpRequest();
-//   obj.onreadystatechange = function() {
-//     if (obj.readyState == 4) {
-//       if (obj.status == 200) {
-//         var x = JSON.parse(obj.responseText);
-//         alert(x.message);
-//       }
-//       else {
-//         alert("XMLHttp Status: " + obj.status + "; " + obj.statusText)
-//       }
-//     }
-//   };
-//   obj.open("post", form.action, true);
-//   obj.setRequestHeader("Content-Type", "application/json");
-//   obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value}));
-//   return false; //Do Not Forget
-// }
+  // , {
+  //       headers: { 
+  //        'Access-Control-Allow-Origin' : '*'
+  //       },
+  //     })
 
-const submitEmail = e => {
-        e.preventDefault();
-        console.log(e, "this is email submission")
-        axios({
-          method: "POST", 
-          url:"/send", 
-          data: {name, phone}
-        }).then((response)=>{
-          if (response.data.status === 'success'){
-              alert("Message Sent."); 
-              resetForm()
-          }else if(response.data.status === 'fail'){
-              alert("Message failed to send.")
-          }
-        })
-}
-// handler to reset contact forms after submission
-const resetForm = () => {
-        setName("");
-        setPhone("");
-}
+  // useEffect(() => {
+  //   const source = axios.CancelToken.source();
+  //   return () => {
+  //     source.cancel();
+  //   };
+  // }, []);
+
 //backdrop handler for shading window when side nav is popped open
   const backdropClickHandler = () => {
     // const myElement = document.getElementsByClassName(".backdrop")
@@ -180,10 +142,10 @@ const resetForm = () => {
       </div>
       </div>
       <Switch>
-        <Route exact path="/" component={Home} isNeeded={isNeeded} submitEmail={submitEmail} name={name} phone={phone} onNameChange={onNameChange} onPhoneChange={onPhoneChange} />
+        <Route exact path="/" component={Home} isNeeded={isNeeded} />
         
-        <Route path="/Mission" component={Mission} />
-        <Route path="/Contact" component={Contact} submitEmail={submitEmail} onNameChange={(name) => `${name}`} onPhoneChange={(phone) => `${phone}`} />
+        <Route path="/Misshandle" component={Mission} />
+        <Route path="/Contact" component={Contact} />
         <Route path="/Residential" component={Residential} />
         <Route path="/Commercial" component={Commercial} />
         <Route path="/Powerwashing" component={Powerwashing} />

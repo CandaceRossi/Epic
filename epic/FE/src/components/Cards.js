@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import axios from 'axios';
 import { Card } from "react-bootstrap";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 
@@ -9,30 +10,89 @@ import commercialslick from "../images/commercialslick.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
 import '../sass/cards.scss';
-import axios from "axios";
 
 
 
-const Cards = (props) => {
-//  let {onNameChange, onPhoneChange, submitEmail} = props;
- const [name, setName] = useState("");
- const [phone, setPhone] = useState("");
- 
+const Cards = () => {
+   
+ const [data, setData] = useState({
+   name: "",
+    email: "",
+    phone: "",
+    message: "",
+    sent: false,
+  });
+console.log("discord data req", data)
+  const onNameChange = (event) => {
+        setData({...data, name: event.target.value})
+        console.log("updated name state", data)
+    }
 
- const onNameChange = e => {
-    setName(e.target.value)
-    console.log("what in the fuck")
+    const onEmailChange = (event) => {
+        setData({...data, email: event.target.value})
+    }
+
+    const onPhoneChange = (event) => {
+        setData({...data, phone: event.target.value})
+         console.log("updated phone state", data)
+    }
+
+    const onMsgChange = (event) => {
+        setData({...data, message: event.target.value})
+    }
+
+
+const submitEmail = (e) => {
+  
+  e.preventDefault();  
+  let data = {
+    // name: {name: "name"}, 
+    // email: {email: "email"},
+    // phone: {phone: "phone"},
+    // message: {message: "message"}
+
+    name: {name: data.name}, 
+    email: {email: data.email},
+    phone: {phone: data.phone},
+    message: {message: data.message}
+
   }
-  const onPhoneChange = e => {
-    setPhone(e.target.value)
-    console.log("what in the luck")
-  }
+//"http://localhost:465/send"
+ axios
+      .post("http://localhost:3001/send", data
+   )
+      .then((response) => {
+          if (response.data.message === 'success'){
+              console.log("data that sent", data)
+            alert("Message Sent."); 
+              setData({sent: true}, resetForm());
+              
+          }else if(response.data.message === 'fail'){
+            alert("Message failed to send.")
+              setData({sent: false})
+          }
+        })
+  };
+  const resetForm = () => {
+    setData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
+//  setTimeout(() => {
+//       setData(
+//         {
+//           send: false
+//         },
+//         3000
+//       );
+//     });
 
 
     return (
-        
-
-        <div className="cards-container">
+      <div className="cards-container">
             <div className="cards-style">
 
                 <Card style={{ border: "none", margin: "0 auto" }}>
@@ -59,20 +119,20 @@ const Cards = (props) => {
                             Fill in the form and we'll Get In Touch!
     </Card.Text>
                         <div className="card-style">
-                            <form onSubmit={props.submitEmail}>
+                            <form onSubmit={submitEmail}>
                                 <div className="row">
                                     <div className="col-25">
-                                        <label for="name">Name</label>
+                                        <label htmlFor="name">Name</label>
                                     </div><div className="col-75">
-                                        <input onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="your full name.." />
+                                        <input value={data.name} onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="your full name.." />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-25">
-                                        <label for="phone">Phone</label>
+                                        <label htmlFor="phone">Phone</label>
                                     </div>
                                     <div className="col-75">
-                                        <input onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="your phone number.." />
+                                        <input value={data.phone} onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="your phone number.." />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -83,10 +143,7 @@ const Cards = (props) => {
                     </Card.Body>
                 </Card>
             </div>
-        </div>
-    
-           
-       
+        </div> 
     )
 }
 export default Cards;
