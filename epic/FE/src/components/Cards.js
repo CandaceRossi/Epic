@@ -43,27 +43,22 @@ console.log("discord data req", data)
 
 
 const submitEmail = (e) => {
-  
-  e.preventDefault();  
-  let data = {
-    // name: {name: "name"}, 
-    // email: {email: "email"},
-    // phone: {phone: "phone"},
-    // message: {message: "message"}
-
-    name: {name: data.name}, 
-    email: {email: data.email},
-    phone: {phone: data.phone},
-    message: {message: data.message}
-
+    e.preventDefault();  
+    let newData = {
+        ...data,
+    name: data.name, 
+    email: data.email,
+    phone: data.phone,
+    message: data.message
   }
+
 //"http://localhost:465/send"
  axios
-      .post("http://localhost:3001/send", data
+      .post(console.log("the data", newData),"http://localhost:3001/send", newData
    )
       .then((response) => {
           if (response.data.message === 'success'){
-              console.log("data that sent", data)
+              console.log("data that sent", newData)
             alert("Message Sent."); 
               setData({sent: true}, resetForm());
               
