@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
+import WebFont from 'webfontloader';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+WebFont.load({
+  google: {
+    families: ['CapitalPosterCdW00-Regular']
+  }
+});
+
+
 ReactDOM.render(
   <Router>
     <App />
