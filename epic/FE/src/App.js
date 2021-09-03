@@ -144,7 +144,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} isNeeded={isNeeded} />
         
-        <Route path="/Misshandle" component={Mission} />
+        <Route path="/Mission" component={Mission} />
         <Route path="/Contact" component={Contact} />
         <Route path="/Residential" component={Residential} />
         <Route path="/Commercial" component={Commercial} />

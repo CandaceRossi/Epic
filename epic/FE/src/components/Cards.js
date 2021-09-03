@@ -98,10 +98,9 @@ const submitEmail = (e) => {
                      
                         <img className="firstimg" src={beigebasement} style={{ width: "370px", height: "250px", paddingTop: "15px", display: "flex" }} alt="room" />
                         <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
-                            <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "395px" }}>Beautiful Colors To Make Your Space Feel Just Right!</Card.Title>
+                            <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "395px" }}>Make Your Space What You Always Dreamed It Could Be!</Card.Title>
                             <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "360px", fontSize: "1.2rem", display: "flex", alignItems: "flex-start" }}>
-                                Preparation is key! Our team starts by protecting all areas, removing electric plates and door handles –
-                                patching holes and de-glossing trim so that the finish product is beautiful and durable.
+                                Let us do the work for you! Our team handles every step of your project so that you don't have to. We protect all surfaces, furniture, patch holes, remove electric plates and switch covers so that the finished product is beautiful with a quality and durability that lasts. 
                             </Card.Text>
 
                         </div>
@@ -111,7 +110,7 @@ const submitEmail = (e) => {
                     <Card.Body>
                         <Card.Title>We'll Call You!</Card.Title>
                         <Card.Text>
-                            Fill in the form and we'll Get In Touch!
+                            Fill in the form and we'll be in touch!
     </Card.Text>
                         <div className="card-style">
                             <form onSubmit={submitEmail}>
@@ -119,7 +118,7 @@ const submitEmail = (e) => {
                                     <div className="col-25">
                                         <label htmlFor="name">Name</label>
                                     </div><div className="col-75">
-                                        <input value={data.name} onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="your full name.." />
+                                        <input value={data.name} onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="Your Full Name.." />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -127,7 +126,7 @@ const submitEmail = (e) => {
                                         <label htmlFor="phone">Phone</label>
                                     </div>
                                     <div className="col-75">
-                                        <input value={data.phone} onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="your phone number.." />
+                                        <input value={data.phone} onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="Your Telephone Number.." />
                                     </div>
                                 </div>
                                 <div className="row">

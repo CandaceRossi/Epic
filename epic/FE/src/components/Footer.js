@@ -1,5 +1,8 @@
 import React from "react";
 import OSHA_logo_black from "../images/OSHA_logo_black.png";
+import houzzicon from "../images/houzzicon.png";
+import twittericon from "../images/twittericon.png";
+import instagramicon from "../images/instagramicon.png";
 import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -30,6 +33,9 @@ const Footer = () => {
             </div>
             <footer className="footer">
                 <nav className="anavforfooter">
+                <a style={{display: "flex", height: "auto", margin: "0px", width: "54px"}}><img style={{margin: "0px", marginRight: "10px", width: "54px", height:"44px"}} src={houzzicon} alt="houzz" /></a>
+                <a style={{display: "flex", height: "auto", margin: "0px", width: "54px"}}><img style={{margin: "0px", marginRight: "10px", width: "54px", height:"44px"}} src={instagramicon} alt="instagram" /></a>
+                <a style={{display: "flex", height: "auto", margin: "0px", width: "44px"}}><img style={{margin: "0px", width: "44px", height:"44px"}} src={twittericon} alt="twitter" /></a>
                     <a id="atagforfooter" href="/">HOME</a>
                     <a id="atagforfooter" href="/Mission">MISSION</a>
                     <a id="atagforfooter" href="/Projects">PROJECTS</a>

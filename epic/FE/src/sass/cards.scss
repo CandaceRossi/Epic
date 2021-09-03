@@ -8,16 +8,19 @@
     justify-content: center !important;
     flex-direction: column;
     z-index: 800;
-    height: 300px;
+    // height: 300px;
+    height: auto;
     .parapara2 {
-        margin: 0 auto !important;
+        margin: 5px auto !important;
+        padding-top: 5px;
         width: 100% !important;
         height: auto;
         display: flex;
         justify-content: center !important;
         align-items: center !important;
         z-index: 800;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'apertura';
+        font-size: 2.4rem;
         color: rgb(21, 29, 68);
     }
 }
@@ -36,27 +39,32 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     background: #d6cec3;
     color: #d6cec3;
     .card {
-        margin: 25px auto;
+        margin: 0px;
         padding: 5px;
         display: flex;
-        width: 25%;
+        justify-content: space-between;
+        align-content: center;
+        width: 35%;
         min-width: 375px !important;
-        height: 135px;
+        height: 155px;
         background: #d6cec3;
         opacity: 0.9;
         border: none;
         .card-body {
+            padding: 5px;
             width: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             div {
                 width: 100%;
+                padding: 5px;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
             }
             .card-text {
@@ -100,9 +108,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // margin: 5px;
-            // font-family: "CapitalPosterCdW00-Regular";
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'apertura';
             color: rgb(21, 29, 68);
         }
         h2,
@@ -208,7 +214,7 @@
             background: #d6cec3 !important;
         }
         .card-text {
-            font-size: 1.3rem !important;
+            font-size: 1.20rem !important;
         }
     }
 }
@@ -223,7 +229,7 @@
     display: flex !important;
     justify-content: center !important;
     .card-title {
-        font-size: 2rem !important;
+        font-size: 1.7rem !important;
     }
     .card {
         margin: 0 auto;

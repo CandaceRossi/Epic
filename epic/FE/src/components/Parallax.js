@@ -23,7 +23,9 @@ const projpar = props.projpar;
                 <div className="cleanbreak">
                     <div className="cleanbreakdiv">
                         <h1>Have Confidence In Who You Hire...</h1>
-                        <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
+                        <p>We are a family owned and family operated business
+                            with highly trained professionals prepared to meet all
+                            of your painting and powerwashing needs.</p>
                     </div>
                      <img src={featuredImage1} alt="" />
                 </div>
@@ -31,8 +33,10 @@ const projpar = props.projpar;
                 
                     <img src={featuredImage2} alt="" />
                     <div className="cleandiv">
-                        <h1>Have Confidence In Who You Hire...</h1>
-                        <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
+                        <h1>Nobody Compares In Service...</h1>
+                        <p>Our experienced professionals provide the highest
+                            quality service with the best products on the market to
+                            make your space the place you’ve always dreamed of.</p>
                     </div>
                 </div>
             </div>
