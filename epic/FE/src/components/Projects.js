@@ -166,8 +166,8 @@ const Projects = ({isNeeded}) => {
             <div className="overlay"> </div>
             <div className="project-style">
                 <div className="projy" data-aos="zoom-in">
-                    <h1>Epic's Project Photo Gallery!</h1>
-                    <h3>Check Out Images Of Our Detailed Work</h3>
+                    <h1>OUR PROJECT PHOTO GALLERY!</h1>
+                    <h3>Check out images of our detailed work:</h3>
                 </div>
                 </div>
                 </div>
@@ -179,13 +179,13 @@ const Projects = ({isNeeded}) => {
                     </div>
                     <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
-                            <h1>Project Gallery</h1>
+                            <h1>PROJECT GALLERY</h1>
                             <div className="line"></div>
                         </div>
                         <div className="bruckup" data-aos="fade-up">
-                            <h3>Our team are fully licensed Painters located in the  South West Florida area</h3>
-                            <h3>Preparation is 90% of the job. We start each project by protecting surrounding areas, removing handles and electric plates –
-                            surfaces are patched and filled while the trim is de-glossed so that the finish coats will be beautiful as well as durable..</h3>
+                            <h3>We are confident that we can help you make your space exactly what you want it to be.</h3>
+                            <h3>From high tech color matching software, to full color spectrum samples, we're here to help! We work 
+                            with you no matter the size of the project to give you beautiful durable surfaces.</h3>
                         </div>
                     </div>
                     <div className="contaflex">
@@ -193,15 +193,15 @@ const Projects = ({isNeeded}) => {
                             <div className="flexflexin">
                                 <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m1">
                                     <div className="one" ></div>
-                                    <p>WINNIE'S HOME</p>
+                                    <p>Chrisy's Home</p>
                                 </div>
                                 <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m2">
                                     <div className="two"></div>
-                                    <p>SARA & TIM</p>
+                                    <p>Jason & Aman</p>
                                 </div>
                                 <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m3">
                                     <div className="three"></div>
-                                    <p>GRACE LEGAL OFFICE</p>
+                                    <p>Mexican Restaurant</p>
                                 </div>
                                 <div className="photoop" data-aos="zoom-in" data-toggle="modal" data-target="#m4">
                                     <div className="four"></div>
@@ -232,13 +232,13 @@ const Projects = ({isNeeded}) => {
                 <ProjectsPhone />
             </PhoneBreakpoint>
             <DesktopBreakpoint>
-            <Parallax featuredImage1={paintcarousel7} featuredImage2={paintsamples} misspar={true} isNeeded={false} />
+            <Parallax projContent={true} featuredImage1={paintcarousel7} featuredImage2={paintsamples} projpar={true} isNeeded={false} />
            </DesktopBreakpoint>
            <TabletBreakpoint>
-                 <ParallaxTablet featuredImage1={paintcarousel7} featuredImage2={paintsamples} homepar={true} isNeeded={false} />
+                 <ParallaxTablet projContent={true} featuredImage1={paintcarousel7} featuredImage2={paintsamples} projpar={true} isNeeded={false} />
             </TabletBreakpoint>
             <PhoneBreakpoint>
-                 <ParallaxPhone featuredImage1={paintcarousel7} featuredImage2={paintsamples} homepar={true} isNeeded={false} />
+                 <ParallaxPhone projContent={true} featuredImage1={paintcarousel7} featuredImage2={paintsamples} projpar={true} isNeeded={false} />
             </PhoneBreakpoint>
         </div>
 </>

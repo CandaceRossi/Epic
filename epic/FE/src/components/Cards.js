@@ -90,16 +90,16 @@ const submitEmail = (e) => {
       <div className="cards-container">
             <div className="cards-style">
 
-                <Card style={{ border: "none", margin: "0 auto" }}>
+                <Card style={{ border: "none", margin: "0 auto", display: "flex !important", alignItems: "center !important"}}>
                     <Card.Body style={{
-                        background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "none", display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "row"
+                        margin: "0 auto", height: "auto", border: "1px solid red", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", display: "flex !important", justifyContent: "space-between !important", alignItems: "center !important", flexDirection: "row"
                     }}>
 
                      
-                        <img className="firstimg" src={beigebasement} style={{ width: "370px", height: "250px", paddingTop: "15px", display: "flex" }} alt="room" />
-                        <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
-                            <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "395px" }}>Make Your Space What You Always Dreamed It Could Be!</Card.Title>
-                            <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "360px", fontSize: "1.2rem", display: "flex", alignItems: "flex-start" }}>
+                        <img className="firstimg" src={beigebasement} style={{ border: "1px solid yellow", width: "370px", height: "250px", display: "flex !important", alignItems: "center !important" }} alt="room" />
+                        <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", alignContent: "center", justifyContent: "center !important", flexDirection: "column" }}>
+                            <Card.Title style={{ border: "1px solid purple", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0px", maxWidth: "440px", width: "auto", fontSize: "2rem" }}>Make Your Space What You Always Dreamed It Could Be!</Card.Title>
+                            <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0px", maxWidth: "395px", width: "auto", fontSize: "1.2rem", display: "flex", alignItems: "center !important" }}>
                                 Let us do the work for you! Our team handles every step of your project so that you don't have to. We protect all surfaces, furniture, patch holes, remove electric plates and switch covers so that the finished product is beautiful with a quality and durability that lasts. 
                             </Card.Text>
 

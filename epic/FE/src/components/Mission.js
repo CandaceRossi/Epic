@@ -97,13 +97,13 @@ const Mission = ({isNeeded}) => {
                 <MissionPhone />
             </PhoneBreakpoint>
             <DesktopBreakpoint>
-            <Parallax featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
+            <Parallax  missContent= {true} featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
            </DesktopBreakpoint>
            <TabletBreakpoint>
-                 <ParallaxTablet featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
+                 <ParallaxTablet missContent= {true} featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
             </TabletBreakpoint>
             <PhoneBreakpoint>
-                 <ParallaxPhone featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
+                 <ParallaxPhone missContent= {true} featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
             </PhoneBreakpoint>          
           </div>
           </>

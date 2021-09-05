@@ -54,7 +54,7 @@ const projpar = props.projpar;
             {isNeeded ?
                 <TestimonialCards /> : null }
             {isNeeded ?
-            <div style={{width: "100%!important", height: "auto"}} className="parallaxes"></div>
+            <div className="parallaxes"></div>
             : null }
             
              {/* </div> */}

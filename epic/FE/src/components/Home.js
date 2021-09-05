@@ -19,6 +19,7 @@ import PhoneBreakpoint from '../components/responsive_utilities/phone_breakpoint
 
 const Home = ({isNeeded}) => {
 
+
     return (
 
         <div className="component-list">
@@ -26,17 +27,17 @@ const Home = ({isNeeded}) => {
             <DesktopBreakpoint>
              <div className="cardzindexarea"></div>
             <Cards />
-             <Parallax featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
+             <Parallax homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
             </DesktopBreakpoint>
             <TabletBreakpoint>
              <div className="cardzindexareatablet"></div>
                 <CardsTablet />
-                 <ParallaxTablet featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
+                 <ParallaxTablet homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
             </TabletBreakpoint>
             <PhoneBreakpoint>
              <div className="cardzindexareaphone"></div>
                 <CardsPhone />
-                 <ParallaxPhone featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
+                 <ParallaxPhone homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
             </PhoneBreakpoint>
         </div>
     )

@@ -16,10 +16,10 @@ const Footer = () => {
             <div className="prefooter" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center"}}>
                 <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
                 <div className="prefoo">
-                <a><span ><FontAwesomeIcon icon={faPhone}/></span> 239-555-5555</a>
-                <a><span ><FontAwesomeIcon icon={faEnvelope}/></span> andrewcharles@epicpaint.com</a>
+                <p><span ><FontAwesomeIcon icon={faPhone}/> </span> 239.826.4326</p>
+                <p className="emailsize"><span ><FontAwesomeIcon icon={faEnvelope}/></span> EpicPaintingandPowerwashing@gmail.com</p>
                
-                <img src={OSHA_logo_black} alt="osha" />
+                {/* <img src={OSHA_logo_black} alt="osha" /> */}
                 </div> 
                 <div className="sortnav">
                     <div><h1>EPIC</h1></div>

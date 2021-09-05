@@ -11,8 +11,8 @@ const TestimonialCards = () => {
     
         <div className="testimonialblock">
         
-                <h2 className="parapara2">One Aspect To Our Great Reputation Is Our Client Testimonials</h2>
-                <h4 className="parapara2">Our Finished Product Is Top Notch, Don't Believe Us -</h4>
+                <h2 className="parapara2">Our Reputation is Impeccable! </h2>
+                <h4 className="parapara2">Need Proof ? Just see what our clients have to say:</h4>
                
               
            
@@ -26,7 +26,7 @@ const TestimonialCards = () => {
                             </div>
                             <br />
                             <Card.Text>
-                                Epic's paint crew did a fantastic job! Solid coats brings a splash of color to workspace! <br/>-Jordan Peele
+                                Epic's paint crew did a fantastic job! Solid coats brings a splash of color to workspace! <br/>-Jordan S.
                         </Card.Text>
                         </div>
                     </Card.Body>
@@ -39,7 +39,7 @@ const TestimonialCards = () => {
                             </div>
                             <br />
                             <Card.Text>
-                                Easily one of the best choices I made. Epic made painting my home a breeze. <br/>-Patricia Smith
+                                Easily one of the best choices I made. Epic made painting my home a breeze. <br/>-Joselyn S.
                         </Card.Text>
                         </div>
                     </Card.Body>
