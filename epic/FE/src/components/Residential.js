@@ -78,7 +78,7 @@ const Residential = ({isNeeded}) => {
                 <ResidentialPhone />
             </PhoneBreakpoint>    
             <DesktopBreakpoint>
-            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} misspar={true} isNeeded={false} />
+            <Parallax featuredImage1={exteriorres} featuredImage2={exteriorres2} respar={true} isNeeded={false} />
            </DesktopBreakpoint>
            <TabletBreakpoint>
                  <ParallaxTablet featuredImage1={exteriorres} featuredImage2={exteriorres2} homepar={true} isNeeded={false} />

@@ -70,7 +70,7 @@ const Powerwashing = ({isNeeded}) => {
                  <PowerwashingPhone />
             </PhoneBreakpoint>
             <DesktopBreakpoint>
-            <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} misspar={true} isNeeded={false} />
+            <Parallax featuredImage1={powerwash9} featuredImage2={powerwashtool} powerpar={true} isNeeded={false} />
            </DesktopBreakpoint>
            <TabletBreakpoint>
                  <ParallaxTablet featuredImage1={powerwash9} featuredImage2={powerwashtool} homepar={true} isNeeded={false} />

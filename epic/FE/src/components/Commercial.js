@@ -69,7 +69,7 @@ const Commercial = ({isNeeded}) => {
                  <CommercialPhone />
             </PhoneBreakpoint>
             <DesktopBreakpoint>
-            <Parallax featuredImage1={commercialshed} featuredImage2={commercialclean} misspar={true} isNeeded={false} />
+            <Parallax featuredImage1={commercialshed} featuredImage2={commercialclean} commpar={true} isNeeded={false} />
            </DesktopBreakpoint>
            <TabletBreakpoint>
                  <ParallaxTablet featuredImage1={commercialshed} featuredImage2={commercialclean} homepar={true} isNeeded={false} />
