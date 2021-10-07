@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classnames from "classnames";
 import DrawerToggleButton from "./SideDrawer/DrawerToggleButton";
 import '../sass/navbars.scss';
+import epiclogo from "../images/EPIClogo final.png"
 // import '../sass/sidedrawer.scss';
 
 export default class TopNavComp extends Component {
@@ -48,14 +49,8 @@ export default class TopNavComp extends Component {
                         <DrawerToggleButton click={this.props.click}/>
                     </div>
                         <a href="/" className="sortnav">
-                            <div className="titlestyle"><h1>EPIC</h1></div>
+                           <img className="logoimg"  src={epiclogo} alt="logo"/>
                              </a>
-                            <div className="sorting">
-                            <div className="titlestyle2">
-                                <h3>PAINTING &</h3>
-                                <h3>POWERWASHING</h3>
-                            </div>
-                            </div>
                          <div className="spacer" />
                          <div className="titlestyle3">
                         <p>Servicing South West Florida Area</p>

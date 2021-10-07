@@ -63,8 +63,12 @@
 
 @media (max-width: 500px) {
     .toggle-button {
-        margin-top: 90%;
-        margin-right: 20px;
+        margin-top: 40%;
+        margin-left: 15px;
+        // margin-right: -25px;
+        margin-bottom: 25px;
+        // margin-top: 90%;
+        margin-right: 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -80,7 +84,7 @@
         outline: none;
     }
     .toggle-button__line {
-        width: 30px;
+        width: 32px;
         height: 2px;
         background: black;
     }

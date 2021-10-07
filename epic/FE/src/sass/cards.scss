@@ -336,6 +336,22 @@
             font-size: 1.7em;
         }
     }
+    .msg {
+        text-align: center;
+        margin: 0 auto;
+        letter-spacing: 0.2rem;
+        // font-style: italic;
+        width: 330px;
+        padding: 0px;
+        font-size: 16.5px;
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        display: none !important;
+    }
+    .msgAppear {
+        display: block;
+    }
     .landingbutton {
         margin: 0 auto;
         width: 100%;
