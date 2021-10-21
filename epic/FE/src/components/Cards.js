@@ -1,125 +1,61 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import { Card } from "react-bootstrap";
-import { ListGroup, ListGroupItem } from "react-bootstrap";
-
-import gorjusyep from "../images/gorjusyep.jpg";
 import beigebasement from "../images/beigebasement.jpg";
-import commercialslick from "../images/commercialslick.jpg";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faMobile } from '@fortawesome/free-solid-svg-icons';
 import '../sass/cards.scss';
-
 
 
 const Cards = () => {
    
- const [data, setData] = useState({
+const [data, setData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
-    isLoading: true,
     sent: false
   });
 
-console.log("discord data req", data)
-  const onNameChange = (event) => {
+const onNameChange = (event) => {
         setData({...data, name: event.target.value})
         console.log("updated name state", data)
     }
 
-    const onEmailChange = (event) => {
+const onEmailChange = (event) => {
         setData({...data, email: event.target.value})
     }
 
-    const onPhoneChange = (event) => {
+const onPhoneChange = (event) => {
         setData({...data, phone: event.target.value})
          console.log("updated phone state", data)
     }
 
-    const onMsgChange = (event) => {
+const onMsgChange = (event) => {
         setData({...data, message: event.target.value})
     }
 
-// const headers = {
-//     'Content-Type': 'application/json' 
-// }
+const getResponse = async () => {
+        try {
+        await axios.get('/').then((response) => {
+            const info = response.data;
+            setData({sent: true})
+            resetForm();
+            console.log(response);
+        })}
+        catch (err) {
+            alert("Error retreiving data!")
+        };
+    }
 
 
-    // setData(data => ({...data, isLoading: true, sent: true}))
-const fetchData = async () => {
- 
-    try{
-         await axios.post(
-        "http://localhost:3001/send", data, {headers :  {'Content-Type': 'text/plain'}}
+async function postData() {
+    const { newData } = await axios.post(
+      "http://localhost:3001/send", data
     )
-    .then(res => {
-        if(res.statusCode === 200){
-            res.json()
-        console.log("get dis shit", res.data) 
-        // return res.data 
-    }
-  }).then(setData(data => ({...data, isLoading: true, sent: true})))
-    } catch (err) {
-        console.error("what in da world", err);
-    }
-}
-// .then(response => (console.log("anything?", response.json()), setData({...data, isLoading: false})))
-// .then(console.log("anything?", data.isLoading))
-
-  useEffect(() => {
-     fetchData()
-  }, [])   
-
-  
-//  useEffect(() => {
-// const fetchData = async() => {
-//     setData(data => ({...data, isLoading: true}))
-//     const { newData } = await axios.post(
-//         "http://localhost:3001/send", data
-//     );
-//     setData({...data, sent:true})
-//     setData({...data, isLoading: false})
-//   };
-//    fetchData();
-// }, [setData])   
-
-//OG
-// async function fetchData() {
-//     const { newData } = await axios.post(
-//       "http://localhost:3001/send", data
-//     )
-//     setData(data => ({...data, sent:true}))
-//   }
-
-//   useEffect(() => {
-//      fetchData()
-//   }, [fetchData])   
-
-
-// const submitEmail = (e) => {
-//     e.preventDefault();  
-//     let newData = {
-//         ...data,
-//     name: data.name, 
-//     email: data.email,
-//     phone: data.phone,
-//     message: data.message
-//   }
-// fetchData()
-// resetForm()
-//   };
-
-
+    setData(data => ({...data, sent:true}));
+    
+  }
 
 const submitEmail = async (e) => {
-    // let url;
-    //     process.env.NODE_ENV === 'production' ?  url = `https://codesurge.herokuapp.com/send`
-    //         : url = "http://localhost:5000/send";
-    //     const name = nameRef.current.value, email = emailRef.current.value,
-    //         message = messageRef.current.value;
     e.preventDefault();  
     let newData = {
         ...data,
@@ -128,8 +64,8 @@ const submitEmail = async (e) => {
     phone: data.phone,
     message: data.message
   }
-fetchData()
-// await resetForm()
+postData();
+getResponse();
   };
 
  
@@ -146,9 +82,9 @@ fetchData()
  setTimeout(() => {
       setData(
         {
-          sent: false,
+          sent: true,
         })
-    }, 3000
+    }, 1000
       );
 };
 
@@ -186,7 +122,7 @@ fetchData()
                                     <div className="col-25">
                                         <label htmlFor="name">Name</label>
                                     </div><div className="col-75">
-                                        <input value={data.name} onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="Your Full Name.." />
+                                        <input value={data.name || ""} onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="Your Full Name.." />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -194,12 +130,10 @@ fetchData()
                                         <label htmlFor="phone">Phone</label>
                                     </div>
                                     <div className="col-75">
-                                        <input value={data.phone} onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="Your Telephone Number.." />
+                                        <input value={data.phone || ""} onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="Your Telephone Number.." />
                                     </div>
                                 </div>
-                                 <div value={data.isLoading} className={data.isLoading ? 'msg msgAppear':'msg'}>Loading...
-                                </div>
-                                 <div value={data.sent} className={data.sent ? 'msg msgAppear':'msg'}>Message has been sent
+                                 <div value={data.sent} className={data.sent ? 'msgAppear':'msg'}>Message has been sent
                                 </div>
                                 <div className="row">
                                     <input className="landingbutton" type="submit" value="Give Me A Call" />
