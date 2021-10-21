@@ -2,18 +2,17 @@ const express = require("express");
 const creds = require('./config');
 const PORT = creds.PORT || 3001
 const nodemailer = require("nodemailer");
-// const bodyParser = require('body-parser');
 
 const app = express();
 const cors = require('cors');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
-app.use(cors()); 
-
-//body parser middleware
-// app.use(bodyParser.urlencoded({extended:true}));
-// app.use(bodyParser.json());
+app.use(function(req, res, next) {
+     res.header("Access-Control-Allow-Origin", "*");
+     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+     next();
+});
 
 //Routing
 app.get('/', (req, res) => {
@@ -21,11 +20,13 @@ app.get('/', (req, res) => {
     title: 'Home Page' });
 });
 
-app.post('/send', (req, res) => {
-  console.log(req.body)
+app.get('/send', function(req,res){
+  console.log("first this get request", res)
+res.send("we received your info!")
+});
+
+app.post('/send', (req, res, next) => {
   let newData = req.body 
-  
-  console.log("alligator data", newData)
   let smtpTransport = nodemailer.createTransport({
     service: 'Gmail',
     port: 465,
@@ -44,10 +45,11 @@ let mailOptions = {
   <h3>Information</h3>
   <ul>
   <li>Name: ${newData.name}</li>
+  <li>LastName: ${newData.lname}</li>
   <li>Phone: ${newData.phone}</li>
-  <li>email: ${newData.email}</li>
+  <li>Email: ${newData.email}</li>
   <h3>Message</h3>
-  <p> name: ${newData.name} \n  email: ${newData.email} \n ${newData.phone}</p>
+  <p>${newData.message}</p>
   </ul>
   `
 };
@@ -57,6 +59,7 @@ smtpTransport.sendMail(mailOptions, (error, res) => {
     res.send(error)
   }
   else{
+    console.log("success is the promise", res)
     res.send("success")
   }
 })
