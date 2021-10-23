@@ -15,9 +15,10 @@ import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
 function App() {
-  window.addEventListener("load", () => {
-    document.querySelector("body").classList.add("loaded");
-  })
+  
+  // window.addEventListener("load", () => {
+  //   document.querySelector("body").classList.add("loaded");
+  // })
 //state to display more than one parallax - only true for hompage
   const [isNeeded] = useState(false);
   //state for setting side nav open or closed
@@ -29,34 +30,11 @@ function App() {
      return setSideDrawerOpen(!prevState);
     });
   };
-  //state for contact forms
-  // const [name, setName] = useState("");
-  // const [lname, setLName] = useState("");
-  // const [country, setCountry] = useState("");
-  // const [phone, setPhone] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [clientText, setClientText] = useState("");
-
-  // , {
-  //       headers: { 
-  //        'Access-Control-Allow-Origin' : '*'
-  //       },
-  //     })
-
-  // useEffect(() => {
-  //   const source = axios.CancelToken.source();
-  //   return () => {
-  //     source.cancel();
-  //   };
-  // }, []);
+  
 
 //backdrop handler for shading window when side nav is popped open
   const backdropClickHandler = () => {
-    // const myElement = document.getElementsByClassName(".backdrop")
-    // // const matches = myElement.querySelectorAll("div")
-    // myElement.click(myElement.css("display", "none"))
     setSideDrawerOpen(false)
-// return {sideDrawerOpen: false};
   };
   
 //Smooth scroll code high level 
@@ -132,15 +110,14 @@ function App() {
 
   return (
     <div className="App">
-    
+   
         <SideDrawer show={sideDrawerOpen} />
-     
         {backdrop}
-    <div>
+    {/* <div> */}
       <div className="fixed-top">
         <NavContainer drawerClickHandler={drawerToggleClickHandler} />
       </div>
-      </div>
+      {/* </div> */}
       <Switch>
         <Route exact path="/" component={Home} isNeeded={isNeeded} />
         
@@ -157,9 +134,9 @@ function App() {
          <Footer />
       </div>
     
-    </div>
+  
+     </div>
   );
 }
 
 export default App;
-

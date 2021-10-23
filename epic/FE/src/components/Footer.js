@@ -33,9 +33,9 @@ const Footer = () => {
             </div>
             <footer className="footer">
                 <nav className="anavforfooter">
-                <a style={{display: "flex", height: "auto", margin: "0px", width: "54px"}}><img style={{margin: "0px", marginRight: "10px", width: "54px", height:"44px"}} src={houzzicon} alt="houzz" /></a>
-                <a style={{display: "flex", height: "auto", margin: "0px", width: "54px"}}><img style={{margin: "0px", marginRight: "10px", width: "54px", height:"44px"}} src={instagramicon} alt="instagram" /></a>
-                <a style={{display: "flex", height: "auto", margin: "0px", width: "44px"}}><img style={{margin: "0px", width: "44px", height:"44px"}} src={twittericon} alt="twitter" /></a>
+                <a className="iconsdisappear" style={{display: "flex", height: "auto", margin: "0px", width: "90px"}}><img style={{margin: "0px", marginRight: "10px", width: "104px", height:"auto"}} src={houzzicon} alt="houzz" /></a>
+                <a className="iconsdisappear" style={{display: "flex", height: "auto", margin: "0px", width: "44px"}}><img style={{margin: "0px", marginRight: "0px", width: "34px", height:"auto"}} src={instagramicon} alt="instagram" /></a>
+                <a className="iconsdisappear" style={{display: "flex", height: "auto", margin: "0px", width: "47px"}}><img style={{margin: "0px", marginRight: "10px", width: "37px", height:"37px"}} src={twittericon} alt="twitter" /></a>
                     <a id="atagforfooter" href="/">HOME</a>
                     <a id="atagforfooter" href="/Mission">MISSION</a>
                     <a id="atagforfooter" href="/Projects">PROJECTS</a>

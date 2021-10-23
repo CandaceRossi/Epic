@@ -27,17 +27,17 @@ const Home = ({isNeeded}) => {
             <DesktopBreakpoint>
              <div className="cardzindexarea"></div>
             <Cards />
-             <Parallax homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
+             <Parallax isNeeded={true} homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true}  />
             </DesktopBreakpoint>
             <TabletBreakpoint>
              <div className="cardzindexareatablet"></div>
                 <CardsTablet />
-                 <ParallaxTablet homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
+                 <ParallaxTablet isNeeded={true} homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} />
             </TabletBreakpoint>
             <PhoneBreakpoint>
              <div className="cardzindexareaphone"></div>
                 <CardsPhone />
-                 <ParallaxPhone homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} isNeeded={true} />
+                 <ParallaxPhone isNeeded={true} homeContent={true} featuredImage1={bluemanroom} featuredImage2={beigebasement} homepar={true} />
             </PhoneBreakpoint>
         </div>
     )

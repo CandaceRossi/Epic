@@ -16,7 +16,7 @@
         width: 575px;
         height: 345px;
         margin: -2px 0px 0px 0px;
-        padding: none;
+        padding: 0px;
     }
     .cleanbreakdiv {
         width: 50%;
@@ -162,7 +162,7 @@
         display: flex;
         justify-content: center !important;
         align-items: center !important;
-        padding: none !important;
+        padding: 0px !important;
         h1 {
             margin: 0 auto !important;
             display: flex;
@@ -175,8 +175,8 @@
         }
         p {
             color: rgb(44, 52, 88);
-            display: flex;
-            justify-content: center;
+            display: flex !important;
+            justify-content: center !important;
             align-items: center;
             margin: 0 auto;
             width: 90%;
@@ -189,7 +189,7 @@
         display: flex !important;
         justify-content: center !important;
         width: 100%;
-        // max-width: 390px;
+        max-width: 390px;
         // height: 245px;
         height: auto;
         margin: 0 auto !important;
@@ -198,9 +198,9 @@
 }
 
 .clean {
-    margin: 0 auto;
+    margin: 0 auto !important;
     width: 100%;
-    height: 465px;
+    min-height: 465px !important;
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
@@ -215,7 +215,7 @@
         width: 575px;
         height: 345px;
         margin: -2px 0px 0px 0px;
-        padding: none;
+        padding: 0px;
     }
     .cleandiv {
         width: 50%;
@@ -271,11 +271,7 @@
     width: 100% !important;
     margin: 0 auto !important;
     margin-top: 30px !important;
-    // margin-bottom: 90px !important;
     margin-bottom: 0px !important;
-    // margin-left: 0px !important;
-    // margin-right: 0px !important;
-    // margin-bottom: 0px !important;
     justify-content: center!important;
     align-items: center!important;
     height: auto !important;
@@ -410,7 +406,7 @@
     background-size: cover;
     z-index: 500;
     position: relative;
-    // margin: 0 auto;
+    margin: 0 auto;
 }
 
 .parallaxres {
@@ -485,7 +481,7 @@
 
 .parallaxes {
     background-image: url("../../src/images/gorjusyep.jpg");
-    height: 500px;
+    height: 500px !important;
     width: 100%;
     min-height: 500px;
     background-attachment: fixed;

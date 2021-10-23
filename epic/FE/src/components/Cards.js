@@ -96,7 +96,7 @@ getResponse();
 
                 <Card style={{ border: "none", margin: "0 auto", display: "flex !important", alignItems: "center !important"}}>
                     <Card.Body style={{
-                        margin: "0 auto", height: "auto", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", display: "flex !important", justifyContent: "space-between !important", alignItems: "center !important", flexDirection: "row"
+                        margin: "0 auto", height: "auto", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", display: "flex !important",  alignItems: "center !important", flexDirection: "row"
                     }}>
 
                      

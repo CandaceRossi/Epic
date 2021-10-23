@@ -16,10 +16,8 @@ const CardsPhone = () => {
     return (
         <div className="cardscontainerphone">
             <div className="cardsstylephone">
-                <Card style={{ border: "none", margin: "0 auto" }}>
-                    <Card.Body style={{
-                        background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "none", display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "row"
-                    }}>
+                <Card >
+                    <Card.Body >
                         <img className="firstimg" src={beigebasement} style={{ width: "370px", height: "250px", paddingTop: "15px", display: "flex" }} alt="room" />
                         <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
                             <Card.Title style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", maxWidth: "395px" }}>Make Your Space What You Always Dreamed It Could Be!</Card.Title>

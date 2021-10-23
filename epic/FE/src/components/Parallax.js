@@ -24,7 +24,7 @@ const missContent = props.missContent;
     return (
         <>
         { homeContent ?
-            <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
+            <div >
                 <div className="cleanbreak">
                     <div className="cleanbreakdiv">
                         <h1>Have Confidence In Who You Hire...</h1>
@@ -73,7 +73,7 @@ const missContent = props.missContent;
 
               { missContent ? 
              
-                 <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
+                 <div>
                 <div className="cleanbreak">
                     <div className="cleanbreakdiv">
                         <h1>No Matter the Size of the Project...</h1>
@@ -110,13 +110,13 @@ const missContent = props.missContent;
             
            
             {/* <div className="hometestimonyparallaxblock"> */}
+            {isNeeded ? 
+            <TestimonialCards /> : null }
             {isNeeded ?
-                <TestimonialCards /> : null }
-            {isNeeded ?
-            <div className="parallaxes"></div>
+            <div className="parallaxes"> </div> 
             : null }
             
-             {/* </div> */}
+          
     
         </>
     )  

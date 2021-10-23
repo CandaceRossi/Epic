@@ -175,6 +175,7 @@
     .commercialtablet {
         background-image: url("../images/commercialslickskape1.jpg");
         margin: 0px;
+        margin-top: 75px !important;
         display: block;
         max-width: 100%;
         height: 350px;
@@ -252,10 +253,8 @@
             margin: 0px;
             display: flex;
             justify-content: center;
-            // width: 255px;
             width: 575px;
             height: 345px;
-            // margin: -2px 0px 0px 0px;
         }
         .brickup {
             display: flex;
@@ -354,22 +353,12 @@
     margin-top: 0px !important;
     .commercialphone {
         background-image: url("../images/commercialslickskape1.jpg");
-        // margin: 0px;
-        // display: block;
-        // max-width: 100%;
-        // height: 350px;
-        // // height: 100%;
-        // z-index: 300;
         opacity: 0.7;
-        // background-position: 50% 20% !important;
-        // background-attachment: fixed;
-        // background-size: 100% auto;
-        // background-repeat: no-repeat;
+        margin-top: 5px !important;
         display: table;
         height: 200px !important;
         width: 100%;
         height: auto;
-        // padding: 100px 0;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -391,8 +380,6 @@
             z-index: 400;
             margin: 0 auto !important;
             .commey {
-                // padding-top: 105px;
-                // margin: 0px;
                 margin-top: 5%;
                 margin-left: 3%;
                 margin-bottom: 3%;
@@ -430,9 +417,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // align-items: flex-start;
         padding-left: 0px;
-        // padding-right: 0px;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
         .imgcontainer {
             height: auto;
@@ -440,24 +425,20 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            // align-items: center;
             width: 310px;
         }
         img {
             margin: 0px;
             display: flex;
             justify-content: center;
-            // width: 255px;
             width: 310px;
             height: 245px;
-            // margin: -2px 0px 0px 0px;
         }
         .brickup {
             display: flex;
             justify-content: center;
             align-items: center !important;
             flex-direction: column;
-            // flex-wrap: wrap;
             margin: 0 auto;
             padding-right: 0px;
             width: 100%;
@@ -465,7 +446,6 @@
             .brickup1 {
                 margin: 0 auto !important;
                 width: 100%;
-                // height: 70%;
                 padding-top: 10px;
                 padding-bottom: 20px;
                 display: flex;
