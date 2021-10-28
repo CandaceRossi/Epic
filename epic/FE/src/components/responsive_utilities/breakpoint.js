@@ -4,13 +4,15 @@ import MediaQuery from "react-responsive";
 
 
 const breakpoints = {
-    desktop: '(min-width: 1025px)',
-    tablet: '(min-width: 718px) and (max-width: 1024px)',
-    phone: '(max-width: 717px)',
+    largest: '(min-width: 1281px)',
+    desktop: '(max-width: 1280px)',
+    tablet: '(max-width: 980px)',
+    phone: '(max-width: 736px)',
+    mini:'(max-width: 480px)'
 };
 const { string, object } = PropTypes;
 export default function Breakpoint(props) {
-    const breakpoint = breakpoints[props.name] || breakpoints.desktop;
+    const breakpoint = breakpoints[props.name] || breakpoints.largest;
     return (  <MediaQuery {...props }
         query = { breakpoint } > { props.children } </MediaQuery>  
     );

@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import { Route, Switch } from "react-router-dom";
 import './App.scss';
-import NavContainer from "./components/NavContainer";
-import Home from "./components/Home";
-import Mission from "./components/Mission";
-import Contact from "./components/Contact";
-import Residential from "./components/Residential";
-import Commercial from "./components/Commercial";
-import Parallax from "./components/Parallax";
-import Powerwashing from "./components/Powerwashing";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import NavContainer from "./components/Nav/NavContainer";
+import Home from "./components/Home/Home";
+import MissionLargest from "./components/Mission/MissionLargest";
+import ContactLargest from "./components/Contact/ContactLargest";
+import ResidentialLargest from "./components/Residential/ResidentialLargest";
+import CommercialLargest from "./components/Commercial/CommercialLargest";
+import PowerwashingLargest from "./components/Powerwashing/PowerwashingLargest";
+import ProjectsLargest from "./components/Projects/ProjectsLargest";
+// import ParallaxLargest from "./components/Parallax/ParallaxLargest";
+import Footer from "./components/Footer/Footer";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
@@ -121,13 +121,13 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} isNeeded={isNeeded} />
         
-        <Route path="/Mission" component={Mission} />
-        <Route path="/Contact" component={Contact} />
-        <Route path="/Residential" component={Residential} />
-        <Route path="/Commercial" component={Commercial} />
-        <Route path="/Powerwashing" component={Powerwashing} />
-        <Route path="/Projects" component={Projects} />
-        <Route path="/Parallax" component={Parallax} />
+       <Route path="/Mission" component={MissionLargest} />
+        <Route path="/Contact" component={ContactLargest} />
+        <Route path="/Residential" component={ResidentialLargest} />
+        <Route path="/Commercial" component={CommercialLargest} />
+        <Route path="/Powerwashing" component={PowerwashingLargest} />
+        <Route path="/Projects" component={ProjectsLargest} />
+        {/* <Route path="/Parallax" component={ParallaxLargest} /> */}
 
   </Switch>
       <div className="lastbottom">
