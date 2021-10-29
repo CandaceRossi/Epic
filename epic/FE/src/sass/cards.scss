@@ -350,79 +350,51 @@
         display: block!important;
         z-index: 800;
         .cardsstyledesktop {
-            border: 2px solid purple;
             margin: 0 auto !important;
             max-width: 100%;
             height: 400px;
             z-index: 4;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
+            padding-left: 260px !important;
+            padding-right: 260px !important;
             display: flex !important;
-            align-items: center !important;
             justify-content: center !important;
             .card:first-of-type {
-                border: 1px solid red !important;
                 margin: 0 auto;
-                min-width: 40% !important;
-                width: 65%!important;
-                height: 100% !important;
+                width: 40%!important;
+                min-width: 650px !important;
+                height: 300px !important;
                 min-height: 300px;
                 display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
-                flex-direction: row !important;
-                flex-wrap: nowrap !important;
-                padding: 0px !important;
-                // .card {
-                //     color: rgb(21, 29, 68) !important;
-                //     background: #d6cec3 !important;
-                //     display: flex !important;
-                //     justify-content: space-evenly !important;
-                //     flex-direction: row !important;
-                //     flex-wrap: nowrap !important;
-                .firstimage {
-                    display: flex;
-                    width: 25%;
-                    border: 2px solid purple;
-                }
-                .imagecard {
-                    // border: none;
-                    // border: 1px solid red !important;
-                    width: 75%;
-                    height: 100%;
-                    border: 2px solid green;
-                    margin: 0px;
+                justify-content: space-evenly !important;
+                .card {
                     color: rgb(21, 29, 68) !important;
                     background: #d6cec3 !important;
                     display: flex !important;
                     justify-content: space-evenly !important;
-                    align-items: center !important;
-                    flex-direction: column !important;
-                    padding: 0px!important;
                 }
                 .card-title {
                     width: 100%;
-                    font-size: 1.5rem !important;
+                    font-size: 1.3rem !important;
                     display: flex !important;
                     margin: 0 auto !important;
                     padding: 0px !important;
-                    padding-left: 20px !important;
+                    padding-left: 10px !important;
                 }
                 .card-text {
                     width: 100% !important;
                     height: auto !important;
                     display: flex;
                     margin: 0 auto;
-                    font-size: 1.20rem !important;
+                    padding-left: 10px;
+                    font-size: 1rem !important;
                 }
-                // }
             }
         }
         .card {
             margin: 0 auto;
             padding: none !important;
             width: 20%;
-            min-width: 340px !important;
+            min-width: 285px !important;
             height: auto;
             background: rgb(21, 29, 68) !important;
             color: #d6cec3;
@@ -545,7 +517,7 @@
             .card:first-of-type {
                 margin: 0 auto;
                 width: 100%;
-                height: 335px;
+                height: 385px;
                 display: flex !important;
                 justify-content: center !important;
                 .card {
@@ -554,21 +526,17 @@
                     display: flex;
                     justify-content: center !important;
                     align-items: center !important;
-                    height: 100% !important;
+                    height: auto !important;
                     margin: 0 auto;
-                    body {
-                        width: 100%;
-                        justify-content: center !important;
-                    }
-                    img {
-                        display: flex !important;
-                        align-items: center !important;
-                        max-width: 390px !important;
-                        z-index: 400;
-                        margin: 0 auto !important;
-                    }
+                    padding-left: "auto";
                     .card-title {
                         font-size: 2rem !important;
+                        height: auto !important;
+                        padding: 0px;
+                    }
+                    .card-text {
+                        width: 100% !important;
+                        height: auto !important;
                     }
                 }
             }

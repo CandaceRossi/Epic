@@ -91,12 +91,14 @@ getResponse();
  
 
     return (
-      <div className="cardscontainerdesktop">
+      <div className="cardscontainerdesktop" >
             <div className="cardsstyledesktop">
 
-                <Card>
-                    <Card.Body>
-                        <img className="firstimg" src={beigebasement} style={{width: "290px", height: "170px", display: "flex !important", alignItems: "center !important" }} alt="room" />
+                <Card style={{ border: "none", margin: "0 auto", display: "flex !important", alignItems: "center !important"}}>
+                    <Card.Body style={{
+                        margin: "0 auto", height: "auto", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", display: "flex !important",  alignItems: "center !important", flexDirection: "row"
+                    }}>
+                        <img className="firstimg" src={beigebasement} style={{width: "320px", height: "200px", display: "flex !important", alignItems: "center !important" }} alt="room" />
                         <div className="imagecard" style={{ border: "none", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", alignContent: "center", justifyContent: "center !important", flexDirection: "column" }}>
                             <Card.Title style={{background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0px", maxWidth: "440px", width: "auto", fontSize: "2rem" }}>Make Your Space What You Always Dreamed It Could Be!</Card.Title>
                             <Card.Text style={{ background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0px", maxWidth: "395px", width: "auto", fontSize: "1.2rem", display: "flex", alignItems: "center !important" }}>
