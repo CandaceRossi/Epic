@@ -1,935 +1,1071 @@
-    .testimonialblock {
-        margin: 0 auto;
-        width: 100%;
-        background: whitesmoke;
-        position: relative;
-        display: flex;
-        align-items: center !important;
-        justify-content: center !important;
-        flex-direction: column;
-        z-index: 800;
-        // height: 300px;
-        height: auto;
-        .parapara2 {
-            margin: 5px auto !important;
-            padding-top: 5px;
-            width: 100% !important;
-            height: auto;
-            display: flex;
-            justify-content: center !important;
-            align-items: center !important;
-            z-index: 800;
-            font-family: 'apertura';
-            font-size: 2.4rem;
-            color: rgb(21, 29, 68);
-        }
-    }
-    
-    .testimon-card-container {
-        z-index: 800;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    
-    .testimonial-cards {
-        z-index: 800;
-        position: relative;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background: #d6cec3;
-        color: #d6cec3;
-        .card {
-            margin: 0px;
-            padding: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            width: 35%;
-            min-width: 375px !important;
-            height: 155px;
-            background: #d6cec3;
-            opacity: 0.9;
-            border: none;
-            .card-body {
-                padding: 5px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                div {
+                .testimonialblock {
+                    margin: 0 auto;
                     width: 100%;
-                    padding: 5px;
+                    background: whitesmoke;
+                    position: relative;
+                    display: flex;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    flex-direction: column;
+                    z-index: 800;
+                    // height: 300px;
+                    height: auto;
+                    .parapara2 {
+                        margin: 5px auto !important;
+                        padding-top: 5px;
+                        width: 100% !important;
+                        height: auto;
+                        display: flex;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        z-index: 800;
+                        font-family: 'apertura';
+                        font-size: 2.4rem;
+                        color: rgb(21, 29, 68);
+                    }
+                }
+                
+                .testimon-card-container {
+                    z-index: 800;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                }
+                
+                .testimonial-cards {
+                    z-index: 800;
+                    position: relative;
+                    margin: 0 auto;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                }
-                .card-text {
-                    padding: 1.6%;
-                    font-style: italic;
-                    width: 60%;
-                    font-size: 1.1rem;
-                    font-weight: normal;
-                    color: rgb(21, 29, 68);
-                }
-                .elipse-testimonial {
-                    margin: 0px;
-                    width: 140px;
-                    height: 140px;
-                    border: 2px solid rgb(21, 29, 68) !important;
-                    border-radius: 50%;
-                    overflow: hidden;
-                }
-            }
-        }
-    }
-    /* phone */
-    
-    @media (max-width: 800px) {
-        .testimonialblock {
-            z-index: 800;
-            margin: 0 auto;
-            height: auto;
-            width: 100%;
-            display: flex;
-            justify-content: center !important;
-            align-items: center;
-            flex-direction: column;
-            .parapara2 {
-                z-index: 800;
-                margin: 0 auto;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: 'apertura';
-                color: rgb(21, 29, 68);
-            }
-            h2,
-            h4 {
-                margin: 0 auto;
-                width: 80%!important;
-                z-index: 800;
-                display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
-            }
-            h2 {
-                margin: 0 auto !important;
-                font-size: 1.4rem !important;
-                z-index: 800;
-            }
-            h4 {
-                margin: 0 auto !important;
-                font-size: 1.2rem !important;
-                z-index: 800;
-            }
-        }
-        .testimonial-cards {
-            width: 100%;
-            z-index: 800;
-            .card {
-                margin: 15px auto;
-                padding: 5px;
-                display: flex;
-                justify-content: space-between;
-                width: 75%;
-                min-width: 320px !important;
-                height: 135px;
-                background: #d6cec3;
-                opacity: 0.9;
-                border: none;
-                z-index: 800;
-                .card-body {
                     width: 100%;
-                    display: flex;
-                    justify-content: space-evenly;
-                    z-index: 800;
-                    div {
+                    background: #d6cec3;
+                    color: #d6cec3;
+                    .card {
+                        margin: 0px;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+                        width: 35%;
+                        min-width: 375px !important;
+                        height: 155px;
+                        background: #d6cec3;
+                        opacity: 0.9;
+                        border: none;
+                        .card-body {
+                            padding: 5px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            div {
+                                width: 100%;
+                                padding: 5px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .card-text {
+                                padding: 1.6%;
+                                font-style: italic;
+                                width: 60%;
+                                font-size: 1.1rem;
+                                font-weight: normal;
+                                color: rgb(21, 29, 68);
+                            }
+                            .elipse-testimonial {
+                                margin: 0px;
+                                width: 140px;
+                                height: 140px;
+                                border: 2px solid rgb(21, 29, 68) !important;
+                                border-radius: 50%;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+                /* phone */
+                
+                @media (max-width: 800px) {
+                    .testimonialblock {
+                        z-index: 800;
+                        margin: 0 auto;
+                        height: auto;
                         width: 100%;
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: center !important;
                         align-items: center;
-                        z-index: 800;
+                        flex-direction: column;
+                        .parapara2 {
+                            z-index: 800;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: 'apertura';
+                            color: rgb(21, 29, 68);
+                        }
+                        h2,
+                        h4 {
+                            margin: 0 auto;
+                            width: 80%!important;
+                            z-index: 800;
+                            display: flex !important;
+                            justify-content: center !important;
+                            align-items: center !important;
+                        }
+                        h2 {
+                            margin: 0 auto !important;
+                            font-size: 1.4rem !important;
+                            z-index: 800;
+                        }
+                        h4 {
+                            margin: 0 auto !important;
+                            font-size: 1.2rem !important;
+                            z-index: 800;
+                        }
                     }
-                    .card-text {
-                        display: flex;
-                        padding: 10px;
+                    .testimonial-cards {
+                        width: 100%;
+                        z-index: 800;
+                        .card {
+                            margin: 15px auto;
+                            padding: 5px;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 75%;
+                            min-width: 320px !important;
+                            height: 135px;
+                            background: #d6cec3;
+                            opacity: 0.9;
+                            border: none;
+                            z-index: 800;
+                            .card-body {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-evenly;
+                                z-index: 800;
+                                div {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    z-index: 800;
+                                }
+                                .card-text {
+                                    display: flex;
+                                    padding: 10px;
+                                    margin: 0 auto;
+                                    width: 75%;
+                                    font-size: 1.1rem;
+                                    // font-weight: bold;
+                                    font-style: italic;
+                                    font-weight: normal;
+                                    color: rgb(21, 29, 68);
+                                    z-index: 800;
+                                }
+                                .elipse-testimonial {
+                                    display: flex;
+                                    margin: 0 auto;
+                                    width: 110px !important;
+                                    height: 110px !important;
+                                    z-index: 800;
+                                }
+                            }
+                        }
+                        .card:first-child {
+                            display: none
+                        }
+                    }
+                }
+                
+                //TOP HOME CONTENT CARDS START HERE
+                //
+                // 
+                // 
+                //largest
+                .cards-container {
+                    margin: 0 auto;
+                    margin-top: -750px;
+                    width: 100%;
+                    height: auto;
+                    position: relative!important;
+                    display: block!important;
+                    z-index: 800;
+                    .cards-style {
+                        margin: 0 auto !important;
+                        max-width: 100%;
+                        height: 400px;
+                        z-index: 4;
+                        padding-left: 260px !important;
+                        padding-right: 260px !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        .card:first-of-type {
+                            margin: 0 auto;
+                            width: 40%;
+                            min-width: 840px !important;
+                            height: 300px;
+                            display: flex !important;
+                            justify-content: space-evenly !important;
+                            .card {
+                                color: rgb(21, 29, 68) !important;
+                                background: #d6cec3 !important;
+                                display: flex !important;
+                                justify-content: space-evenly !important;
+                            }
+                            .card-title {
+                                width: 100%;
+                                font-size: 1.5rem !important;
+                                display: flex !important;
+                                margin: 0 auto !important;
+                                padding: 0px !important;
+                                padding-left: 20px !important;
+                            }
+                            .card-text {
+                                width: 100% !important;
+                                height: auto !important;
+                                display: flex;
+                                margin: 0 auto;
+                                font-size: 1.20rem !important;
+                            }
+                        }
+                    }
+                    .card {
                         margin: 0 auto;
-                        width: 75%;
-                        font-size: 1.1rem;
-                        // font-weight: bold;
-                        font-style: italic;
-                        font-weight: normal;
-                        color: rgb(21, 29, 68);
-                        z-index: 800;
+                        padding: none !important;
+                        width: 20%;
+                        min-width: 340px !important;
+                        height: auto;
+                        background: rgb(21, 29, 68) !important;
+                        color: #d6cec3;
+                        position: relative!important;
+                        top: 130!important;
+                        .card-body {
+                            padding: none !important;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        div {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            padding-top: 5px;
+                            background: rgb(21, 29, 68);
+                            color: #d6cec3;
+                        }
+                        .card-title {
+                            width: 100%;
+                            margin: 5px auto !important;
+                            display: flex;
+                            height: auto !important;
+                        }
+                        .card-text {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            margin: 0 auto;
+                            height: 20px !important;
+                        }
+                        .list-group-flush {
+                            width: 100%;
+                            height: auto;
+                            margin: 0 auto !important;
+                            .list-group-item {
+                                width: 100%;
+                                display: flex;
+                                margin: 0 auto !important;
+                                justify-content: center !important;
+                                height: 25px;
+                                align-items: center;
+                                // margin: auto;
+                                padding: none !important;
+                            }
+                        }
+                        .link {
+                            display: flex;
+                            justify-content: flex-start !important;
+                            align-items: center !important;
+                            width: 100%;
+                            height: 21px;
+                            padding: none !important;
+                            margin: 0 auto;
+                            font-size: .8rem !important;
+                            color: #d6cec3;
+                        }
                     }
-                    .elipse-testimonial {
-                        display: flex;
+                    .row {
+                        padding: 5px;
+                        input {
+                            max-width: 100%;
+                            padding: 8px;
+                        }
+                        label {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            font-size: 1.7em;
+                        }
+                    }
+                    .msg {
+                        text-align: center;
                         margin: 0 auto;
-                        width: 110px !important;
-                        height: 110px !important;
-                        z-index: 800;
-                    }
-                }
-            }
-            .card:first-child {
-                display: none
-            }
-        }
-    }
-    
-    //TOP HOME CONTENT CARDS START HERE
-    //
-    // 
-    // 
-    //largest
-    .cards-container {
-        margin: 0 auto;
-        margin-top: -750px;
-        width: 100%;
-        height: auto;
-        position: relative!important;
-        display: block!important;
-        z-index: 800;
-        .cards-style {
-            margin: 0 auto !important;
-            max-width: 100%;
-            height: 400px;
-            z-index: 4;
-            padding-left: 260px !important;
-            padding-right: 260px !important;
-            display: flex !important;
-            justify-content: center !important;
-            .card:first-of-type {
-                margin: 0 auto;
-                width: 40%;
-                min-width: 840px !important;
-                height: 300px;
-                display: flex !important;
-                justify-content: space-evenly !important;
-                .card {
-                    color: rgb(21, 29, 68) !important;
-                    background: #d6cec3 !important;
-                    display: flex !important;
-                    justify-content: space-evenly !important;
-                }
-                .card-title {
-                    width: 100%;
-                    font-size: 1.5rem !important;
-                    display: flex !important;
-                    margin: 0 auto !important;
-                    padding: 0px !important;
-                    padding-left: 20px !important;
-                }
-                .card-text {
-                    width: 100% !important;
-                    height: auto !important;
-                    display: flex;
-                    margin: 0 auto;
-                    font-size: 1.20rem !important;
-                }
-            }
-        }
-        .card {
-            margin: 0 auto;
-            padding: none !important;
-            width: 20%;
-            min-width: 340px !important;
-            height: auto;
-            background: rgb(21, 29, 68) !important;
-            color: #d6cec3;
-            position: relative!important;
-            top: 130!important;
-            .card-body {
-                padding: none !important;
-                margin: 0 auto;
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-            }
-            div {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-                padding-top: 5px;
-                background: rgb(21, 29, 68);
-                color: #d6cec3;
-            }
-            .card-title {
-                width: 100%;
-                margin: 5px auto !important;
-                display: flex;
-                height: auto !important;
-            }
-            .card-text {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                margin: 0 auto;
-                height: 20px !important;
-            }
-            .list-group-flush {
-                width: 100%;
-                height: auto;
-                margin: 0 auto !important;
-                .list-group-item {
-                    width: 100%;
-                    display: flex;
-                    margin: 0 auto !important;
-                    justify-content: center !important;
-                    height: 25px;
-                    align-items: center;
-                    // margin: auto;
-                    padding: none !important;
-                }
-            }
-            .link {
-                display: flex;
-                justify-content: flex-start !important;
-                align-items: center !important;
-                width: 100%;
-                height: 21px;
-                padding: none !important;
-                margin: 0 auto;
-                font-size: .8rem !important;
-                color: #d6cec3;
-            }
-        }
-        .row {
-            padding: 5px;
-            input {
-                max-width: 100%;
-                padding: 8px;
-            }
-            label {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                font-size: 1.7em;
-            }
-        }
-        .msg {
-            text-align: center;
-            margin: 0 auto;
-            letter-spacing: 0.2rem;
-            width: 330px;
-            padding: 0px;
-            font-size: 16.5px;
-            font-weight: bold;
-            color: #000;
-            background-color: #fff;
-            display: none !important;
-        }
-        .msgAppear {
-            display: block;
-        }
-        .landingbutton {
-            margin: 0 auto;
-            width: 100%;
-            padding: 5px;
-            font-size: 1.4em;
-        }
-    }
-    
-    //desktop
-    .cardscontainerdesktop {
-        margin: 0 auto;
-        margin-top: -750px;
-        width: 100%;
-        height: auto;
-        position: relative!important;
-        display: block!important;
-        z-index: 800;
-        .cardsstyledesktop {
-            margin: 0 auto !important;
-            max-width: 100%;
-            height: 400px;
-            z-index: 4;
-            padding-left: 260px !important;
-            padding-right: 260px !important;
-            display: flex !important;
-            justify-content: center !important;
-            .card:first-of-type {
-                margin: 0 auto;
-                width: 40%!important;
-                min-width: 650px !important;
-                height: 300px !important;
-                min-height: 300px;
-                display: flex !important;
-                justify-content: space-evenly !important;
-                .card {
-                    color: rgb(21, 29, 68) !important;
-                    background: #d6cec3 !important;
-                    display: flex !important;
-                    justify-content: space-evenly !important;
-                }
-                .card-title {
-                    width: 100%;
-                    font-size: 1.3rem !important;
-                    display: flex !important;
-                    margin: 0 auto !important;
-                    padding: 0px !important;
-                    padding-left: 10px !important;
-                }
-                .card-text {
-                    width: 100% !important;
-                    height: auto !important;
-                    display: flex;
-                    margin: 0 auto;
-                    padding-left: 10px;
-                    font-size: 1rem !important;
-                }
-            }
-        }
-        .card {
-            margin: 0 auto;
-            padding: none !important;
-            width: 20%;
-            min-width: 285px !important;
-            height: auto;
-            background: rgb(21, 29, 68) !important;
-            color: #d6cec3;
-            position: relative!important;
-            top: 130!important;
-            .card-body {
-                padding: none !important;
-                margin: 0 auto;
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-            }
-            div {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-                padding-top: 5px;
-                background: rgb(21, 29, 68);
-                color: #d6cec3;
-            }
-            .card-title {
-                width: 100%;
-                margin: 5px auto !important;
-                display: flex;
-                height: auto !important;
-            }
-            .card-text {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                margin: 0 auto;
-                height: 20px !important;
-            }
-            .list-group-flush {
-                width: 100%;
-                height: auto;
-                margin: 0 auto !important;
-                .list-group-item {
-                    width: 100%;
-                    display: flex;
-                    margin: 0 auto !important;
-                    justify-content: center !important;
-                    height: 25px;
-                    align-items: center;
-                    // margin: auto;
-                    padding: none !important;
-                }
-            }
-            .link {
-                display: flex;
-                justify-content: flex-start !important;
-                align-items: center !important;
-                width: 100%;
-                height: 21px;
-                padding: none !important;
-                margin: 0 auto;
-                font-size: .8rem !important;
-                color: #d6cec3;
-            }
-        }
-        .row {
-            padding: 5px;
-            input {
-                max-width: 100%;
-                padding: 8px;
-            }
-            label {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                font-size: 1.7em;
-            }
-        }
-        .msg {
-            text-align: center;
-            margin: 0 auto;
-            letter-spacing: 0.2rem;
-            width: 330px;
-            padding: 0px;
-            font-size: 16.5px;
-            font-weight: bold;
-            color: #000;
-            background-color: #fff;
-            display: none !important;
-        }
-        .msgAppear {
-            display: block;
-        }
-        .landingbutton {
-            margin: 0 auto;
-            width: 100%;
-            padding: 5px;
-            font-size: 1.4em;
-        }
-    }
-    
-    //tablet
-    .cardscontainertablet {
-        margin: 0 auto !important;
-        margin-top: -420px!important;
-        width: 100% !important;
-        height: auto;
-        position: relative!important;
-        display: block!important;
-        z-index: 800;
-        .cardsstyletablet {
-            margin: 0 auto !important;
-            margin-bottom: 135px !important;
-            width: 100% !important;
-            height: 380px !important;
-            z-index: 4;
-            display: flex !important;
-            flex-direction: column;
-            justify-content: center !important;
-            align-items: center !important;
-            .card:first-of-type {
-                margin: 0 auto;
-                width: 100%;
-                height: 385px;
-                display: flex !important;
-                justify-content: center !important;
-                .card {
-                    color: rgb(21, 29, 68) !important;
-                    background: #d6cec3 !important;
-                    display: flex;
-                    justify-content: center !important;
-                    align-items: center !important;
-                    height: auto !important;
-                    margin: 0 auto;
-                    padding-left: "auto";
-                    .card-title {
-                        font-size: 2rem !important;
-                        height: auto !important;
+                        letter-spacing: 0.2rem;
+                        width: 330px;
                         padding: 0px;
+                        font-size: 16.5px;
+                        font-weight: bold;
+                        color: #000;
+                        background-color: #fff;
+                        display: none !important;
                     }
-                    .card-text {
+                    .msgAppear {
+                        display: block;
+                    }
+                    .landingbutton {
+                        margin: 0 auto;
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 1.4em;
+                    }
+                }
+                
+                //desktop
+                .cardscontainerdesktop {
+                    margin: 0 auto;
+                    margin-top: -750px;
+                    width: 100%;
+                    height: auto;
+                    position: relative!important;
+                    display: block!important;
+                    z-index: 800;
+                    .cardsstyledesktop {
+                        margin: 0 auto !important;
+                        max-width: 100%;
+                        height: 400px;
+                        z-index: 4;
+                        padding-left: 260px !important;
+                        padding-right: 260px !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        .card:first-of-type {
+                            margin: 0 auto;
+                            width: 40%!important;
+                            min-width: 650px !important;
+                            height: 300px !important;
+                            min-height: 300px;
+                            display: flex !important;
+                            justify-content: space-evenly !important;
+                            .card {
+                                color: rgb(21, 29, 68) !important;
+                                background: #d6cec3 !important;
+                                display: flex !important;
+                                justify-content: space-evenly !important;
+                            }
+                            .card-title {
+                                width: 100%;
+                                font-size: 1.3rem !important;
+                                display: flex !important;
+                                margin: 0 auto !important;
+                                padding: 0px !important;
+                                padding-left: 10px !important;
+                            }
+                            .card-text {
+                                width: 100% !important;
+                                height: auto !important;
+                                display: flex;
+                                margin: 0 auto;
+                                padding-left: 10px;
+                                font-size: 1rem !important;
+                            }
+                        }
+                    }
+                    .card {
+                        margin: 0 auto;
+                        padding: none !important;
+                        width: 20%;
+                        min-width: 285px !important;
+                        height: auto;
+                        background: rgb(21, 29, 68) !important;
+                        color: #d6cec3;
+                        position: relative!important;
+                        top: 130!important;
+                        .card-body {
+                            padding: none !important;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        div {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            padding-top: 5px;
+                            background: rgb(21, 29, 68);
+                            color: #d6cec3;
+                        }
+                        .card-title {
+                            width: 100%;
+                            margin: 5px auto !important;
+                            display: flex;
+                            height: auto !important;
+                        }
+                        .card-text {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            margin: 0 auto;
+                            height: 20px !important;
+                        }
+                        .list-group-flush {
+                            width: 100%;
+                            height: auto;
+                            margin: 0 auto !important;
+                            .list-group-item {
+                                width: 100%;
+                                display: flex;
+                                margin: 0 auto !important;
+                                justify-content: center !important;
+                                height: 25px;
+                                align-items: center;
+                                // margin: auto;
+                                padding: none !important;
+                            }
+                        }
+                        .link {
+                            display: flex;
+                            justify-content: flex-start !important;
+                            align-items: center !important;
+                            width: 100%;
+                            height: 21px;
+                            padding: none !important;
+                            margin: 0 auto;
+                            font-size: .8rem !important;
+                            color: #d6cec3;
+                        }
+                    }
+                    .row {
+                        padding: 5px;
+                        input {
+                            max-width: 100%;
+                            padding: 8px;
+                        }
+                        label {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            font-size: 1.7em;
+                        }
+                    }
+                    .msg {
+                        text-align: center;
+                        margin: 0 auto;
+                        letter-spacing: 0.2rem;
+                        width: 330px;
+                        padding: 0px;
+                        font-size: 16.5px;
+                        font-weight: bold;
+                        color: #000;
+                        background-color: #fff;
+                        display: none !important;
+                    }
+                    .msgAppear {
+                        display: block;
+                    }
+                    .landingbutton {
+                        margin: 0 auto;
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 1.4em;
+                    }
+                }
+                
+                //tablet
+                .cardscontainertablet {
+                    margin: 0 auto !important;
+                    margin-top: -420px!important;
+                    width: 100% !important;
+                    height: auto;
+                    position: relative!important;
+                    display: block!important;
+                    z-index: 800;
+                    .cardsstyletablet {
+                        margin: 0 auto !important;
+                        margin-bottom: 135px !important;
                         width: 100% !important;
-                        height: auto !important;
+                        height: 380px !important;
+                        z-index: 4;
+                        padding-left: 0px;
+                        padding-right: 0px !important;
+                        display: flex !important;
+                        flex-direction: column;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        .card:first-of-type {
+                            margin: 0 auto;
+                            width: 100%;
+                            height: 385px;
+                            display: flex !important;
+                            justify-content: center !important;
+                            .card {
+                                color: rgb(21, 29, 68) !important;
+                                background: #d6cec3 !important;
+                                display: flex !important;
+                                justify-content: center !important;
+                                align-items: center !important;
+                                height: auto !important;
+                                margin: 0 auto;
+                                width: 100% !important;
+                                padding: 0px !important;
+                                .card-title {
+                                    width: 100% !important;
+                                    font-size: 2rem !important;
+                                    height: auto !important;
+                                    padding: 0px;
+                                    padding-right: 0px !important;
+                                }
+                                .card-text {
+                                    width: 100% !important;
+                                    height: auto !important;
+                                    padding-right: 0px !important;
+                                }
+                            }
+                        }
+                    }
+                    .card {
+                        margin: 0 auto;
+                        padding: none !important;
+                        width: 100%;
+                        background: rgb(21, 29, 68) !important;
+                        color: #d6cec3;
+                        position: relative!important;
+                        .card-body {
+                            padding: none !important;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        div {
+                            width: 75%;
+                            height: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            background: rgb(21, 29, 68);
+                            color: #d6cec3;
+                        }
+                        .card-title {
+                            width: 90% !important;
+                            margin: 5px auto;
+                            display: flex;
+                            height: auto !important;
+                            font-size: 1.65rem !important;
+                            padding: 15px 0px 10px 0px;
+                        }
+                        .card-text {
+                            display: flex;
+                            justify-content: center;
+                            width: 100% !important;
+                            margin: 0 auto;
+                            height: auto !important;
+                        }
+                        .card-text:nth-child(2) {
+                            font-size: 1.4rem;
+                        }
+                        .list-group-flush {
+                            width: 100%!important;
+                            height: auto;
+                            margin: 0 auto !important;
+                            .list-group-item {
+                                width: 100% !important;
+                                display: flex;
+                                margin: 0 auto !important;
+                                justify-content: center !important;
+                                height: 25px;
+                                align-items: center;
+                                padding: none !important;
+                            }
+                        }
+                        .link {
+                            display: flex;
+                            justify-content: flex-start !important;
+                            align-items: center !important;
+                            width: 100%;
+                            height: 21px;
+                            padding: none !important;
+                            margin: 0 auto;
+                            font-size: 1.2rem !important;
+                            color: #d6cec3;
+                        }
+                    }
+                    .row {
+                        width: 100% !important;
+                        margin: 0px !important;
+                        padding: 15px !important;
+                        display: flex;
+                        justify-content: center !important;
+                        flex-wrap: nowrap !important;
+                        align-items: baseline !important;
+                        input {
+                            margin: 0px !important;
+                            width: 598px !important;
+                            padding: 8px;
+                        }
+                        label {
+                            padding: 0px !important;
+                            margin: 0px !important;
+                            width: 100px!important;
+                            font-size: 1.7em;
+                        }
+                    }
+                    .landingbutton {
+                        margin: 0 auto;
+                        width: 100% !important;
+                        padding: 5px;
+                        font-size: 1.4em;
                     }
                 }
-            }
-        }
-        .card {
-            margin: 0 auto;
-            padding: none !important;
-            width: 100%;
-            background: rgb(21, 29, 68) !important;
-            color: #d6cec3;
-            position: relative!important;
-            .card-body {
-                padding: none !important;
-                margin: 0 auto;
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-            }
-            div {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-                background: rgb(21, 29, 68);
-                color: #d6cec3;
-            }
-            .card-title {
-                width: 90% !important;
-                margin: 5px auto;
-                display: flex;
-                height: auto !important;
-                font-size: 1.65rem !important;
-                padding: 15px 0px 10px 0px;
-            }
-            .card-text {
-                display: flex;
-                justify-content: center;
-                width: 100% !important;
-                margin: 0 auto;
-                height: auto !important;
-            }
-            .card-text:nth-child(2) {
-                font-size: 1.4rem;
-            }
-            .list-group-flush {
-                width: 100%!important;
-                height: auto;
-                margin: 0 auto !important;
-                .list-group-item {
+                
+                //phone 
+                .cardscontainerphone {
+                    border: 1px solid red;
+                    // padding-top: 0px;
+                    // display: flex !important;
+                    // flex-direction: column !important;
+                    margin: 0 auto !important;
+                    margin-top: 520px !important;
+                    // margin-top: -420px!important;
                     width: 100% !important;
-                    display: flex;
-                    margin: 0 auto !important;
-                    justify-content: center !important;
-                    height: 25px;
-                    align-items: center;
-                    padding: none !important;
-                }
-            }
-            .link {
-                display: flex;
-                justify-content: flex-start !important;
-                align-items: center !important;
-                width: 100%;
-                height: 21px;
-                padding: none !important;
-                margin: 0 auto;
-                font-size: 1.2rem !important;
-                color: #d6cec3;
-            }
-        }
-        .row {
-            width: 100% !important;
-            margin: 0px !important;
-            padding: 15px !important;
-            display: flex;
-            justify-content: center !important;
-            flex-wrap: nowrap !important;
-            align-items: baseline !important;
-            input {
-                margin: 0px !important;
-                width: 598px !important;
-                padding: 8px;
-            }
-            label {
-                padding: 0px !important;
-                margin: 0px !important;
-                width: 100px!important;
-                font-size: 1.7em;
-            }
-        }
-        .landingbutton {
-            margin: 0 auto;
-            width: 100% !important;
-            padding: 5px;
-            font-size: 1.4em;
-        }
-    }
-    
-    //phone 
-    .cardscontainerphone {
-        width: 100vw;
-        height: 100% !important;
-        margin: 0 auto !important;
-        margin-top: 360px !important;
-        position: relative !important;
-        padding-top: 0px;
-        z-index: 500 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        img {
-            display: none !important;
-        }
-        .card:first-of-type {
-            margin: 0 auto !important;
-            width: 100% !important;
-            height: 360px !important;
-            display: flex !important;
-            justify-content: center !important;
-            .card {
-                padding: 0px;
-                display: flex !important;
-                justify-content: space-evenly !important;
-            }
-            .card-title {
-                height: auto;
-                width: 100%;
-                padding-bottom: 10px;
-                font-size: 1.4rem!important;
-            }
-            .card-text {
-                width: 100%;
-                font-size: 1.2rem !important;
-                height: auto;
-            }
-        }
-        .cardsstylephone {
-            margin: 0 auto;
-            width: 100vw !important;
-            height: 100% !important;
-            z-index: 4;
-            display: flex !important;
-            align-items: center;
-            justify-content: center !important;
-            flex-direction: column !important;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-            background: whitesmoke !important;
-            .card:first-of-type {
-                margin: 0 auto !important;
-                width: 100vw !important;
-                max-height: 420px;
-                height: auto !important;
-                display: flex !important;
-                justify-content: center !important;
-                .card-title {
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    margin: 0 auto !important;
                     height: auto;
-                    width: 100% !important;
-                    padding-bottom: 10px;
-                    font-size: 1.4rem!important;
+                    position: relative!important;
+                    display: block!important;
+                    z-index: 800;
+                    img {
+                        display: none !important;
+                    }
+                    .cardsstylephone {
+                        margin: 0 auto !important;
+                        margin-bottom: 135px !important;
+                        width: 100% !important;
+                        height: 380px !important;
+                        z-index: 4;
+                        padding-left: 0px;
+                        padding-right: 0px !important;
+                        display: flex !important;
+                        flex-direction: column;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        .card:first-of-type {
+                            margin: 0 auto;
+                            width: 100%;
+                            height: 385px;
+                            display: flex !important;
+                            justify-content: center !important;
+                            .card {
+                                color: rgb(21, 29, 68) !important;
+                                background: #d6cec3 !important;
+                                display: flex !important;
+                                justify-content: center !important;
+                                align-items: center !important;
+                                height: auto !important;
+                                margin: 0 auto;
+                                width: 100% !important;
+                                padding: 0px !important;
+                                .card-title {
+                                    width: 100% !important;
+                                    font-size: 2rem !important;
+                                    height: auto !important;
+                                    padding: 0px;
+                                    padding-right: 0px !important;
+                                }
+                                .card-text {
+                                    width: 100% !important;
+                                    height: auto !important;
+                                    padding-right: 0px !important;
+                                }
+                            }
+                        }
+                    }
+                    .card {
+                        margin: 0 auto;
+                        padding: none !important;
+                        width: 100%;
+                        background: rgb(21, 29, 68) !important;
+                        color: #d6cec3;
+                        position: relative!important;
+                        .card-body {
+                            padding: none !important;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        div {
+                            width: 75%;
+                            height: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            background: rgb(21, 29, 68);
+                            color: #d6cec3;
+                        }
+                        .card-title {
+                            width: 90% !important;
+                            margin: 5px auto;
+                            display: flex;
+                            height: auto !important;
+                            font-size: 1.65rem !important;
+                            padding: 15px 0px 10px 0px;
+                        }
+                        .card-text {
+                            display: flex;
+                            justify-content: center;
+                            width: 100% !important;
+                            margin: 0 auto;
+                            height: auto !important;
+                        }
+                        .card-text:nth-child(2) {
+                            font-size: 1.4rem;
+                        }
+                        .list-group-flush {
+                            width: 100%!important;
+                            height: auto;
+                            margin: 0 auto !important;
+                            .list-group-item {
+                                width: 100% !important;
+                                display: flex;
+                                margin: 0 auto !important;
+                                justify-content: center !important;
+                                height: 25px;
+                                align-items: center;
+                                padding: none !important;
+                            }
+                        }
+                        .link {
+                            display: flex;
+                            justify-content: flex-start !important;
+                            align-items: center !important;
+                            width: 100%;
+                            height: 21px;
+                            padding: none !important;
+                            margin: 0 auto;
+                            font-size: 1.2rem !important;
+                            color: #d6cec3;
+                        }
+                    }
+                    .row {
+                        width: 100% !important;
+                        margin: 0px !important;
+                        padding: 15px !important;
+                        display: flex;
+                        justify-content: center !important;
+                        flex-wrap: nowrap !important;
+                        align-items: baseline !important;
+                        input {
+                            margin: 0px !important;
+                            width: 598px !important;
+                            padding: 8px;
+                        }
+                        label {
+                            padding: 0px !important;
+                            margin: 0px !important;
+                            width: 100px!important;
+                            font-size: 1.7em;
+                        }
+                    }
+                    .landingbutton {
+                        margin: 0 auto;
+                        width: 100% !important;
+                        padding: 5px;
+                        font-size: 1.4em;
+                    }
+                    // width: 100%;
+                    // height: auto !important;
+                    // margin: 0 auto !important;
+                    // margin-top: 360px !important;
+                    // position: relative !important;
+                    // padding-top: 0px;
+                    // z-index: 800 !important;
+                    // display: flex !important;
+                    // flex-direction: column !important;
+                    // img {
+                    //     // display: none !important;
+                    // }
+                    // .cardsstylephone {
+                    // margin: 0 auto;
+                    // width: 100vw !important;
+                    // height: 100% !important;
+                    // z-index: 4;
+                    // display: flex !important;
+                    // align-items: center;
+                    // justify-content: center !important;
+                    // flex-direction: column !important;
+                    // padding-left: 0px !important;
+                    // padding-right: 0px !important;
+                    // background: whitesmoke !important;
+                    //     .card:first-of-type {
+                    //         margin: 0 auto !important;
+                    //         width: 100vw !important;
+                    //         max-height: 420px;
+                    //         height: auto !important;
+                    //         display: flex !important;
+                    //         justify-content: center !important;
+                    //         .card-title {
+                    //             display: flex !important;
+                    //             align-items: center !important;
+                    //             justify-content: center !important;
+                    //             margin: 0 auto !important;
+                    //             height: auto;
+                    //             width: 100% !important;
+                    //             padding-bottom: 10px;
+                    //             font-size: 1.4rem!important;
+                    //         }
+                    //         .card-text {
+                    //             display: flex !important;
+                    //             justify-content: center !important;
+                    //             margin: 0 auto !important;
+                    //             font-size: 1.2rem !important;
+                    //             height: auto !important;
+                    //         }
+                    //     }
+                    //     .card-title {
+                    //         width: 100%;
+                    //         display: flex;
+                    //         font-size: 2rem !important;
+                    //     }
+                    //     .card {
+                    //         margin: 0 auto;
+                    //         display: flex;
+                    //         padding: 0px !important;
+                    //         padding-bottom: 15px !important;
+                    //         width: 100%;
+                    //         min-width: 340px !important;
+                    //         height: auto;
+                    //         background: rgb(21, 29, 68) !important;
+                    //         color: #d6cec3;
+                    //         position: relative!important;
+                    //         .card-body {
+                    //             padding: 0px !important;
+                    //             margin: 0 auto;
+                    //             width: 100%;
+                    //             height: auto !important;
+                    //             display: flex;
+                    //             flex-direction: column;
+                    //         }
+                    //         div {
+                    //             width: 100%;
+                    //             height: auto;
+                    //             display: flex;
+                    //             justify-content: center;
+                    //             align-items: center;
+                    //             margin: 0 auto;
+                    //             padding-top: 5px;
+                    //             background: rgb(21, 29, 68);
+                    //             color: #d6cec3;
+                    //         }
+                    //         .card-title {
+                    //             width: 100%;
+                    //             margin: 0 auto;
+                    //             display: flex;
+                    //             height: auto !important;
+                    //             font-size: 1.5rem !important;
+                    //         }
+                    //         .card-text {
+                    //             display: flex;
+                    //             justify-content: center;
+                    //             width: 100%;
+                    //             margin: 0 auto;
+                    //             height: 20px !important;
+                    //         }
+                    //         .landingbutton {
+                    //             margin: 0 auto;
+                    //             display: flex;
+                    //             justify-content: center;
+                    //             align-items: center;
+                    //             width: 100%;
+                    //             padding: 1px !important;
+                    //             font-size: 1.5em;
+                    //         }
+                    //         .link {
+                    //             display: flex;
+                    //             justify-content: flex-start !important;
+                    //             align-items: center !important;
+                    //             width: 100%;
+                    //             height: 21px;
+                    //             // margin: auto;
+                    //             padding: none !important;
+                    //             margin: 0 auto;
+                    //             font-size: .8rem !important;
+                    //             color: #d6cec3;
+                    //         }
+                    //     }
+                    // }
                 }
-                .card-text {
-                    display: flex !important;
-                    justify-content: center !important;
-                    margin: 0 auto !important;
-                    font-size: 1.2rem !important;
-                    height: auto !important;
-                }
-            }
-            .card-title {
-                width: 100%;
-                display: flex;
-                font-size: 2rem !important;
-            }
-            .card {
-                margin: 0 auto;
-                display: flex;
-                padding: 0px !important;
-                padding-bottom: 15px !important;
-                width: 100%;
-                min-width: 340px !important;
-                height: auto;
-                background: rgb(21, 29, 68) !important;
-                color: #d6cec3;
-                position: relative!important;
-                .card-body {
-                    padding: 0px !important;
-                    margin: 0 auto;
-                    width: 100%;
-                    height: auto !important;
-                    display: flex;
-                    flex-direction: column;
-                }
-                div {
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 auto;
-                    padding-top: 5px;
-                    background: rgb(21, 29, 68);
-                    color: #d6cec3;
-                }
-                .card-title {
-                    width: 100%;
-                    margin: 0 auto;
-                    display: flex;
-                    height: auto !important;
-                    font-size: 1.5rem !important;
-                }
-                .card-text {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    margin: 0 auto;
-                    height: 20px !important;
-                }
-                .landingbutton {
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    padding: 1px !important;
-                    font-size: 1.5em;
-                }
-                .link {
-                    display: flex;
-                    justify-content: flex-start !important;
-                    align-items: center !important;
-                    width: 100%;
-                    height: 21px;
-                    // margin: auto;
-                    padding: none !important;
-                    margin: 0 auto;
-                    font-size: .8rem !important;
-                    color: #d6cec3;
-                }
-            }
-        }
-    }
-    
-    //mini
-    .cardscontainermini {
-        width: 100vw;
-        height: 100% !important;
-        margin: 0 auto !important;
-        margin-top: 360px !important;
-        position: relative !important;
-        padding-top: 0px;
-        z-index: 500 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        img {
-            display: none !important;
-        }
-        .card:first-of-type {
-            margin: 0 auto !important;
-            width: 100% !important;
-            height: 360px !important;
-            display: flex !important;
-            justify-content: center !important;
-            .card {
-                padding: 0px;
-                display: flex !important;
-                justify-content: space-evenly !important;
-            }
-            .card-title {
-                height: auto;
-                width: 100%;
-                padding-bottom: 10px;
-                font-size: 1.4rem!important;
-            }
-            .card-text {
-                width: 100%;
-                font-size: 1.2rem !important;
-                height: auto;
-            }
-        }
-        .cardsstylemini {
-            margin: 0 auto;
-            width: 100vw !important;
-            height: 100% !important;
-            z-index: 4;
-            display: flex !important;
-            align-items: center;
-            justify-content: center !important;
-            flex-direction: column !important;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-            background: whitesmoke !important;
-            .card:first-of-type {
-                margin: 0 auto !important;
-                width: 100vw !important;
-                max-height: 420px;
-                height: auto !important;
-                display: flex !important;
-                justify-content: center !important;
-                .card-title {
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    margin: 0 auto !important;
-                    height: auto;
-                    width: 100% !important;
-                    padding-bottom: 10px;
-                    font-size: 1.4rem!important;
-                }
-                .card-text {
-                    display: flex !important;
-                    justify-content: center !important;
-                    margin: 0 auto !important;
-                    font-size: 1.2rem !important;
-                    height: auto !important;
-                }
-            }
-            .card-title {
-                width: 100%;
-                display: flex;
-                font-size: 2rem !important;
-            }
-            .card {
-                margin: 0 auto;
-                display: flex;
-                padding: 0px !important;
-                padding-bottom: 15px !important;
-                width: 100%;
-                min-width: 340px !important;
-                height: auto;
-                background: rgb(21, 29, 68) !important;
-                color: #d6cec3;
-                position: relative!important;
-                .card-body {
-                    padding: 0px !important;
-                    margin: 0 auto;
-                    width: 100%;
-                    height: auto !important;
-                    display: flex;
-                    flex-direction: column;
-                }
-                div {
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 auto;
-                    padding-top: 5px;
-                    background: rgb(21, 29, 68);
-                    color: #d6cec3;
-                }
-                .card-title {
-                    width: 100%;
-                    margin: 0 auto;
-                    display: flex;
-                    height: auto !important;
-                    font-size: 1.5rem !important;
-                }
-                .card-text {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    margin: 0 auto;
-                    height: 20px !important;
-                }
-                .landingbutton {
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    padding: 1px !important;
-                    font-size: 1.5em;
-                }
-                .link {
-                    display: flex;
-                    justify-content: flex-start !important;
-                    align-items: center !important;
-                    width: 100%;
-                    height: 21px;
-                    // margin: auto;
-                    padding: none !important;
-                    margin: 0 auto;
-                    font-size: .8rem !important;
-                    color: #d6cec3;
-                }
-            }
-        }
-    }
+                
+                //mini
+                // .cardscontainermini {
+                //     width: 100vw;
+                //     height: 100% !important;
+                //     margin: 0 auto !important;
+                //     margin-top: 360px !important;
+                //     position: relative !important;
+                //     padding-top: 0px;
+                //     z-index: 500 !important;
+                //     display: flex !important;
+                //     flex-direction: column !important;
+                //     img {
+                //         display: none !important;
+                //     }
+                //     .card:first-of-type {
+                //         margin: 0 auto !important;
+                //         width: 100% !important;
+                //         height: 360px !important;
+                //         display: flex !important;
+                //         justify-content: center !important;
+                //         .card {
+                //             padding: 0px;
+                //             display: flex !important;
+                //             justify-content: space-evenly !important;
+                //         }
+                //         .card-title {
+                //             height: auto;
+                //             width: 100%;
+                //             padding-bottom: 10px;
+                //             font-size: 1.4rem!important;
+                //         }
+                //         .card-text {
+                //             width: 100%;
+                //             font-size: 1.2rem !important;
+                //             height: auto;
+                //         }
+                //     }
+                //     .cardsstylemini {
+                //         margin: 0 auto;
+                //         width: 100vw !important;
+                //         height: 100% !important;
+                //         z-index: 4;
+                //         display: flex !important;
+                //         align-items: center;
+                //         justify-content: center !important;
+                //         flex-direction: column !important;
+                //         padding-left: 0px !important;
+                //         padding-right: 0px !important;
+                //         background: whitesmoke !important;
+                //         .card:first-of-type {
+                //             margin: 0 auto !important;
+                //             width: 100vw !important;
+                //             max-height: 420px;
+                //             height: auto !important;
+                //             display: flex !important;
+                //             justify-content: center !important;
+                //             .card-title {
+                //                 display: flex !important;
+                //                 align-items: center !important;
+                //                 justify-content: center !important;
+                //                 margin: 0 auto !important;
+                //                 height: auto;
+                //                 width: 100% !important;
+                //                 padding-bottom: 10px;
+                //                 font-size: 1.4rem!important;
+                //             }
+                //             .card-text {
+                //                 display: flex !important;
+                //                 justify-content: center !important;
+                //                 margin: 0 auto !important;
+                //                 font-size: 1.2rem !important;
+                //                 height: auto !important;
+                //             }
+                //         }
+                //         .card-title {
+                //             width: 100%;
+                //             display: flex;
+                //             font-size: 2rem !important;
+                //         }
+                //         .card {
+                //             margin: 0 auto;
+                //             display: flex;
+                //             padding: 0px !important;
+                //             padding-bottom: 15px !important;
+                //             width: 100%;
+                //             min-width: 340px !important;
+                //             height: auto;
+                //             background: rgb(21, 29, 68) !important;
+                //             color: #d6cec3;
+                //             position: relative!important;
+                //             .card-body {
+                //                 padding: 0px !important;
+                //                 margin: 0 auto;
+                //                 width: 100%;
+                //                 height: auto !important;
+                //                 display: flex;
+                //                 flex-direction: column;
+                //             }
+                //             div {
+                //                 width: 100%;
+                //                 height: auto;
+                //                 display: flex;
+                //                 justify-content: center;
+                //                 align-items: center;
+                //                 margin: 0 auto;
+                //                 padding-top: 5px;
+                //                 background: rgb(21, 29, 68);
+                //                 color: #d6cec3;
+                //             }
+                //             .card-title {
+                //                 width: 100%;
+                //                 margin: 0 auto;
+                //                 display: flex;
+                //                 height: auto !important;
+                //                 font-size: 1.5rem !important;
+                //             }
+                //             .card-text {
+                //                 display: flex;
+                //                 justify-content: center;
+                //                 width: 100%;
+                //                 margin: 0 auto;
+                //                 height: 20px !important;
+                //             }
+                //             .landingbutton {
+                //                 margin: 0 auto;
+                //                 display: flex;
+                //                 justify-content: center;
+                //                 align-items: center;
+                //                 width: 100%;
+                //                 padding: 1px !important;
+                //                 font-size: 1.5em;
+                //             }
+                //             .link {
+                //                 display: flex;
+                //                 justify-content: flex-start !important;
+                //                 align-items: center !important;
+                //                 width: 100%;
+                //                 height: 21px;
+                //                 // margin: auto;
+                //                 padding: none !important;
+                //                 margin: 0 auto;
+                //                 font-size: .8rem !important;
+                //                 color: #d6cec3;
+                //             }
+                //         }
+                //     }
+                // }
