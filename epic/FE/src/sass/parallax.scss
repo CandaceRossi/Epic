@@ -1,3 +1,4 @@
+//white section after carousel with cards
 .cleanbreak {
     margin: 0 auto !important;
     width: 100%;
@@ -64,15 +65,58 @@
     }
 }
 
+//desktop
+.cleanbreakdesktop {
+    margin: 0 auto !important;
+    width: 100%;
+    min-height: 465px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    z-index: 600;
+    position: relative;
+    img {
+        display: flex;
+        justify-content: center;
+        width: 420px;
+        height: 265px;
+        margin: -2px 0px 0px 0px;
+        padding: 0px;
+    }
+    .cleanbreakdiv {
+        width: 50%;
+        min-width: 445px !important;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 20px;
+        h1 {
+            margin: 0px;
+            width: 100%;
+            color: rgb(44, 52, 88);
+            font-size: 2.2rem;
+        }
+        p {
+            margin: 0 auto;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.8rem;
+            color: rgb(44, 52, 88);
+        }
+    }
+}
+
 
 /* tablet */
 
 .cleanbreaktablet {
-    box-sizing: border-box;
     width: 100% !important;
     margin: 0 auto !important;
     margin-top: 30px !important;
-    margin-bottom: 210px !important;
+    margin-bottom: 45px !important;
     justify-content: center!important;
     align-items: center!important;
     height: auto !important;
@@ -81,32 +125,27 @@
     background: whitesmoke !important;
     z-index: 400 !important;
     position: relative !important;
-    padding: 0px auto !important;
-    // padding-top: 175px !important;
+    padding: 0px !important;
     padding-left: 30px;
     padding-right: 30px;
     .cleanbreakdivtablet {
         width: 100% !important;
-        margin-top: 0px !important;
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-        margin-bottom: 0px !important;
+        margin: 0 auto;
         flex-direction: column !important;
         width: 100%!important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        padding: 0px !important;
-        height: auto !important;
+        padding-top: 5% !important;
+        height: 100%;
         h1 {
             width: 100%;
-            margin: 0px !important;
+            margin: 0 auto !important;
             display: flex !important;
-            justify-content: flex-start !important;
+            justify-content: center !important;
             align-items: center !important;
             padding: 0px !important;
-            padding-left: 35px !important;
-            height: auto!important;
+            height: 100%;
             color: rgb(44, 52, 88);
             font-size: 2.2rem;
         }
@@ -119,6 +158,7 @@
             padding-right: 30px !important;
             padding-bottom: 25px;
             width: 100% !important;
+            height: 100%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.6rem;
             color: rgb(44, 52, 88);
@@ -128,14 +168,11 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center!important;
-        // width: 100% !important;
-        max-width: 690px;
-        height: auto !important;
+        max-width: 580px;
+        height: 100%;
         margin-top: -2px !important;
-        margin-bottom: -165px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        // margin: 0 auto !important;
         padding: 0px !important;
     }
 }
@@ -147,14 +184,14 @@
     box-sizing: border-box;
     width: 90% !important;
     margin: 0 auto !important;
-    justify-content: space-around !important;
+    justify-content: center!important;
     height: 100% !important;
     display: flex;
     flex-direction: column;
     background: whitesmoke !important;
-    z-index: 400 !important;
+    z-index: 600 !important;
     position: relative;
-    padding: 5px 0px 25px 0px!important;
+    padding: 65px 0px 25px 0px!important;
     .cleanbreakdiv {
         margin: 0px !important;
         flex-direction: column;
@@ -182,21 +219,130 @@
             width: 90%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.1rem;
-            // color: whitesmoke;
+            padding-bottom: 25px;
         }
     }
     img {
         display: flex !important;
         justify-content: center !important;
         width: 100%;
-        max-width: 390px;
-        // height: 245px;
+        // max-width: 390px;
+        height: 300px;
         height: auto;
         margin: 0 auto !important;
         padding: 0px !important;
     }
 }
 
+//mini
+.cleanbreakmini {
+    box-sizing: border-box;
+    // min-height: 665px;
+    width: 90% !important;
+    margin: 0 auto !important;
+    justify-content: space-around !important;
+    align-items: center;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke !important;
+    z-index: 400 !important;
+    position: relative;
+    padding: 155px 0px 25px 0px!important;
+    .cleanbreakdiv {
+        margin: 0px !important;
+        flex-direction: column;
+        width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0px !important;
+        h1 {
+            margin: 0 auto !important;
+            display: flex;
+            justify-content: center !important;
+            align-items: center !important;
+            max-width: 90%;
+            color: rgb(44, 52, 88);
+            font-size: 1.4rem;
+            padding: 0px;
+        }
+        p {
+            color: rgb(44, 52, 88);
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center;
+            margin: 0 auto;
+            width: 90%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            padding-bottom: 25px;
+        }
+    }
+    img {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100%;
+        // max-width: 390px;
+        height: 200px;
+        height: auto;
+        margin: 0 auto !important;
+        padding: 0px !important;
+    }
+    // box-sizing: border-box;
+    // width: 90% !important;
+    // margin: 0 auto !important;
+    // justify-content: space-around !important;
+    // height: 100% !important;
+    // display: flex;
+    // flex-direction: column;
+    // background: whitesmoke !important;
+    // z-index: 400 !important;
+    // position: relative;
+    // padding: 5px 0px 25px 0px!important;
+    // .cleanbreakdiv {
+    //     margin: 0px !important;
+    //     flex-direction: column;
+    //     width: 100% !important;
+    //     display: flex;
+    //     justify-content: center !important;
+    //     align-items: center !important;
+    //     padding: 0px !important;
+    //     h1 {
+    //         margin: 0 auto !important;
+    //         display: flex;
+    //         justify-content: center !important;
+    //         align-items: center !important;
+    //         width: 90%;
+    //         color: rgb(44, 52, 88);
+    //         font-size: 1.4rem;
+    //         padding: 0px;
+    //     }
+    //     p {
+    //         color: rgb(44, 52, 88);
+    //         display: flex !important;
+    //         justify-content: center !important;
+    //         align-items: center;
+    //         margin: 0 auto;
+    //         width: 90%;
+    //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //         font-size: 1.1rem;
+    //         // color: whitesmoke;
+    //     }
+    // }
+    // img {
+    //     display: flex !important;
+    //     justify-content: center !important;
+    //     width: 100%;
+    //     max-width: 390px;
+    //     // height: 245px;
+    //     height: auto;
+    //     margin: 0 auto !important;
+    //     padding: 0px !important;
+    // }
+}
+
+//blue section after carousel with cards
 .clean {
     margin: 0 auto !important;
     width: 100%;
@@ -263,15 +409,57 @@
     }
 }
 
+//desktop
+.cleandesktop {
+    margin: 0 auto !important;
+    width: 100%;
+    min-height: 465px !important;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
+    z-index: 600;
+    position: relative;
+    img {
+        display: flex;
+        justify-content: center;
+        width: 420px;
+        height: 265px;
+        margin: -2px 0px 0px 0px;
+        padding: 0px;
+    }
+    .cleandiv {
+        width: 50%;
+        min-width: 445px !important;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 20px;
+        h1 {
+            margin: 0 auto;
+            width: 100%;
+            color: #d6cec3;
+            font-size: 2.2rem;
+        }
+        p {
+            margin: 0 auto;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.8rem;
+            color: #d6cec3;
+        }
+    }
+}
+
 
 /* tablet */
 
 .cleantablet {
-    box-sizing: border-box;
     width: 100% !important;
     margin: 0 auto !important;
     margin-top: 30px !important;
-    margin-bottom: 0px !important;
     justify-content: center!important;
     align-items: center!important;
     height: auto !important;
@@ -280,47 +468,39 @@
     background: rgb(44, 52, 88) !important;
     z-index: 400 !important;
     position: relative !important;
-    padding: 0px auto !important;
-    // padding-top: 175px !important;
+    padding: 0px !important;
     padding-left: 30px;
     padding-right: 30px;
     img {
         display: flex !important;
         justify-content: center !important;
         align-items: center!important;
-        // width: 100% !important;
-        max-width: 690px;
-        height: auto !important;
+        max-width: 580px;
+        height: 100%;
+        margin: 0 auto;
         margin-top: 85px !important;
-        margin-bottom: -165px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        // margin: 0 auto !important;
         padding: 0px !important;
     }
     .cleandivtablet {
         width: 100% !important;
-        margin-top: 175px !important;
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-        margin-bottom: 0px !important;
+        margin: 0 auto;
+        margin-top: 35px;
         flex-direction: column !important;
         width: 100%!important;
         display: flex !important;
         justify-content: center!important;
         align-items: center !important;
         padding: 0px !important;
-        // padding-left: 35px !important;
-        height: auto !important;
+        padding-bottom: 5% !important;
+        height: 100%;
         h1 {
             width: 100%;
-            margin: 0px !important;
+            margin: 0 auto !important;
             display: flex !important;
-            justify-content: flex-start !important;
+            justify-content: center !important;
             align-items: center !important;
             padding: 0px !important;
-            padding-left: 35px !important;
-            height: auto!important;
+            height: 100%;
             color: whitesmoke !important;
             font-size: 2.2rem;
         }
@@ -333,6 +513,7 @@
             padding-right: 30px !important;
             padding-bottom: 25px;
             width: 100% !important;
+            height: 100%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.6rem;
             color: whitesmoke !important;
@@ -354,7 +535,7 @@
     background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
     z-index: 400 !important;
     position: relative;
-    padding: 25px 0px 5px 0px!important;
+    padding: 25px 0px 25px 0px!important;
     .cleandiv {
         margin: 0px !important;
         flex-direction: column;
@@ -363,6 +544,61 @@
         justify-content: center !important;
         align-items: center !important;
         padding: none !important;
+        h1 {
+            margin: 0 auto !important;
+            display: flex;
+            justify-content: center !important;
+            align-items: center !important;
+            width: 87%;
+            color: whitesmoke;
+            font-size: 1.4rem;
+            padding: 0px;
+            padding-top: 25px;
+        }
+        p {
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            margin: 0 auto;
+            width: 86%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            color: whitesmoke;
+        }
+    }
+    img {
+        display: flex !important;
+        justify-content: center !important;
+        // max-width: 90%;
+        max-width: 375px;
+        height: 245px;
+        margin: 0 auto !important;
+        padding: 0px !important;
+        // padding-top: 25px;
+    }
+}
+
+//mini
+.cleanmini {
+    box-sizing: border-box;
+    width: 100% !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
+    z-index: 400 !important;
+    position: relative;
+    padding: 25px 0px 5px 0px!important;
+    .cleandiv {
+        margin: 0 auto !important;
+        flex-direction: column;
+        width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0px !important;
         h1 {
             margin: 0 auto !important;
             display: flex;

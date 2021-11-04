@@ -19,7 +19,7 @@ const projpar = props.projpar;
 
     return (
         <>
-            <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
+            <div style={{ display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
                 <div className="cleanbreakmini">
                     <div className="cleanbreakdiv">
                         <h1>Have Confidence In Who You Hire...</h1>

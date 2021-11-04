@@ -10,12 +10,13 @@
 //mini
 .cardzindexareamini {
     margin: 0 auto;
-    margin-top: 205px;
+    margin-top: 205px !important;
     height: auto;
     width: 100%;
     z-index: 500;
     background: whitesmoke;
     position: relative;
+    // display: block;
     bottom: 0;
 }
 
