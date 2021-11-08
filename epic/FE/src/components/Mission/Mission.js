@@ -13,13 +13,6 @@ import floridafriendly from "../../images/floridafriendly.jpg";
 import "aos/dist/aos.css";
 import '../../sass/mission.scss';
 
-import MissionTablet from "./MissionTablet";
-import MissionPhone from "./MissionPhone";
-
-import DesktopBreakpoint from '../responsive_utilities/desktop_breakpoint';
-import TabletBreakpoint from '../responsive_utilities/tablet_breakpoint';
-import PhoneBreakpoint from '../responsive_utilities/phone_breakpoint';
-
 
 const Mission = ({isNeeded}) => {
     useEffect(() => {
@@ -28,15 +21,12 @@ const Mission = ({isNeeded}) => {
     return (
         <>
         <div className="missioncontdesktop">
-        <DesktopBreakpoint>
         <div className="missiondesktop">
-
          <div className="overlay"> </div>
             <div className="mission-styledesktop">
                 <div className="missy" data-aos="zoom-in">
                     <h1>OUR MISSION</h1>
                     <h3>Our mission is to work with our community to become a helpful and reliable painting company. </h3>
-        
                 </div>
                 </div>
                 </div>
@@ -62,26 +52,26 @@ const Mission = ({isNeeded}) => {
                         <div className="flexin">
                             <div className="flexflexin">
                             <div data-aos="zoom-in">
-                                {/* <div className="photoop"> */}
+                              
                                 <img src={painter} alt="" /> 
                                 
                                 <p>Andrew Charles</p>
                                 <p>Owner & Contractor</p>
-                                {/* </div> */}
+                               
                             </div>
                             <div data-aos="zoom-in">
-                                {/* <div className="photoop"> */}
+                                
                                 <img src={apainterperson} alt="" /> 
                                 <p>Brad Fontaine</p>
                                 <p>Paint Contractor</p>
-                                {/* </div> */}
+                           
                             </div>
                             <div data-aos="zoom-in">
-                                {/* <div className="photoop"> */}
+                                
                                 <img src={danette} alt="" /> 
                                 <p>Danette Aaron</p>
                                 <p>Office Manager</p>
-                                {/* </div> */}
+                            
                             </div>
         
                         </div>
@@ -89,22 +79,6 @@ const Mission = ({isNeeded}) => {
 
                 </div>
             </div>
-            </DesktopBreakpoint>
-            <TabletBreakpoint>
-                <MissionTablet />
-            </TabletBreakpoint>
-            <PhoneBreakpoint>
-                <MissionPhone />
-            </PhoneBreakpoint>
-            <DesktopBreakpoint>
-            <Parallax  missContent= {true} featuredImage1={dusty2} featuredImage2={floridafriendly} misspar={true} isNeeded={false} />
-           </DesktopBreakpoint>
-           <TabletBreakpoint>
-                 <ParallaxTablet missContent= {true} featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
-            </TabletBreakpoint>
-            <PhoneBreakpoint>
-                 <ParallaxPhone missContent= {true} featuredImage1={dusty2} featuredImage2={floridafriendly} homepar={true} isNeeded={false} />
-            </PhoneBreakpoint>          
           </div>
           </>
     )

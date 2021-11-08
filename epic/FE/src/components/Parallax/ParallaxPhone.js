@@ -37,17 +37,17 @@ const projpar = props.projpar;
                 </div>
             </div>
             {homepar ?
-            <div style={{width: "100%!important", height: "auto"}} className="parallaxhome"></div> :
+            <div className="parallaxhome"></div> :
             respar ? 
-            <div style={{width: "100%!important", height: "auto"}} className="parallaxres"></div> : 
+            <div className="parallaxres"></div> : 
             commpar ?
-             <div style={{width: "100%!important", height: "auto"}} className="parallaxcomm"></div> : 
+             <div className="parallaxcomm"></div> : 
             powerpar ?
-            <div style={{width: "100%!important", height: "auto"}} className="parallaxpower"></div> :
+            <div className="parallaxpower"></div> :
             misspar ?
-           <div style={{width: "100%!important", height: "auto"}} className="parallaxmiss"></div> : 
+           <div className="parallaxmiss"></div> : 
             projpar ?
-           <div style={{width: "100%!important", height: "auto"}} className="parallaxproj"></div> : null }
+           <div className="parallaxproj"></div> : null }
             
            
             {/* <div className="hometestimonyparallaxblock"> */}

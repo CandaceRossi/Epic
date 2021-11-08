@@ -631,114 +631,109 @@
     }
 }
 
-.parallaxhome {
-    background-image: url("../../src/images/gorjus.jpg");
-    width: 100%;
-    height: 500px;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-    margin: 0 auto;
-}
-
-.parallaxres {
-    background-image: url("../../src/images/residentialparallax.jpg");
-    height: 500px;
-    width: 100%;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-    margin: 0 auto;
-}
-
-.parallaxcomm {
-    background-image: url("../../src/images/commercialparallax1.jpg");
-    height: 500px;
-    width: 100%;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-    margin: 0 auto;
-}
-
-.parallaxpower {
-    background-image: url("../../src/images/powerwash14.jpg");
-    height: 500px;
-    width: 100%;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-    margin: 0 auto;
-}
-
-.parallaxproj {
-    background-image: url("../../src/images/parallaxproject.jpg");
-    height: 500px;
-    width: 100%;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-    margin: 0 auto;
-}
-
-.parallaxmiss {
-    background-image: url("../../src/images/paintingpainters.jpg");
-    height: 500px;
-    width: 100%;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-    margin: 0 auto;
-}
-
-.parallaxes {
-    background-image: url("../../src/images/gorjusyep.jpg");
-    height: 500px !important;
-    width: 100%;
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
-}
-
-.parallaxing {
-    background-image: url("../../src/images/officeclean.jpg");
-    min-height: 500px;
-    width: 100%;
-    height: 500%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 500;
-    position: relative;
+@media screen and (min-width: 737px) {
+    .parallaxhome {
+        background-image: url("../../src/images/gorjus.jpg");
+        width: 100%;
+        height: 500px;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+    }
+    .parallaxres {
+        background-image: url("../../src/images/residentialparallax.jpg");
+        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+    }
+    .parallaxcomm {
+        background-image: url("../../src/images/commercialparallax1.jpg");
+        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+    }
+    .parallaxpower {
+        background-image: url("../../src/images/powerwash14.jpg");
+        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+    }
+    .parallaxproj {
+        background-image: url("../../src/images/parallaxproject.jpg");
+        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+    }
+    .parallaxmiss {
+        background-image: url("../../src/images/paintingpainters.jpg");
+        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+    }
+    .parallaxes {
+        background-image: url("../../src/images/gorjusyep.jpg");
+        height: 500px !important;
+        width: 100%;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+    }
+    .parallaxing {
+        background-image: url("../../src/images/officeclean.jpg");
+        min-height: 500px;
+        width: 100%;
+        height: 500%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+    }
 }
 
 // /* tablet */
@@ -765,121 +760,122 @@
 //         min-height: 250px;
 //     }
 // }
-// @media (max-width: 800px) {
-//     .parallaxhome {
-//         background-image: url("../../src/images/gorjus.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxres {
-//         background-image: url("../../src/images/residentialparallax.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxcomm {
-//         background-image: url("../../src/images/commercialparallax1.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxpower {
-//         background-image: url("../../src/images/powerwash14.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxproj {
-//         background-image: url("../../src/images/parallaxproject.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxmiss {
-//         background-image: url("../../src/images/paintingpainters.jpg");
-//         height: 400px !important;
-//         min-height: 400px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxes {
-//         background-image: url("../../src/images/gorjusyep.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .parallaxing {
-//         background-image: url("../../src/images/officeclean.jpg");
-//         height: 200px !important;
-//         min-height: 200px;
-//         width: 100% !important;
-//         background-attachment: fixed;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover !important;
-//         z-index: 500;
-//         position: relative;
-//         margin: 0 auto;
-//         display: block;
-//     }
-// }
-@media (max-width: 500px) {
+@media screen and (min-width: 481px) and (max-width: 736px) {
+    .parallaxhome {
+        background-image: url("../../src/images/gorjus.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxres {
+        background-image: url("../../src/images/residentialparallax.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxcomm {
+        background-image: url("../../src/images/commercialparallax1.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxpower {
+        background-image: url("../../src/images/powerwash14.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxproj {
+        background-image: url("../../src/images/parallaxproject.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxmiss {
+        background-image: url("../../src/images/paintingpainters.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxes {
+        background-image: url("../../src/images/gorjusyep.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .parallaxing {
+        background-image: url("../../src/images/officeclean.jpg");
+        height: 400px !important;
+        min-height: 400px;
+        width: 100% !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        z-index: 500;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .parallaxhome {
         background-image: url("../../src/images/gorjus.jpg");
         height: 200px !important;
