@@ -13,7 +13,7 @@
         height: 550px;
         z-index: 300;
         opacity: 0.7;
-        background-position: 50% 30%!important;
+        background-position: 50% 20%!important;
         background-attachment: fixed;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -70,6 +70,8 @@
         justify-content: center !important;
         align-items: flex-start;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
+        padding-left: 10%;
+        padding-right: 10%;
         .imgcontainer {
             height: auto;
             padding-top: 75px;
@@ -93,7 +95,6 @@
             margin: 0 auto;
             width: 50%;
             height: auto;
-            // padding-right: 5%;
             .brickup1 {
                 margin: 0 auto;
                 width: 100%;
@@ -127,6 +128,7 @@
             // width: 75%;
             height: auto;
             margin: 0 auto;
+            margin-left: 20px;
             h3 {
                 margin: 0 auto;
                 max-width: 100%;
@@ -200,12 +202,12 @@
         height: 550px;
         z-index: 300;
         opacity: 0.7;
-        background-position: 50% 30%!important;
+        background-position: 50% 15%!important;
         background-attachment: fixed;
         background-size: 100% auto;
         background-repeat: no-repeat;
         .overlay {
-            width: 90%;
+            width: 100%;
             min-height: 800px;
             float: left;
             left: -400px;
@@ -256,8 +258,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
-        padding-left: 2%;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
+        padding-left: 10%;
+        padding-right: 10%;
         .imgcontainer {
             height: auto;
             padding-top: 75px;
@@ -265,7 +268,6 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            // width: 575px;
             width: 50%;
         }
         img {
@@ -282,7 +284,7 @@
             margin: 0 auto;
             width: 50%;
             height: auto;
-            // padding-right: 5%;
+            padding-left: 5%;
             .brickup1 {
                 margin: 0 auto;
                 width: 100%;
@@ -312,9 +314,10 @@
         }
         .bruckup {
             color: white;
-            width: 450px;
+            min-width: 350px;
             height: auto;
             margin: 0 auto;
+            margin-left: 20px;
             h3 {
                 margin: 0 auto;
                 width: 100%;
@@ -385,11 +388,11 @@
         margin-top: 75px !important;
         display: block;
         max-width: 100%;
-        height: 350px;
+        height: 380px;
         // height: 100%;
         z-index: 300;
         opacity: 0.7;
-        background-position: 50% 20% !important;
+        background-position: 50% 15% !important;
         background-attachment: fixed;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -444,8 +447,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center !important;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 0%;
+        padding-right: 0%;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
         .imgcontainer {
             height: auto;
@@ -577,18 +581,19 @@
     margin-top: 0px !important;
     .missionphone {
         background-image: url("../images/together.jpg");
-        height: 200px !important;
+        height: 250px !important;
         opacity: 0.7;
+        margin: 0px;
+        // margin-top: 85px !important;
         margin-top: 5px !important;
-        display: table;
+        display: block;
         width: 100%;
-        height: auto;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background-position: 50% 10% !important;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
         .overlay {
-            min-width: 130% !important;
+            min-width: 125% !important;
             min-height: 800px;
             float: left;
             left: -400px;
@@ -603,7 +608,7 @@
             flex-direction: column;
             z-index: 400;
             .missy {
-                // padding-top: 105px;
+                padding-top: 45px;
                 margin: 0px;
                 margin-top: 5%;
                 margin-left: 3%;
@@ -644,6 +649,7 @@
         justify-content: center !important;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
         padding-left: 0px;
+        padding-right: 0px;
         .imgcontainer {
             height: auto;
             padding-top: 35px;
@@ -858,6 +864,7 @@
         justify-content: center !important;
         background: linear-gradient( #54504a, rgb(138, 140, 141));
         padding-left: 0px;
+        padding-right: 0px;
         .imgcontainer {
             height: auto;
             padding-top: 35px;

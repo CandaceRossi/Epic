@@ -61,7 +61,7 @@
     z-index: 999;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 736px) {
     .toggle-button {
         margin-top: 40%;
         margin-left: 15px;
@@ -90,7 +90,7 @@
     }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 736px) {
     .toggle-button {
         display: none !important;
     }

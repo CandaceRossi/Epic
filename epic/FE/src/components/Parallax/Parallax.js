@@ -50,7 +50,7 @@ const missContent = props.missContent;
                  { projContent ? 
                 
         <div style={{  display: "flex", flexDirection: "column", margin: "0 auto", zIndex: "600", height:"100%", position: "relative", background: "whitesmoke"}}>
-            <div className="cleanbreak">
+            <div className="cleanbreakdesktop">
                     <div className="cleanbreakdiv">
                         <h1>Keeping up with Advances in Technology...</h1>
                         <p>We do our utmost to stay informed in new technologies. We use color matching software to
@@ -58,7 +58,7 @@ const missContent = props.missContent;
                     </div>
                      <img src={featuredImage1} alt="" />
                 </div>
-                <div className="clean">
+                <div className="cleandesktop">
                 
                     <img src={featuredImage2} alt="" />
                     <div className="cleandiv">
@@ -74,7 +74,7 @@ const missContent = props.missContent;
               { missContent ? 
              
                  <div>
-                <div className="cleanbreak">
+                <div className="cleanbreakdesktop">
                     <div className="cleanbreakdiv">
                         <h1>No Matter the Size of the Project...</h1>
                         <p>We know that projects can seem overwhelming and we work hard to take the pressure of of you!
@@ -82,7 +82,7 @@ const missContent = props.missContent;
                     </div>
                      <img src={featuredImage1} alt="" />
                 </div>
-                <div className="clean">
+                <div className="cleandesktop">
                 
                     <img src={featuredImage2} alt="" />
                     <div className="cleandiv">

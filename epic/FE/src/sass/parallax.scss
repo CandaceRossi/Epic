@@ -85,25 +85,26 @@
         height: 265px;
         margin: -2px 0px 0px 0px;
         padding: 0px;
+        padding-left: 20px;
     }
     .cleanbreakdiv {
         width: 50%;
-        min-width: 445px !important;
+        min-width: 350px !important;
         display: flex;
         flex-direction: column;
         align-content: center;
-        padding-left: 20px;
+        // padding-left: 20px;
         h1 {
             margin: 0px;
             width: 100%;
             color: rgb(44, 52, 88);
-            font-size: 2.2rem;
+            font-size: 2rem !important;
         }
         p {
             margin: 0 auto;
             width: 100%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.35rem !important;
             color: rgb(44, 52, 88);
         }
     }
@@ -225,10 +226,8 @@
     img {
         display: flex !important;
         justify-content: center !important;
-        width: 100%;
-        // max-width: 390px;
-        height: 300px;
-        height: auto;
+        max-width: 375px;
+        height: 245px;
         margin: 0 auto !important;
         padding: 0px !important;
     }
@@ -238,17 +237,17 @@
 .cleanbreakmini {
     box-sizing: border-box;
     // min-height: 665px;
-    width: 90% !important;
+    width: 100% !important;
     margin: 0 auto !important;
-    justify-content: space-around !important;
-    align-items: center;
+    justify-content: center !important;
+    // align-items: center;
     height: 100% !important;
     display: flex;
     flex-direction: column;
     background: whitesmoke !important;
     z-index: 400 !important;
     position: relative;
-    padding: 155px 0px 25px 0px!important;
+    padding: 25px 0px 25px 0px!important;
     .cleanbreakdiv {
         margin: 0px !important;
         flex-direction: column;
@@ -262,7 +261,7 @@
             display: flex;
             justify-content: center !important;
             align-items: center !important;
-            max-width: 90%;
+            max-width: 87%;
             color: rgb(44, 52, 88);
             font-size: 1.4rem;
             padding: 0px;
@@ -273,7 +272,7 @@
             justify-content: center !important;
             align-items: center;
             margin: 0 auto;
-            width: 90%;
+            width: 86%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.1rem;
             padding-bottom: 25px;
@@ -282,9 +281,9 @@
     img {
         display: flex !important;
         justify-content: center !important;
-        width: 100%;
+        width: 375px;
         // max-width: 390px;
-        height: 200px;
+        height: 245px;
         height: auto;
         margin: 0 auto !important;
         padding: 0px !important;
@@ -441,13 +440,13 @@
             margin: 0 auto;
             width: 100%;
             color: #d6cec3;
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
         p {
             margin: 0 auto;
             width: 100%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.35rem;
             color: #d6cec3;
         }
     }
@@ -465,7 +464,7 @@
     height: auto !important;
     display: flex !important;
     flex-direction: column !important;
-    background: rgb(44, 52, 88) !important;
+    background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
     z-index: 400 !important;
     position: relative !important;
     padding: 0px !important;
@@ -590,7 +589,7 @@
     background: linear-gradient(rgb(44, 52, 88), rgb(51, 53, 63));
     z-index: 400 !important;
     position: relative;
-    padding: 25px 0px 5px 0px!important;
+    padding: 25px 0px 25px 0px!important;
     .cleandiv {
         margin: 0 auto !important;
         flex-direction: column;
@@ -608,6 +607,7 @@
             color: whitesmoke;
             font-size: 1.4rem;
             padding: 0px;
+            padding-top: 25px;
         }
         p {
             display: flex;
