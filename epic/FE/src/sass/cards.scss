@@ -698,6 +698,7 @@
         flex-direction: column;
         justify-content: center !important;
         align-items: center !important;
+        border: none;
         .card:first-of-type {
             margin: 0 auto;
             width: 100%;
@@ -828,12 +829,13 @@
 
 //mini
 .cardscontainermini {
-    margin-top: 550px !important;
+    margin-top: 450px !important;
     width: 100% !important;
     height: auto;
     position: relative!important;
     display: block!important;
     z-index: 800;
+    border: none;
     img {
         display: none !important;
     }
