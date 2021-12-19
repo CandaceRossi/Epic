@@ -25,11 +25,11 @@ const projpar = props.projpar;
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
                     </div>
-                     <img src={featuredImage1} alt="" />
+                     <img style={{width: "100%", height: "auto"}} src={featuredImage1} alt="" />
                 </div>
                 <div className="cleanphone">
                 
-                    <img src={featuredImage2} alt="" />
+                    <img style={{width: "100%", height: "auto"}} src={featuredImage2} alt="" />
                     <div className="cleandiv">
                         <h1>Have Confidence In Who You Hire...</h1>
                         <p>We are highly trained professionals who perform guaranteed, safe services. Fully licensed and insured. We are prepared to meet all your painting or powerwashing needs.</p>
