@@ -6,89 +6,6 @@ import '../../sass/cards.scss';
 
 
 const Cards = () => {
-   
-const [data, setData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-    sent: false
-  });
-
-const onNameChange = (event) => {
-        setData({...data, name: event.target.value})
-        console.log("updated name state", data)
-    }
-
-const onEmailChange = (event) => {
-        setData({...data, email: event.target.value})
-    }
-
-const onPhoneChange = (event) => {
-        setData({...data, phone: event.target.value})
-         console.log("updated phone state", data)
-    }
-
-const onMsgChange = (event) => {
-        setData({...data, message: event.target.value})
-    }
-
-const getResponse = async () => {
-        try {
-        await axios.get('/').then((response) => {
-            const info = response.data;
-            setData({sent: true})
-            resetForm();
-            console.log(response);
-        })}
-        catch (err) {
-            alert("Error retreiving data!")
-        };
-    }
-
-
-async function postData() {
-    const { newData } = await axios.post(
-      "http://localhost:3001/send", data
-    )
-    setData(data => ({...data, sent:true}));
-    
-  }
-
-const submitEmail = async (e) => {
-    e.preventDefault();  
-    let newData = {
-        ...data,
-    name: data.name, 
-    email: data.email,
-    phone: data.phone,
-    message: data.message
-  }
-postData();
-getResponse();
-  };
-
- 
-
-  const resetForm = () => {
-    setData({
-      name: "",
-      email: "",
-      phone: "",
-      message: ""
-    });
-  
-
- setTimeout(() => {
-      setData(
-        {
-          sent: true,
-        })
-    }, 1000
-      );
-};
-
- 
 
     return (
       <div className="cardscontainerdesktop" >
@@ -115,12 +32,12 @@ getResponse();
                             Fill in the form and we'll be in touch!
     </Card.Text>
                         <div className="card-style">
-                            <form onSubmit={submitEmail}>
+                            <form action="/actionpage">
                                 <div className="row">
                                     <div className="col-25">
                                         <label htmlFor="name">Name</label>
                                     </div><div className="col-75">
-                                        <input value={data.name || ""} onChange={onNameChange} style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="Your Full Name.." />
+                                        <input style={{ fontSize: "1.2em" }} type="text" id="name" name="name" placeholder="Your Full Name.." />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -128,10 +45,10 @@ getResponse();
                                         <label htmlFor="phone">Phone</label>
                                     </div>
                                     <div className="col-75">
-                                        <input value={data.phone || ""} onChange={onPhoneChange} style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="Your Telephone Number.." />
+                                        <input style={{ fontSize: "1.2em" }} type="number" id="number" name="number" placeholder="Your Telephone Number.." />
                                     </div>
                                 </div>
-                                 <div value={data.sent} className={data.sent ? 'msgAppear':'msg'}>Message has been sent
+                                 <div>Message has been sent
                                 </div>
                                 <div className="row">
                                     <input className="landingbutton" type="submit" value="Give Me A Call" />
