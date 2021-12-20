@@ -19,7 +19,7 @@ const projpar = props.projpar;
 
     return (
         <>
-            <div >
+            <div style={{margin: "0px", display: "block !important", paddingTop:"20px", position: "relative"}}>
                 <div className="cleanbreakphone">
                     <div className="cleanbreakdiv">
                         <h1>Have Confidence In Who You Hire...</h1>

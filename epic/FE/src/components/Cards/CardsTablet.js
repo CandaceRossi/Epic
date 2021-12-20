@@ -27,7 +27,7 @@ const CardsTablet = () => {
                         <img className="firstimg" src={beigebasement} style={{ border: "none", margin:"0 auto", width: "395px", height: "250px", paddingTop: "15px", paddingBottom: "15px", display: "flex" }} alt="room" />
                         <div className="imagecard" style={{ border: "none", paddingRight: "0px !important", margin: "0 auto", background: "#d6cec3", color: "rgb(21, 29, 68)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingLeft: "30px", margin: "0 auto", marginRight: "0px !important" }}>
                             <Card.Title style={{ paddingRight: "0px !important", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", marginLeft: "0px", maxWidth: "100% !important", fontSize: "2rem" }}>Make Your Space What You Always Dreamed It Could Be!</Card.Title>
-                            <Card.Text style={{  paddingRight: "0px !important", background: "#d6cec3", color: "rgb(21, 29, 68)", margin: "0 auto", marginLeft: "0px", maxWidth: "100% !important", fontSize: "1.2rem" }}>
+                            <Card.Text >
                                  Let us do the work for you! Our team handles every step of your project so that you don't have to. We protect all surfaces, furniture, patch holes, remove electric plates and switch covers so that the finished product is beautiful with a quality and durability that lasts. 
                             </Card.Text>
 
