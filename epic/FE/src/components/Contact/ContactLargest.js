@@ -149,7 +149,7 @@ getResponse();
                                 <div className="flexin" data-aos="fade-left">
                                     <p>HOURS OF OPERATION:</p>
                                     <p>Mon - Fri: 8AM - 6PM</p>
-                                    <p>Sat & Sun: 10AM - 3PM</p>
+                                   
                                 </div>
                             </div>
                         </div>

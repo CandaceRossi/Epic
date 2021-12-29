@@ -12,7 +12,8 @@
         height: 550px;
         z-index: 300;
         background-image: url("../images/powerwash15.jpg");
-        background-position: 50% 220% !important;
+        // background-position: 50% 220% !important;
+        background-position: center !important;
         opacity: 0.7;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -159,6 +160,189 @@
                         font-size: 1.35rem;
                         width: 230px;
                         margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////
+.pressurewashcontdesktop {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    padding-top: 88px;
+    .pressurewashdesktop {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: 450px;
+        z-index: 300;
+        background-image: url("../images/powerwash15.jpg");
+        // background-position: 50% 220% !important;
+        background-position: center !important;
+        opacity: 0.7;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        .overlay {
+            width: 100%;
+            min-height: 800px;
+            float: left;
+            left: -400px;
+            background: rgba(21, 29, 68, 0.658);
+            position: absolute;
+            transform: skew(-25deg);
+        }
+        .pressurewash-styledesktop {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            // align-items: space-between;
+            .pressy {
+                padding-top: 105px;
+                margin: 0px;
+                margin-top: 5%;
+                margin-left: 1%;
+                width: 60%;
+                h1,
+                h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 500;
+                    font-size: 1.8rem;
+                    margin: 0px;
+                    padding: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #f8f1ed;
+                    text-shadow: 1px 1px black;
+                }
+                h1 {
+                    font-size: 52px;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1%;
+        padding-right: 1%;
+        background: linear-gradient( #54504a, rgb(138, 140, 141));
+        .imgcontainer {
+            height: auto;
+            padding-top: 75px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50%;
+            padding-bottom: 30px;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            width: 455px;
+            height: 345px;
+            margin: -2px 0px 0px 0px;
+        }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            padding-right: 5%;
+            .brickup1 {
+                margin: 0 auto;
+                width: 100%;
+                // height: 70%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 37px;
+                    color: rgb(255, 255, 255);
+                    z-index: 500;
+                    // top: 0;
+                    // left: 0;
+                    padding: 0px;
+                    padding-top: 30px;
+                    margin-left: 20px !important;
+                    // position: absolute;
+                }
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 3px;
+                    border-top: 3px solid black;
+                }
+            }
+        }
+        .bruckup {
+            color: white;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            margin-left: 20px;
+            h3 {
+                margin: 0 auto;
+                width: 95%;
+                display: flex;
+                justify-content: flex-start;
+                font-size: 1.35rem;
+            }
+            .contaflex {
+                height: auto;
+                display: flex;
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 30px !important;
+                align-items: baseline;
+                .flexin {
+                    height: auto;
+                    display: flex;
+                    width: 100% !important;
+                    margin: 0px!important;
+                    padding: 0px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding-bottom: 35px;
+                    p {
+                        font-size: 1.25rem !important;
+                        height: 30px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                    img {
+                        padding: 0px;
+                        margin: 0px;
+                        padding-bottom: 20px;
                     }
                 }
             }

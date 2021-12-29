@@ -116,9 +116,9 @@ getResponse();
                     <div className="contact-styledesktop">
                         <div className="consty" data-aos="zoom-in">
                             <h1>SCHEDULE A FREE ESTIMATE TODAY!</h1>
-                            <h2>We appreciate our customer's business.</h2>
-                            <h2>We guarantee great service from professionals you can count on.</h2>
-                            <h2>Contact us today to get set up with a specialist who can help.</h2>
+                            
+                            <h3>We guarantee great service from professionals you can count on.</h3>
+                            <h3>Contact us today to get set up with a specialist who can help.</h3>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ getResponse();
                                 <div className="flexin" data-aos="fade-left">
                                     <p>HOURS OF OPERATION:</p>
                                     <p>Mon - Fri: 8AM - 6PM</p>
-                                    <p>Sat & Sun: 10AM - 3PM</p>
+                                   
                                 </div>
                             </div>
                         </div>
