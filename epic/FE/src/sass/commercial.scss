@@ -528,3 +528,188 @@
         }
     }
 }
+
+.commercialcontmini {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    margin-top: 0px !important;
+    .commercialmini {
+        background-image: url("../images/commercialslickskape1.jpg");
+        height: 200px !important;
+        opacity: 0.7;
+        margin-top: 5px !important;
+        display: table;
+        width: 100%;
+        height: auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        .overlay {
+            width: 130%;
+            min-height: 800px;
+            float: left;
+            left: -400px;
+            background: rgba(21, 29, 68, 0.658);
+            position: absolute;
+            transform: skew(-25deg);
+        }
+        .commercial-stylemini {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 400;
+            margin: 0 auto !important;
+            .commey {
+                margin-top: 5%;
+                margin-left: 3%;
+                margin-bottom: 3%;
+                width: 60%;
+                h1,
+                h3 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 500;
+                    font-size: 1.2rem;
+                    margin: 0px;
+                    padding: 3px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #f8f1ed;
+                    text-shadow: 1px 1px black;
+                }
+                h1 {
+                    font-size: 24px !important;
+                    display: flex;
+                    justify-content: center !important;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        position: relative;
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: 100%;
+        z-index: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0px;
+        background: linear-gradient( #54504a, rgb(138, 140, 141));
+        .imgcontainer {
+            height: auto;
+            padding-top: 35px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 310px;
+        }
+        img {
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            width: 310px;
+            height: 245px;
+        }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            align-items: center !important;
+            flex-direction: column;
+            margin: 0 auto;
+            padding-right: 0px;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0 auto !important;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    color: rgb(255, 255, 255);
+                    z-index: 500;
+                    padding: 5px;
+                }
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 3px;
+                    border-top: 3px solid black;
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto !important;
+            color: white;
+            width: 90%;
+            height: auto;
+            display: flex;
+            padding-left: 0px;
+            padding-right: 0px !important;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            h3 {
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 1.15rem;
+                padding-bottom: 7px;
+                font-weight: lighter;
+            }
+            .contaflex {
+                display: flex;
+                height: auto;
+                width: 100%;
+                margin: 0 auto !important;
+                padding-top: 0px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 10px;
+                .flexin {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+                    // padding-bottom: 35px !important;
+                    // height: auto;
+                    // display: flex;
+                    // width: 100% !important;
+                    margin: 0 auto !important;
+                    padding: 0px !important;
+                    justify-content: center;
+                    // flex-wrap: wrap;
+                    align-items: center;
+                    p {
+                        display: flex;
+                        justify-content: center !important;
+                        font-size: 1.15rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
